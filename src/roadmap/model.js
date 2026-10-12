@@ -97,7 +97,10 @@ export function toFlow(doc) {
     position: { x: n.x ?? 0, y: n.y ?? 0 },
     data: { kind: n.kind ?? 'topic', label: n.label ?? '', priority: n.priority ?? 'normal', page: n.page ?? '' },
   }))
-  const edges = (doc.edges ?? []).map((e) => ({
+  // A link to a node that no longer exists isn't drawn and would break the build:
+  // drop it, so the next save removes it from the file
+  const ids = new Set(nodes.map((n) => n.id))
+  const edges = (doc.edges ?? []).filter((e) => ids.has(e.source) && ids.has(e.target)).map((e) => ({
     id: e.id,
     source: e.source,
     target: e.target,
@@ -108,7 +111,10 @@ export function toFlow(doc) {
   return { nodes, edges }
 }
 
-export function fromFlow({ title, description }, nodes, edges) {
+export function fromFlow({ title, description }, nodes, allEdges) {
+  // Never save a link to a node that isn't there any more
+  const ids = new Set(nodes.map((n) => n.id))
+  const edges = allEdges.filter((e) => ids.has(e.source) && ids.has(e.target))
   return {
     title,
     description,

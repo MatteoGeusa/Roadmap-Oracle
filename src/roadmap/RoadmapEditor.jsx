@@ -126,7 +126,16 @@ function Editor({ file, doc, pageFiles, openRequest, apiRef }) {
 
   // Any change except selection and React Flow's own measuring counts as unsaved work
   const track = (changes) => changes.some((c) => c.type !== 'select' && c.type !== 'dimensions') && setDirty(true)
-  const handleNodesChange = useCallback((c) => (onNodesChange(c), track(c)), [onNodesChange])
+  const handleNodesChange = useCallback(
+    (c) => {
+      onNodesChange(c)
+      // However a node goes away, its links go with it
+      const gone = new Set(c.filter((x) => x.type === 'remove').map((x) => x.id))
+      if (gone.size) setEdges((eds) => eds.filter((e) => !gone.has(e.source) && !gone.has(e.target)))
+      track(c)
+    },
+    [onNodesChange, setEdges],
+  )
   const handleEdgesChange = useCallback((c) => (onEdgesChange(c), track(c)), [onEdgesChange])
 
   const onConnect = useCallback(
