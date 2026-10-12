@@ -44,7 +44,8 @@ const RANK = { title: 0, topic: 1, subtopic: 2, note: 2 }
 // direction, so each node goes under the nearest node one level up (by number of hops,
 // moving only through nodes of its own level), or the nearest higher one if there is
 // none. Titles are the top-level sections; nodes with nothing above them come before
-// them. Siblings follow the layout, top to bottom then left to right.
+// them, and empty titles are skipped. Siblings follow the layout, top to bottom then
+// left to right.
 export function buildIndex(doc) {
   const byPos = (a, b) => (a.y ?? 0) - (b.y ?? 0) || (a.x ?? 0) - (b.x ?? 0)
   const rank = (n) => RANK[n.kind ?? 'topic']
@@ -79,8 +80,10 @@ export function buildIndex(doc) {
   const roots = []
   for (const n of nodes) (parent.has(n.id) ? entries.get(parent.get(n.id)).children : roots).push(entries.get(n.id))
   // A section's content isn't indented under its title, so nodes linked to no title go
-  // before the first section: listed after one they would look like part of it
-  return [...roots.filter((e) => e.node.kind !== 'title'), ...roots.filter((e) => e.node.kind === 'title')]
+  // before the first section: listed after one they would look like part of it.
+  // A title with nothing under it and no document (the roadmap's own heading) is left out.
+  const titles = roots.filter((e) => e.node.kind === 'title' && (e.children.length || e.node.page))
+  return [...roots.filter((e) => e.node.kind !== 'title'), ...titles]
 }
 
 export const emptyRoadmap =(title) => ({ title, description: '', nodes: [], edges: [] })
