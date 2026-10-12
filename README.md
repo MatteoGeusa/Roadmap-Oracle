@@ -38,7 +38,7 @@ pull request.
 git clone https://github.com/MatteoGeusa/Roadmap-Oracle.git
 cd Roadmap-Oracle
 npm install
-git switch -c contenuti/nome-argomento     # un nuovo branch per la tua modifica
+git switch -c nome-argomento     # un nuovo branch per la tua modifica
 npm run dev
 ```
 
@@ -50,7 +50,7 @@ Tutto ciò che salvi viene scritto in `home/`; controlla il risultato su http://
 ```sh
 git add home
 git commit -m "Aggiunge il documento sui JOIN"
-git push -u origin contenuti/nome-argomento
+git push -u origin nome-argomento
 ```
 
 Poi apri su GitHub una pull request verso `main` (il link compare nell'output del push) e
