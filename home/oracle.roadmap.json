@@ -5604,13 +5604,6 @@
       "targetHandle": "l"
     },
     {
-      "id": "emv58fvnwgqzp",
-      "source": "full-table-scan-fino-all-hwm",
-      "target": "gestione-dello-spazio",
-      "sourceHandle": "b",
-      "targetHandle": "r"
-    },
-    {
       "id": "emv58g1axd1bh",
       "source": "gestione-dello-spazio",
       "target": "pctfree",
