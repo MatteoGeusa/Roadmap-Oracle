@@ -21,42 +21,48 @@
       "kind": "subtopic",
       "label": "Data file",
       "x": -620,
-      "y": 0
+      "y": 0,
+      "page": "fondamenti/data-file.md"
     },
     {
       "id": "redo-record-ddl-e-dml",
       "kind": "subtopic",
       "label": "Redo record (DDL e DML)",
       "x": -900,
-      "y": 50
+      "y": 50,
+      "page": "fondamenti/redo-record-ddl-e-dml.md"
     },
     {
       "id": "redo-log-file",
       "kind": "subtopic",
       "label": "Redo log file",
       "x": -620,
-      "y": 50
+      "y": 50,
+      "page": "fondamenti/redo-log-file.md"
     },
     {
       "id": "path-di-tutti-gli-altri-file",
       "kind": "subtopic",
       "label": "Path di tutti gli altri file",
       "x": -900,
-      "y": 100
+      "y": 100,
+      "page": "fondamenti/path-di-tutti-gli-altri-file.md"
     },
     {
       "id": "multiplexing-su-piu-path",
       "kind": "subtopic",
       "label": "Multiplexing su più path",
       "x": -900,
-      "y": 150
+      "y": 150,
+      "page": "fondamenti/multiplexing-su-piu-path.md"
     },
     {
       "id": "control-file",
       "kind": "subtopic",
       "label": "Control file",
       "x": -620,
-      "y": 125
+      "y": 125,
+      "page": "fondamenti/control-file.md"
     },
     {
       "id": "database-fisico",
@@ -64,35 +70,40 @@
       "label": "Database fisico",
       "x": -330,
       "y": 63,
-      "priority": "important"
+      "priority": "important",
+      "page": "fondamenti/database-fisico.md"
     },
     {
       "id": "memoria-processi-si-avvia-non-si-install",
       "kind": "subtopic",
       "label": "Memoria + processi: si avvia, non si installa",
       "x": 620,
-      "y": 0
+      "y": 0,
+      "page": "fondamenti/memoria-processi-si-avvia-non-si-install.md"
     },
     {
       "id": "standalone-1-istanza-1-database",
       "kind": "subtopic",
       "label": "Standalone: 1 istanza, 1 database",
       "x": 900,
-      "y": 70
+      "y": 70,
+      "page": "fondamenti/standalone-1-istanza-1-database.md"
     },
     {
       "id": "rac-n-istanze-1-database",
       "kind": "subtopic",
       "label": "RAC: N istanze, 1 database",
       "x": 900,
-      "y": 138
+      "y": 138,
+      "page": "fondamenti/rac-n-istanze-1-database.md"
     },
     {
       "id": "rapporto-istanza-database",
       "kind": "subtopic",
       "label": "Rapporto istanza-database",
       "x": 620,
-      "y": 113
+      "y": 113,
+      "page": "fondamenti/rapporto-istanza-database.md"
     },
     {
       "id": "istanza",
@@ -100,35 +111,40 @@
       "label": "Istanza",
       "x": 320,
       "y": 90,
-      "priority": "important"
+      "priority": "important",
+      "page": "fondamenti/istanza.md"
     },
     {
       "id": "sqlplus",
       "kind": "subtopic",
       "label": "sqlplus",
       "x": 680,
-      "y": 260
+      "y": 260,
+      "page": "fondamenti/sqlplus.md"
     },
     {
       "id": "dbca",
       "kind": "subtopic",
       "label": "dbca",
       "x": 680,
-      "y": 310
+      "y": 310,
+      "page": "fondamenti/dbca.md"
     },
     {
       "id": "lsnrctl",
       "kind": "subtopic",
       "label": "lsnrctl",
       "x": 680,
-      "y": 360
+      "y": 360,
+      "page": "fondamenti/lsnrctl.md"
     },
     {
       "id": "oracle-home",
       "kind": "topic",
       "label": "Oracle Home",
       "x": 360,
-      "y": 310
+      "y": 310,
+      "page": "fondamenti/oracle-home.md"
     },
     {
       "id": "fondamenti",
@@ -142,63 +158,72 @@
       "kind": "subtopic",
       "label": "Disco RAW",
       "x": -620,
-      "y": 562
+      "y": 562,
+      "page": "storage/disco-raw.md"
     },
     {
       "id": "physical-volume",
       "kind": "subtopic",
       "label": "Physical Volume",
       "x": -900,
-      "y": 612
+      "y": 612,
+      "page": "storage/physical-volume.md"
     },
     {
       "id": "volume-group",
       "kind": "subtopic",
       "label": "Volume Group",
       "x": -900,
-      "y": 662
+      "y": 662,
+      "page": "storage/volume-group.md"
     },
     {
       "id": "logical-volume",
       "kind": "subtopic",
       "label": "Logical Volume",
       "x": -900,
-      "y": 712
+      "y": 712,
+      "page": "storage/logical-volume.md"
     },
     {
       "id": "lvm",
       "kind": "subtopic",
       "label": "LVM",
       "x": -620,
-      "y": 662
+      "y": 662,
+      "page": "storage/lvm.md"
     },
     {
       "id": "formattazione-mkfs",
       "kind": "subtopic",
       "label": "Formattazione (mkfs)",
       "x": -900,
-      "y": 762
+      "y": 762,
+      "page": "storage/formattazione-mkfs.md"
     },
     {
       "id": "mount-point",
       "kind": "subtopic",
       "label": "Mount point",
       "x": -900,
-      "y": 812
+      "y": 812,
+      "page": "storage/mount-point.md"
     },
     {
       "id": "spazio-libero-df",
       "kind": "subtopic",
       "label": "Spazio libero (df)",
       "x": -900,
-      "y": 862
+      "y": 862,
+      "page": "storage/spazio-libero-df.md"
     },
     {
       "id": "file-system",
       "kind": "subtopic",
       "label": "File system",
       "x": -620,
-      "y": 812
+      "y": 812,
+      "page": "storage/file-system.md"
     },
     {
       "id": "datafile",
@@ -206,21 +231,24 @@
       "label": "Datafile",
       "x": -620,
       "y": 937,
-      "priority": "important"
+      "priority": "important",
+      "page": "storage/datafile.md"
     },
     {
       "id": "piano-fisico",
       "kind": "topic",
       "label": "Piano fisico",
       "x": -330,
-      "y": 749
+      "y": 749,
+      "page": "storage/piano-fisico.md"
     },
     {
       "id": "uno-o-piu-datafile",
       "kind": "subtopic",
       "label": "Uno o più datafile",
       "x": 900,
-      "y": 562
+      "y": 562,
+      "page": "storage/uno-o-piu-datafile.md"
     },
     {
       "id": "system-e-sysaux",
@@ -241,14 +269,16 @@
       "kind": "subtopic",
       "label": "TEMP",
       "x": 1180,
-      "y": 712
+      "y": 712,
+      "page": "storage/temp.md"
     },
     {
       "id": "undotbs",
       "kind": "subtopic",
       "label": "UNDOTBS",
       "x": 1180,
-      "y": 762
+      "y": 762,
+      "page": "storage/undotbs.md"
     },
     {
       "id": "tablespace-di-sistema",
@@ -263,7 +293,8 @@
       "label": "Tablespace",
       "x": 620,
       "y": 620,
-      "priority": "important"
+      "priority": "important",
+      "page": "storage/tablespace.md"
     },
     {
       "id": "tabelle",
@@ -284,14 +315,16 @@
       "kind": "subtopic",
       "label": "Allocazione all'arrivo dei dati",
       "x": 900,
-      "y": 890
+      "y": 890,
+      "page": "storage/allocazione-all-arrivo-dei-dati.md"
     },
     {
       "id": "segment",
       "kind": "subtopic",
       "label": "Segment",
       "x": 620,
-      "y": 862
+      "y": 862,
+      "page": "storage/segment.md"
     },
     {
       "id": "blocchi-contigui",
@@ -305,14 +338,16 @@
       "kind": "subtopic",
       "label": "Dimensione automatica o manuale",
       "x": 900,
-      "y": 990
+      "y": 990,
+      "page": "storage/dimensione-automatica-o-manuale.md"
     },
     {
       "id": "extent",
       "kind": "subtopic",
       "label": "Extent",
       "x": 620,
-      "y": 987
+      "y": 987,
+      "page": "storage/extent.md"
     },
     {
       "id": "dimensione-fissa-8-kb",
@@ -334,7 +369,8 @@
       "label": "Blocco",
       "x": 620,
       "y": 1090,
-      "priority": "important"
+      "priority": "important",
+      "page": "storage/blocco.md"
     },
     {
       "id": "piano-logico",
@@ -342,7 +378,8 @@
       "label": "Piano logico",
       "x": 330,
       "y": 855,
-      "priority": "important"
+      "priority": "important",
+      "page": "storage/piano-logico.md"
     },
     {
       "id": "struttura",
@@ -356,14 +393,16 @@
       "kind": "subtopic",
       "label": "PCTFREE",
       "x": 1110,
-      "y": 1210
+      "y": 1210,
+      "page": "storage/pctfree.md"
     },
     {
       "id": "pctused",
       "kind": "subtopic",
       "label": "PCTUSED",
       "x": 1110,
-      "y": 1270
+      "y": 1270,
+      "page": "storage/pctused.md"
     },
     {
       "id": "gestione-dello-spazio",
@@ -377,7 +416,8 @@
       "kind": "subtopic",
       "label": "Row migration",
       "x": 1110,
-      "y": 1330
+      "y": 1330,
+      "page": "storage/row-migration.md"
     },
     {
       "id": "chained-row",
@@ -385,7 +425,8 @@
       "label": "Chained row",
       "x": 1110,
       "y": 1390,
-      "priority": "optional"
+      "priority": "optional",
+      "page": "storage/chained-row.md"
     },
     {
       "id": "righe-fuori-posto",
@@ -399,14 +440,16 @@
       "kind": "subtopic",
       "label": "High water mark",
       "x": 850,
-      "y": 1370
+      "y": 1370,
+      "page": "storage/high-water-mark.md"
     },
     {
       "id": "organizzazione-del-blocco",
       "kind": "topic",
       "label": "Organizzazione del blocco",
       "x": 590,
-      "y": 1220
+      "y": 1220,
+      "page": "storage/organizzazione-del-blocco.md"
     },
     {
       "id": "storage",
@@ -420,14 +463,16 @@
       "kind": "subtopic",
       "label": "Buffer clean e dirty",
       "x": -900,
-      "y": 1536
+      "y": 1536,
+      "page": "istanza/buffer-clean-e-dirty.md"
     },
     {
       "id": "algoritmo-lru",
       "kind": "subtopic",
       "label": "Algoritmo LRU",
       "x": -900,
-      "y": 1586
+      "y": 1586,
+      "page": "istanza/algoritmo-lru.md"
     },
     {
       "id": "dimensione-blocco-del-database",
@@ -441,56 +486,64 @@
       "kind": "subtopic",
       "label": "Buffer cache",
       "x": -620,
-      "y": 1586
+      "y": 1586,
+      "page": "istanza/buffer-cache.md"
     },
     {
       "id": "parsing-e-piano-di-esecuzione",
       "kind": "subtopic",
       "label": "Parsing e piano di esecuzione",
       "x": -1180,
-      "y": 1686
+      "y": 1686,
+      "page": "istanza/parsing-e-piano-di-esecuzione.md"
     },
     {
       "id": "soft-parse",
       "kind": "subtopic",
       "label": "Soft parse",
       "x": -1180,
-      "y": 1736
+      "y": 1736,
+      "page": "istanza/soft-parse.md"
     },
     {
       "id": "hard-parse",
       "kind": "subtopic",
       "label": "Hard parse",
       "x": -1180,
-      "y": 1786
+      "y": 1786,
+      "page": "istanza/hard-parse.md"
     },
     {
       "id": "library-cache",
       "kind": "subtopic",
       "label": "Library cache",
       "x": -900,
-      "y": 1736
+      "y": 1736,
+      "page": "istanza/library-cache.md"
     },
     {
       "id": "data-dictionary-cache",
       "kind": "subtopic",
       "label": "Data dictionary cache",
       "x": -900,
-      "y": 1836
+      "y": 1836,
+      "page": "istanza/data-dictionary-cache.md"
     },
     {
       "id": "shared-pool",
       "kind": "subtopic",
       "label": "Shared pool",
       "x": -620,
-      "y": 1786
+      "y": 1786,
+      "page": "istanza/shared-pool.md"
     },
     {
       "id": "redo-log-buffer",
       "kind": "subtopic",
       "label": "Redo log buffer",
       "x": -620,
-      "y": 1886
+      "y": 1886,
+      "page": "istanza/redo-log-buffer.md"
     },
     {
       "id": "sga",
@@ -498,7 +551,8 @@
       "label": "SGA",
       "x": -330,
       "y": 1736,
-      "priority": "important"
+      "priority": "important",
+      "page": "istanza/sga.md"
     },
     {
       "id": "order-by-e-group-by",
@@ -519,7 +573,8 @@
       "kind": "subtopic",
       "label": "SQL work area",
       "x": 620,
-      "y": 1686
+      "y": 1686,
+      "page": "istanza/sql-work-area.md"
     },
     {
       "id": "variabili-e-credenziali",
@@ -533,21 +588,24 @@
       "kind": "subtopic",
       "label": "Cursori",
       "x": 900,
-      "y": 1811
+      "y": 1811,
+      "page": "istanza/cursori.md"
     },
     {
       "id": "memoria-di-sessione",
       "kind": "subtopic",
       "label": "Memoria di sessione",
       "x": 620,
-      "y": 1786
+      "y": 1786,
+      "page": "istanza/memoria-di-sessione.md"
     },
     {
       "id": "spill-sul-tablespace-temp",
       "kind": "subtopic",
       "label": "Spill sul tablespace TEMP",
       "x": 620,
-      "y": 1861
+      "y": 1861,
+      "page": "istanza/spill-sul-tablespace-temp.md"
     },
     {
       "id": "pga",
@@ -555,56 +613,64 @@
       "label": "PGA",
       "x": 330,
       "y": 1773,
-      "priority": "important"
+      "priority": "important",
+      "page": "istanza/pga.md"
     },
     {
       "id": "dbwn-scrittura-differita",
       "kind": "subtopic",
       "label": "DBWn: scrittura differita",
       "x": 900,
-      "y": 1935
+      "y": 1935,
+      "page": "istanza/dbwn-scrittura-differita.md"
     },
     {
       "id": "lgwr-scrittura-al-commit",
       "kind": "subtopic",
       "label": "LGWR: scrittura al COMMIT",
       "x": 900,
-      "y": 1985
+      "y": 1985,
+      "page": "istanza/lgwr-scrittura-al-commit.md"
     },
     {
       "id": "scn-system-change-number",
       "kind": "subtopic",
       "label": "SCN (System Change Number)",
       "x": 1180,
-      "y": 2035
+      "y": 2035,
+      "page": "istanza/scn-system-change-number.md"
     },
     {
       "id": "ckpt",
       "kind": "subtopic",
       "label": "CKPT",
       "x": 900,
-      "y": 2035
+      "y": 2035,
+      "page": "istanza/ckpt.md"
     },
     {
       "id": "pmon-pulizia-sessioni",
       "kind": "subtopic",
       "label": "PMON: pulizia sessioni",
       "x": 900,
-      "y": 2085
+      "y": 2085,
+      "page": "istanza/pmon-pulizia-sessioni.md"
     },
     {
       "id": "smon-recovery-dell-istanza",
       "kind": "subtopic",
       "label": "SMON: recovery dell'istanza",
       "x": 900,
-      "y": 2135
+      "y": 2135,
+      "page": "istanza/smon-recovery-dell-istanza.md"
     },
     {
       "id": "lreg-registrazione-sul-listener",
       "kind": "subtopic",
       "label": "LREG: registrazione sul listener",
       "x": 900,
-      "y": 2185
+      "y": 2185,
+      "page": "istanza/lreg-registrazione-sul-listener.md"
     },
     {
       "id": "sempre-presenti",
@@ -618,21 +684,24 @@
       "kind": "subtopic",
       "label": "Modalità ARCHIVELOG",
       "x": 1180,
-      "y": 2235
+      "y": 2235,
+      "page": "istanza/modalita-archivelog.md"
     },
     {
       "id": "archived-redo-log",
       "kind": "subtopic",
       "label": "Archived redo log",
       "x": 1180,
-      "y": 2285
+      "y": 2285,
+      "page": "istanza/archived-redo-log.md"
     },
     {
       "id": "arcn",
       "kind": "subtopic",
       "label": "ARCn",
       "x": 900,
-      "y": 2260
+      "y": 2260,
+      "page": "istanza/arcn.md"
     },
     {
       "id": "opzionali",
@@ -647,7 +716,8 @@
       "label": "Processi in background",
       "x": 340,
       "y": 2090,
-      "priority": "important"
+      "priority": "important",
+      "page": "istanza/processi-in-background.md"
     },
     {
       "id": "istanza-memoria-e-processi",
@@ -668,7 +738,8 @@
       "kind": "subtopic",
       "label": "DML",
       "x": -620,
-      "y": 2435
+      "y": 2435,
+      "page": "transazioni/dml.md"
     },
     {
       "id": "create-alter-drop-truncate",
@@ -682,21 +753,24 @@
       "kind": "subtopic",
       "label": "DDL",
       "x": -620,
-      "y": 2510
+      "y": 2510,
+      "page": "transazioni/ddl.md"
     },
     {
       "id": "commit",
       "kind": "subtopic",
       "label": "COMMIT",
       "x": -900,
-      "y": 2585
+      "y": 2585,
+      "page": "transazioni/commit.md"
     },
     {
       "id": "rollback",
       "kind": "subtopic",
       "label": "ROLLBACK",
       "x": -900,
-      "y": 2635
+      "y": 2635,
+      "page": "transazioni/rollback.md"
     },
     {
       "id": "savepoint",
@@ -710,49 +784,56 @@
       "kind": "subtopic",
       "label": "TCL",
       "x": -620,
-      "y": 2635
+      "y": 2635,
+      "page": "transazioni/tcl.md"
     },
     {
       "id": "linguaggi-sql",
       "kind": "topic",
       "label": "Linguaggi SQL",
       "x": -330,
-      "y": 2535
+      "y": 2535,
+      "page": "transazioni/linguaggi-sql.md"
     },
     {
       "id": "parse-e-controllo-permessi",
       "kind": "subtopic",
       "label": "Parse e controllo permessi",
       "x": 900,
-      "y": 2435
+      "y": 2435,
+      "page": "transazioni/parse-e-controllo-permessi.md"
     },
     {
       "id": "buffer-hit-buffer-miss",
       "kind": "subtopic",
       "label": "Buffer hit / buffer miss",
       "x": 900,
-      "y": 2485
+      "y": 2485,
+      "page": "transazioni/buffer-hit-buffer-miss.md"
     },
     {
       "id": "lock-sulla-riga",
       "kind": "subtopic",
       "label": "Lock sulla riga",
       "x": 900,
-      "y": 2535
+      "y": 2535,
+      "page": "transazioni/lock-sulla-riga.md"
     },
     {
       "id": "scrittura-dell-undo",
       "kind": "subtopic",
       "label": "Scrittura dell'UNDO",
       "x": 900,
-      "y": 2585
+      "y": 2585,
+      "page": "transazioni/scrittura-dell-undo.md"
     },
     {
       "id": "redo-record-e-dirty-buffer",
       "kind": "subtopic",
       "label": "Redo record e dirty buffer",
       "x": 900,
-      "y": 2635
+      "y": 2635,
+      "page": "transazioni/redo-record-e-dirty-buffer.md"
     },
     {
       "id": "prima-del-commit",
@@ -766,14 +847,16 @@
       "kind": "subtopic",
       "label": "Assegnazione dell'SCN",
       "x": 900,
-      "y": 2685
+      "y": 2685,
+      "page": "transazioni/assegnazione-dell-scn.md"
     },
     {
       "id": "scrittura-sincrona-di-lgwr",
       "kind": "subtopic",
       "label": "Scrittura sincrona di LGWR",
       "x": 900,
-      "y": 2735
+      "y": 2735,
+      "page": "transazioni/scrittura-sincrona-di-lgwr.md"
     },
     {
       "id": "rilascio-dei-lock",
@@ -787,7 +870,8 @@
       "kind": "subtopic",
       "label": "Scrittura asincrona di DBWn",
       "x": 900,
-      "y": 2835
+      "y": 2835,
+      "page": "transazioni/scrittura-asincrona-di-dbwn.md"
     },
     {
       "id": "al-commit",
@@ -802,7 +886,8 @@
       "label": "Ciclo di una transazione",
       "x": 330,
       "y": 2647,
-      "priority": "important"
+      "priority": "important",
+      "page": "transazioni/ciclo-di-una-transazione.md"
     },
     {
       "id": "rollback-con-l-undo",
@@ -816,7 +901,8 @@
       "kind": "subtopic",
       "label": "Atomicità",
       "x": -620,
-      "y": 2759
+      "y": 2759,
+      "page": "transazioni/atomicita.md"
     },
     {
       "id": "vincoli-di-integrita",
@@ -830,21 +916,24 @@
       "kind": "subtopic",
       "label": "Coerenza",
       "x": -620,
-      "y": 2809
+      "y": 2809,
+      "page": "transazioni/coerenza.md"
     },
     {
       "id": "read-consistency",
       "kind": "subtopic",
       "label": "Read consistency",
       "x": -900,
-      "y": 2859
+      "y": 2859,
+      "page": "transazioni/undo-e-read-consistency.md"
     },
     {
       "id": "isolamento",
       "kind": "subtopic",
       "label": "Isolamento",
       "x": -620,
-      "y": 2859
+      "y": 2859,
+      "page": "transazioni/isolamento.md"
     },
     {
       "id": "redo-log-e-lgwr",
@@ -858,7 +947,8 @@
       "kind": "subtopic",
       "label": "Durabilità",
       "x": -620,
-      "y": 2909
+      "y": 2909,
+      "page": "transazioni/durabilita.md"
     },
     {
       "id": "proprieta-acid",
@@ -881,7 +971,8 @@
       "kind": "subtopic",
       "label": "Undo record",
       "x": 620,
-      "y": 2909
+      "y": 2909,
+      "page": "transazioni/undo-record.md"
     },
     {
       "id": "copia-del-buffer-corrente",
@@ -902,56 +993,64 @@
       "kind": "subtopic",
       "label": "Consistent read (CR) clone",
       "x": 620,
-      "y": 2984
+      "y": 2984,
+      "page": "transazioni/consistent-read-cr-clone.md"
     },
     {
       "id": "read-committed",
       "kind": "subtopic",
       "label": "READ COMMITTED",
       "x": 900,
-      "y": 3059
+      "y": 3059,
+      "page": "transazioni/read-committed.md"
     },
     {
       "id": "serializable",
       "kind": "subtopic",
       "label": "SERIALIZABLE",
       "x": 900,
-      "y": 3109
+      "y": 3109,
+      "page": "transazioni/serializable.md"
     },
     {
       "id": "isolation-level",
       "kind": "subtopic",
       "label": "Isolation level",
       "x": 620,
-      "y": 3084
+      "y": 3084,
+      "page": "transazioni/isolation-level.md"
     },
     {
       "id": "undo-retention",
       "kind": "subtopic",
       "label": "UNDO_RETENTION",
       "x": 1180,
-      "y": 3159
+      "y": 3159,
+      "page": "transazioni/undo-retention.md"
     },
     {
       "id": "retention-guarantee",
       "kind": "subtopic",
       "label": "RETENTION GUARANTEE",
       "x": 1180,
-      "y": 3209
+      "y": 3209,
+      "page": "transazioni/retention-guarantee.md"
     },
     {
       "id": "ora-01555",
       "kind": "subtopic",
       "label": "ORA-01555",
       "x": 900,
-      "y": 3184
+      "y": 3184,
+      "page": "transazioni/ora-01555.md"
     },
     {
       "id": "ora-30036-undo-pieno",
       "kind": "subtopic",
       "label": "ORA-30036: undo pieno",
       "x": 900,
-      "y": 3259
+      "y": 3259,
+      "page": "transazioni/ora-30036-undo-pieno.md"
     },
     {
       "id": "errori",
@@ -966,7 +1065,8 @@
       "label": "UNDO e read consistency",
       "x": 330,
       "y": 3065,
-      "priority": "important"
+      "priority": "important",
+      "page": "transazioni/undo-e-read-consistency.md"
     },
     {
       "id": "a-un-timestamp",
@@ -987,28 +1087,32 @@
       "kind": "subtopic",
       "label": "FLASHBACK TABLE",
       "x": -620,
-      "y": 3065
+      "y": 3065,
+      "page": "transazioni/flashback-table.md"
     },
     {
       "id": "cestino-recycle-bin",
       "kind": "subtopic",
       "label": "Cestino (recycle bin)",
       "x": -900,
-      "y": 3140
+      "y": 3140,
+      "page": "transazioni/cestino-recycle-bin.md"
     },
     {
       "id": "flashback-to-before-drop",
       "kind": "subtopic",
       "label": "FLASHBACK TO BEFORE DROP",
       "x": -620,
-      "y": 3140
+      "y": 3140,
+      "page": "transazioni/flashback-to-before-drop.md"
     },
     {
       "id": "flashback",
       "kind": "topic",
       "label": "Flashback",
       "x": -330,
-      "y": 3102
+      "y": 3102,
+      "page": "transazioni/flashback.md"
     },
     {
       "id": "transazioni",
@@ -1022,28 +1126,32 @@
       "kind": "subtopic",
       "label": "PFILE e SPFILE",
       "x": -620,
-      "y": 3409
+      "y": 3409,
+      "page": "avvio e spegnimento/pfile-e-spfile.md"
     },
     {
       "id": "statici",
       "kind": "subtopic",
       "label": "Statici",
       "x": -900,
-      "y": 3459
+      "y": 3459,
+      "page": "avvio e spegnimento/statici.md"
     },
     {
       "id": "dinamici",
       "kind": "subtopic",
       "label": "Dinamici",
       "x": -900,
-      "y": 3509
+      "y": 3509,
+      "page": "avvio e spegnimento/dinamici.md"
     },
     {
       "id": "v-parameter",
       "kind": "subtopic",
       "label": "v$parameter",
       "x": -900,
-      "y": 3559
+      "y": 3559,
+      "page": "avvio e spegnimento/v-parameter.md"
     },
     {
       "id": "parametri",
@@ -1057,28 +1165,32 @@
       "kind": "subtopic",
       "label": "MEMORY",
       "x": -900,
-      "y": 3609
+      "y": 3609,
+      "page": "avvio e spegnimento/memory.md"
     },
     {
       "id": "spfile",
       "kind": "subtopic",
       "label": "SPFILE",
       "x": -900,
-      "y": 3659
+      "y": 3659,
+      "page": "avvio e spegnimento/spfile.md"
     },
     {
       "id": "both",
       "kind": "subtopic",
       "label": "BOTH",
       "x": -900,
-      "y": 3709
+      "y": 3709,
+      "page": "avvio e spegnimento/both.md"
     },
     {
       "id": "alter-system-scope",
       "kind": "subtopic",
       "label": "ALTER SYSTEM … SCOPE",
       "x": -620,
-      "y": 3659
+      "y": 3659,
+      "page": "avvio e spegnimento/alter-system-scope.md"
     },
     {
       "id": "parameter-file",
@@ -1086,7 +1198,8 @@
       "label": "Parameter file",
       "x": -330,
       "y": 3534,
-      "priority": "important"
+      "priority": "important",
+      "page": "avvio e spegnimento/parameter-file.md"
     },
     {
       "id": "lettura-del-parameter-file",
@@ -1107,14 +1220,16 @@
       "kind": "subtopic",
       "label": "DB_NAME",
       "x": 900,
-      "y": 3509
+      "y": 3509,
+      "page": "avvio e spegnimento/db-name.md"
     },
     {
       "id": "nomount",
       "kind": "subtopic",
       "label": "NOMOUNT",
       "x": 620,
-      "y": 3459
+      "y": 3459,
+      "page": "avvio e spegnimento/nomount.md"
     },
     {
       "id": "apertura-del-control-file",
@@ -1128,14 +1243,16 @@
       "kind": "subtopic",
       "label": "Parametro CONTROL_FILES",
       "x": 900,
-      "y": 3609
+      "y": 3609,
+      "page": "avvio e spegnimento/parametro-control-files.md"
     },
     {
       "id": "mount",
       "kind": "subtopic",
       "label": "MOUNT",
       "x": 620,
-      "y": 3584
+      "y": 3584,
+      "page": "avvio e spegnimento/mount.md"
     },
     {
       "id": "data-file-e-redo-log",
@@ -1149,14 +1266,16 @@
       "kind": "subtopic",
       "label": "Controllo degli SCN",
       "x": 900,
-      "y": 3709
+      "y": 3709,
+      "page": "avvio e spegnimento/controllo-degli-scn.md"
     },
     {
       "id": "open",
       "kind": "subtopic",
       "label": "OPEN",
       "x": 620,
-      "y": 3684
+      "y": 3684,
+      "page": "avvio e spegnimento/open.md"
     },
     {
       "id": "startup",
@@ -1164,21 +1283,24 @@
       "label": "STARTUP",
       "x": 330,
       "y": 3571,
-      "priority": "important"
+      "priority": "important",
+      "page": "avvio e spegnimento/startup.md"
     },
     {
       "id": "normal",
       "kind": "subtopic",
       "label": "NORMAL",
       "x": -620,
-      "y": 3783
+      "y": 3783,
+      "page": "avvio e spegnimento/normal.md"
     },
     {
       "id": "transactional",
       "kind": "subtopic",
       "label": "TRANSACTIONAL",
       "x": -620,
-      "y": 3833
+      "y": 3833,
+      "page": "avvio e spegnimento/transactional.md"
     },
     {
       "id": "checkpoint",
@@ -1199,7 +1321,8 @@
       "kind": "subtopic",
       "label": "IMMEDIATE",
       "x": -620,
-      "y": 3908
+      "y": 3908,
+      "page": "avvio e spegnimento/immediate.md"
     },
     {
       "id": "recovery-al-riavvio",
@@ -1213,7 +1336,8 @@
       "kind": "subtopic",
       "label": "ABORT",
       "x": -620,
-      "y": 3983
+      "y": 3983,
+      "page": "avvio e spegnimento/abort.md"
     },
     {
       "id": "shutdown",
@@ -1221,56 +1345,64 @@
       "label": "SHUTDOWN",
       "x": -330,
       "y": 3883,
-      "priority": "important"
+      "priority": "important",
+      "page": "avvio e spegnimento/shutdown.md"
     },
     {
       "id": "roll-forward-con-il-redo",
       "kind": "subtopic",
       "label": "Roll forward con il redo",
       "x": 620,
-      "y": 3883
+      "y": 3883,
+      "page": "avvio e spegnimento/roll-forward-con-il-redo.md"
     },
     {
       "id": "roll-backward-con-l-undo",
       "kind": "subtopic",
       "label": "Roll backward con l'undo",
       "x": 620,
-      "y": 3933
+      "y": 3933,
+      "page": "avvio e spegnimento/roll-backward-con-l-undo.md"
     },
     {
       "id": "crash-recovery-smon",
       "kind": "topic",
       "label": "Crash recovery (SMON)",
       "x": 330,
-      "y": 3908
+      "y": 3908,
+      "page": "avvio e spegnimento/crash-recovery-smon.md"
     },
     {
       "id": "path-del-file",
       "kind": "subtopic",
       "label": "Path del file",
       "x": 620,
-      "y": 4007
+      "y": 4007,
+      "page": "avvio e spegnimento/path-del-file.md"
     },
     {
       "id": "lettura-di-uno-startup",
       "kind": "subtopic",
       "label": "Lettura di uno STARTUP",
       "x": 620,
-      "y": 4057
+      "y": 4057,
+      "page": "avvio e spegnimento/lettura-di-uno-startup.md"
     },
     {
       "id": "lettura-di-uno-shutdown-immediate",
       "kind": "subtopic",
       "label": "Lettura di uno SHUTDOWN IMMEDIATE",
       "x": 620,
-      "y": 4107
+      "y": 4107,
+      "page": "avvio e spegnimento/lettura-di-uno-shutdown-immediate.md"
     },
     {
       "id": "lettura-di-uno-shutdown-abort",
       "kind": "subtopic",
       "label": "Lettura di uno SHUTDOWN ABORT",
       "x": 620,
-      "y": 4157
+      "y": 4157,
+      "page": "avvio e spegnimento/lettura-di-uno-shutdown-abort.md"
     },
     {
       "id": "alert-log",
@@ -1278,28 +1410,32 @@
       "label": "Alert log",
       "x": 330,
       "y": 4082,
-      "priority": "optional"
+      "priority": "optional",
+      "page": "avvio e spegnimento/alert-log.md"
     },
     {
       "id": "variabili-oracle-sid-e-oracle-home",
       "kind": "subtopic",
       "label": "Variabili ORACLE_SID e ORACLE_HOME",
       "x": -900,
-      "y": 4057
+      "y": 4057,
+      "page": "avvio e spegnimento/variabili-oracle-sid-e-oracle-home.md"
     },
     {
       "id": "password-file-orapwd",
       "kind": "subtopic",
       "label": "Password file (orapwd)",
       "x": -900,
-      "y": 4107
+      "y": 4107,
+      "page": "avvio e spegnimento/password-file-orapwd.md"
     },
     {
       "id": "pfile-minimo",
       "kind": "subtopic",
       "label": "PFILE minimo",
       "x": -900,
-      "y": 4157
+      "y": 4157,
+      "page": "avvio e spegnimento/pfile-minimo.md"
     },
     {
       "id": "preparazione",
@@ -1313,21 +1449,24 @@
       "kind": "subtopic",
       "label": "STARTUP NOMOUNT e CREATE DATABASE",
       "x": -620,
-      "y": 4207
+      "y": 4207,
+      "page": "avvio e spegnimento/startup-nomount-e-create-database.md"
     },
     {
       "id": "catalog-sql",
       "kind": "subtopic",
       "label": "catalog.sql",
       "x": -900,
-      "y": 4257
+      "y": 4257,
+      "page": "avvio e spegnimento/catalog-sql.md"
     },
     {
       "id": "catproc-sql",
       "kind": "subtopic",
       "label": "catproc.sql",
       "x": -900,
-      "y": 4307
+      "y": 4307,
+      "page": "avvio e spegnimento/catproc-sql.md"
     },
     {
       "id": "script-del-dizionario",
@@ -1341,14 +1480,16 @@
       "kind": "subtopic",
       "label": "DBCA: tutto in automatico",
       "x": -620,
-      "y": 4357
+      "y": 4357,
+      "page": "fondamenti/dbca.md"
     },
     {
       "id": "creazione-manuale-del-database",
       "kind": "topic",
       "label": "Creazione manuale del database",
       "x": -330,
-      "y": 4232
+      "y": 4232,
+      "page": "avvio e spegnimento/creazione-manuale-del-database.md"
     },
     {
       "id": "avvio-e-spegnimento",
@@ -1362,7 +1503,8 @@
       "kind": "subtopic",
       "label": "/ as sysdba",
       "x": -900,
-      "y": 4507
+      "y": 4507,
+      "page": "accesso e sicurezza/as-sysdba.md"
     },
     {
       "id": "nolog",
@@ -1376,7 +1518,8 @@
       "kind": "subtopic",
       "label": "SQL*Plus",
       "x": -620,
-      "y": 4532
+      "y": 4532,
+      "page": "fondamenti/sqlplus.md"
     },
     {
       "id": "connessione",
@@ -1390,7 +1533,8 @@
       "kind": "subtopic",
       "label": "Privilegio SYSDBA",
       "x": 900,
-      "y": 4507
+      "y": 4507,
+      "page": "accesso e sicurezza/privilegio-sysdba.md"
     },
     {
       "id": "proprietario-del-dizionario",
@@ -1404,14 +1548,16 @@
       "kind": "subtopic",
       "label": "SYS",
       "x": 620,
-      "y": 4532
+      "y": 4532,
+      "page": "accesso e sicurezza/sys.md"
     },
     {
       "id": "ruolo-dba",
       "kind": "subtopic",
       "label": "Ruolo DBA",
       "x": 900,
-      "y": 4607
+      "y": 4607,
+      "page": "accesso e sicurezza/dba.md"
     },
     {
       "id": "amministrazione-quotidiana",
@@ -1425,7 +1571,8 @@
       "kind": "subtopic",
       "label": "SYSTEM",
       "x": 620,
-      "y": 4632
+      "y": 4632,
+      "page": "accesso e sicurezza/system.md"
     },
     {
       "id": "utenti-amministrativi",
@@ -1440,7 +1587,8 @@
       "kind": "subtopic",
       "label": "CREATE USER",
       "x": -620,
-      "y": 4631
+      "y": 4631,
+      "page": "accesso e sicurezza/create-user.md"
     },
     {
       "id": "schema-gli-oggetti-dell-utente",
@@ -1454,14 +1602,16 @@
       "kind": "subtopic",
       "label": "Profili",
       "x": -620,
-      "y": 4731
+      "y": 4731,
+      "page": "accesso e sicurezza/profili.md"
     },
     {
       "id": "lock-dell-utente",
       "kind": "subtopic",
       "label": "Lock dell'utente",
       "x": -620,
-      "y": 4781
+      "y": 4781,
+      "page": "accesso e sicurezza/lock-dell-utente.md"
     },
     {
       "id": "quota",
@@ -1497,7 +1647,8 @@
       "label": "Utenti e schemi",
       "x": -330,
       "y": 4756,
-      "priority": "important"
+      "priority": "important",
+      "page": "accesso e sicurezza/utenti-e-schemi.md"
     },
     {
       "id": "create-session-create-table",
@@ -1511,14 +1662,16 @@
       "kind": "subtopic",
       "label": "WITH ADMIN OPTION",
       "x": 900,
-      "y": 4781
+      "y": 4781,
+      "page": "accesso e sicurezza/with-admin-option.md"
     },
     {
       "id": "di-sistema",
       "kind": "subtopic",
       "label": "Di sistema",
       "x": 620,
-      "y": 4756
+      "y": 4756,
+      "page": "accesso e sicurezza/di-sistema.md"
     },
     {
       "id": "select-insert-on-oggetto",
@@ -1532,14 +1685,16 @@
       "kind": "subtopic",
       "label": "WITH GRANT OPTION",
       "x": 900,
-      "y": 4881
+      "y": 4881,
+      "page": "accesso e sicurezza/with-grant-option.md"
     },
     {
       "id": "di-oggetto",
       "kind": "subtopic",
       "label": "Di oggetto",
       "x": 620,
-      "y": 4856
+      "y": 4856,
+      "page": "accesso e sicurezza/di-oggetto.md"
     },
     {
       "id": "utente",
@@ -1560,35 +1715,40 @@
       "kind": "subtopic",
       "label": "PUBLIC",
       "x": 900,
-      "y": 5031
+      "y": 5031,
+      "page": "accesso e sicurezza/public.md"
     },
     {
       "id": "grantor-e-grantee",
       "kind": "subtopic",
       "label": "Grantor e grantee",
       "x": 620,
-      "y": 4981
+      "y": 4981,
+      "page": "accesso e sicurezza/grantor-e-grantee.md"
     },
     {
       "id": "a-cascata-grant-option",
       "kind": "subtopic",
       "label": "A cascata (GRANT OPTION)",
       "x": 900,
-      "y": 5081
+      "y": 5081,
+      "page": "accesso e sicurezza/a-cascata-grant-option.md"
     },
     {
       "id": "non-a-cascata-admin-option",
       "kind": "subtopic",
       "label": "Non a cascata (ADMIN OPTION)",
       "x": 900,
-      "y": 5131
+      "y": 5131,
+      "page": "accesso e sicurezza/non-a-cascata-admin-option.md"
     },
     {
       "id": "revoke",
       "kind": "subtopic",
       "label": "REVOKE",
       "x": 620,
-      "y": 5106
+      "y": 5106,
+      "page": "accesso e sicurezza/revoke.md"
     },
     {
       "id": "privilegi",
@@ -1596,35 +1756,40 @@
       "label": "Privilegi",
       "x": 330,
       "y": 4931,
-      "priority": "important"
+      "priority": "important",
+      "page": "accesso e sicurezza/privilegi.md"
     },
     {
       "id": "create-role-e-grant-del-ruolo",
       "kind": "subtopic",
       "label": "CREATE ROLE e GRANT del ruolo",
       "x": -620,
-      "y": 5005
+      "y": 5005,
+      "page": "accesso e sicurezza/create-role-e-grant-del-ruolo.md"
     },
     {
       "id": "connect",
       "kind": "subtopic",
       "label": "CONNECT",
       "x": -900,
-      "y": 5055
+      "y": 5055,
+      "page": "accesso e sicurezza/connect.md"
     },
     {
       "id": "resource",
       "kind": "subtopic",
       "label": "RESOURCE",
       "x": -900,
-      "y": 5105
+      "y": 5105,
+      "page": "accesso e sicurezza/resource.md"
     },
     {
       "id": "dba",
       "kind": "subtopic",
       "label": "DBA",
       "x": -900,
-      "y": 5155
+      "y": 5155,
+      "page": "accesso e sicurezza/dba.md"
     },
     {
       "id": "ruoli-predefiniti",
@@ -1638,77 +1803,88 @@
       "kind": "subtopic",
       "label": "SET ROLE e ruoli di default",
       "x": -620,
-      "y": 5205
+      "y": 5205,
+      "page": "accesso e sicurezza/set-role-e-ruoli-di-default.md"
     },
     {
       "id": "ruoli-e-pl-sql-definer-s-rights",
       "kind": "subtopic",
       "label": "Ruoli e PL/SQL (definer's rights)",
       "x": -620,
-      "y": 5255
+      "y": 5255,
+      "page": "accesso e sicurezza/ruoli-e-pl-sql-definer-s-rights.md"
     },
     {
       "id": "ruoli",
       "kind": "topic",
       "label": "Ruoli",
       "x": -330,
-      "y": 5130
+      "y": 5130,
+      "page": "accesso e sicurezza/ruoli.md"
     },
     {
       "id": "tabelle-base-tab-col-user",
       "kind": "subtopic",
       "label": "Tabelle base (TAB$, COL$, USER$)",
       "x": 620,
-      "y": 5205
+      "y": 5205,
+      "page": "accesso e sicurezza/tabelle-base-tab-col-user.md"
     },
     {
       "id": "dict-e-cat",
       "kind": "subtopic",
       "label": "DICT e CAT",
       "x": 620,
-      "y": 5255
+      "y": 5255,
+      "page": "accesso e sicurezza/dict-e-cat.md"
     },
     {
       "id": "user",
       "kind": "subtopic",
       "label": "USER_",
       "x": 900,
-      "y": 5305
+      "y": 5305,
+      "page": "accesso e sicurezza/user.md"
     },
     {
       "id": "all",
       "kind": "subtopic",
       "label": "ALL_",
       "x": 900,
-      "y": 5355
+      "y": 5355,
+      "page": "accesso e sicurezza/all.md"
     },
     {
       "id": "dba-2",
       "kind": "subtopic",
       "label": "DBA_",
       "x": 900,
-      "y": 5405
+      "y": 5405,
+      "page": "accesso e sicurezza/dba-2.md"
     },
     {
       "id": "cdb",
       "kind": "subtopic",
       "label": "CDB_",
       "x": 900,
-      "y": 5455
+      "y": 5455,
+      "page": "accesso e sicurezza/cdb.md"
     },
     {
       "id": "viste-statiche",
       "kind": "subtopic",
       "label": "Viste statiche",
       "x": 620,
-      "y": 5380
+      "y": 5380,
+      "page": "accesso e sicurezza/viste-statiche.md"
     },
     {
       "id": "v",
       "kind": "subtopic",
       "label": "V$",
       "x": 900,
-      "y": 5505
+      "y": 5505,
+      "page": "accesso e sicurezza/viste-dinamiche.md"
     },
     {
       "id": "gv",
@@ -1722,7 +1898,8 @@
       "kind": "subtopic",
       "label": "Viste dinamiche",
       "x": 620,
-      "y": 5530
+      "y": 5530,
+      "page": "accesso e sicurezza/viste-dinamiche.md"
     },
     {
       "id": "dizionario-dati",
@@ -1730,7 +1907,8 @@
       "label": "Dizionario dati",
       "x": 330,
       "y": 5367,
-      "priority": "important"
+      "priority": "important",
+      "page": "accesso e sicurezza/dizionario-dati.md"
     },
     {
       "id": "accesso-e-sicurezza",
@@ -1744,14 +1922,16 @@
       "kind": "subtopic",
       "label": "Indirizzi di ascolto",
       "x": -900,
-      "y": 5705
+      "y": 5705,
+      "page": "oracle net/indirizzi-di-ascolto.md"
     },
     {
       "id": "servizi-statici",
       "kind": "subtopic",
       "label": "Servizi statici",
       "x": -900,
-      "y": 5755
+      "y": 5755,
+      "page": "oracle net/sid-list-nel-listener-ora.md"
     },
     {
       "id": "parametri-di-controllo",
@@ -1765,98 +1945,112 @@
       "kind": "subtopic",
       "label": "listener.ora",
       "x": -620,
-      "y": 5755
+      "y": 5755,
+      "page": "oracle net/listener-ora.md"
     },
     {
       "id": "tnsnames-ora",
       "kind": "subtopic",
       "label": "tnsnames.ora",
       "x": -620,
-      "y": 5855
+      "y": 5855,
+      "page": "oracle net/tnsnames-ora.md"
     },
     {
       "id": "names-directory-path",
       "kind": "subtopic",
       "label": "NAMES.DIRECTORY_PATH",
       "x": -900,
-      "y": 5905
+      "y": 5905,
+      "page": "oracle net/names-directory-path.md"
     },
     {
       "id": "dead-connection-detection",
       "kind": "subtopic",
       "label": "Dead Connection Detection",
       "x": -900,
-      "y": 5955
+      "y": 5955,
+      "page": "oracle net/dead-connection-detection.md"
     },
     {
       "id": "sqlnet-ora",
       "kind": "subtopic",
       "label": "sqlnet.ora",
       "x": -620,
-      "y": 5930
+      "y": 5930,
+      "page": "oracle net/sqlnet-ora.md"
     },
     {
       "id": "tns-admin",
       "kind": "subtopic",
       "label": "TNS_ADMIN",
       "x": -620,
-      "y": 6005
+      "y": 6005,
+      "page": "oracle net/tns-admin.md"
     },
     {
       "id": "file-di-configurazione",
       "kind": "topic",
       "label": "File di configurazione",
       "x": -330,
-      "y": 5880
+      "y": 5880,
+      "page": "oracle net/file-di-configurazione.md"
     },
     {
       "id": "percorso-di-una-connessione",
       "kind": "topic",
       "label": "Percorso di una connessione",
       "x": 330,
-      "y": 5905
+      "y": 5905,
+      "page": "oracle net/percorso-di-una-connessione.md"
     },
     {
       "id": "start-e-stop",
       "kind": "subtopic",
       "label": "start e stop",
       "x": 900,
-      "y": 5970
+      "y": 5970,
+      "page": "oracle net/start-e-stop.md"
     },
     {
       "id": "status",
       "kind": "subtopic",
       "label": "status",
       "x": 900,
-      "y": 6029
+      "y": 6029,
+      "page": "oracle net/status.md"
     },
     {
       "id": "services",
       "kind": "subtopic",
       "label": "services",
       "x": 900,
-      "y": 6079
+      "y": 6079,
+      "page": "oracle net/services.md"
     },
     {
       "id": "reload",
       "kind": "subtopic",
       "label": "reload",
       "x": 900,
-      "y": 6129
+      "y": 6129,
+      "page": "oracle net/reload.md"
     },
     {
       "id": "lsnrctl-2",
       "kind": "subtopic",
       "label": "lsnrctl",
       "x": 620,
-      "y": 6054
+      "y": 6054,
+      "page": "fondamenti/lsnrctl.md"
     },
     {
       "id": "dbstart-e-etc-oratab",
       "kind": "subtopic",
       "label": "dbstart e /etc/oratab",
       "x": 900,
-      "y": 6179
+      "y": 6179,
+      "page": "oracle net/dbstart-e-etc-oratab.md"
     },
     {
       "id": "servizio-systemd",
@@ -1870,21 +2064,24 @@
       "kind": "subtopic",
       "label": "Avvio al boot",
       "x": 620,
-      "y": 6204
+      "y": 6204,
+      "page": "oracle net/avvio-al-boot.md"
     },
     {
       "id": "default-senza-listener-ora",
       "kind": "subtopic",
       "label": "Default senza listener.ora",
       "x": 620,
-      "y": 6279
+      "y": 6279,
+      "page": "oracle net/default-senza-listener-ora.md"
     },
     {
       "id": "chi-occupa-una-porta-ss-lsof",
       "kind": "subtopic",
       "label": "Chi occupa una porta (ss, lsof)",
       "x": 620,
-      "y": 6329
+      "y": 6329,
+      "page": "oracle net/chi-occupa-una-porta-ss-lsof.md"
     },
     {
       "id": "listener",
@@ -1892,63 +2089,72 @@
       "label": "Listener",
       "x": 330,
       "y": 6191,
-      "priority": "important"
+      "priority": "important",
+      "page": "oracle net/listener.md"
     },
     {
       "id": "processo-lreg",
       "kind": "subtopic",
       "label": "Processo LREG",
       "x": -900,
-      "y": 6091
+      "y": 6091,
+      "page": "istanza/lreg-registrazione-sul-listener.md"
     },
     {
       "id": "local-listener",
       "kind": "subtopic",
       "label": "local_listener",
       "x": -900,
-      "y": 6141
+      "y": 6141,
+      "page": "oracle net/local-listener.md"
     },
     {
       "id": "remote-listener",
       "kind": "subtopic",
       "label": "remote_listener",
       "x": -900,
-      "y": 6191
+      "y": 6191,
+      "page": "oracle net/remote-listener.md"
     },
     {
       "id": "alter-system-register",
       "kind": "subtopic",
       "label": "ALTER SYSTEM REGISTER",
       "x": -900,
-      "y": 6241
+      "y": 6241,
+      "page": "oracle net/alter-system-register.md"
     },
     {
       "id": "dinamica",
       "kind": "subtopic",
       "label": "Dinamica",
       "x": -620,
-      "y": 6166
+      "y": 6166,
+      "page": "oracle net/dinamica.md"
     },
     {
       "id": "sid-list-nel-listener-ora",
       "kind": "subtopic",
       "label": "SID_LIST nel listener.ora",
       "x": -900,
-      "y": 6291
+      "y": 6291,
+      "page": "oracle net/sid-list-nel-listener-ora.md"
     },
     {
       "id": "avvio-remoto-di-un-istanza",
       "kind": "subtopic",
       "label": "Avvio remoto di un'istanza",
       "x": -900,
-      "y": 6341
+      "y": 6341,
+      "page": "oracle net/avvio-remoto-di-un-istanza.md"
     },
     {
       "id": "statica",
       "kind": "subtopic",
       "label": "Statica",
       "x": -620,
-      "y": 6316
+      "y": 6316,
+      "page": "oracle net/statica.md"
     },
     {
       "id": "registrazione-dei-servizi",
@@ -1956,7 +2162,8 @@
       "label": "Registrazione dei servizi",
       "x": -330,
       "y": 6241,
-      "priority": "important"
+      "priority": "important",
+      "page": "oracle net/registrazione-dei-servizi.md"
     },
     {
       "id": "db-name-e-db-domain",
@@ -1977,42 +2184,48 @@
       "kind": "subtopic",
       "label": "Servizio di default",
       "x": 620,
-      "y": 6428
+      "y": 6428,
+      "page": "oracle net/servizio-di-default.md"
     },
     {
       "id": "create-service",
       "kind": "subtopic",
       "label": "CREATE_SERVICE",
       "x": 900,
-      "y": 6503
+      "y": 6503,
+      "page": "oracle net/create-service.md"
     },
     {
       "id": "start-service",
       "kind": "subtopic",
       "label": "START_SERVICE",
       "x": 900,
-      "y": 6553
+      "y": 6553,
+      "page": "oracle net/start-service.md"
     },
     {
       "id": "stop-service-e-delete-service",
       "kind": "subtopic",
       "label": "STOP_SERVICE e DELETE_SERVICE",
       "x": 900,
-      "y": 6603
+      "y": 6603,
+      "page": "oracle net/stop-service-e-delete-service.md"
     },
     {
       "id": "dbms-service",
       "kind": "subtopic",
       "label": "DBMS_SERVICE",
       "x": 620,
-      "y": 6553
+      "y": 6553,
+      "page": "oracle net/dbms-service.md"
     },
     {
       "id": "viste-sui-servizi",
       "kind": "subtopic",
       "label": "Viste sui servizi",
       "x": 620,
-      "y": 6653
+      "y": 6653,
+      "page": "oracle net/viste-sui-servizi.md"
     },
     {
       "id": "servizi",
@@ -2020,126 +2233,144 @@
       "label": "Servizi",
       "x": 330,
       "y": 6540,
-      "priority": "important"
+      "priority": "important",
+      "page": "oracle net/servizi.md"
     },
     {
       "id": "local-naming-tnsnames-ora",
       "kind": "subtopic",
       "label": "Local naming (tnsnames.ora)",
       "x": -680,
-      "y": 6510
+      "y": 6510,
+      "page": "oracle net/local-naming-tnsnames-ora.md"
     },
     {
       "id": "easy-connect",
       "kind": "subtopic",
       "label": "Easy Connect",
       "x": -620,
-      "y": 6565
+      "y": 6565,
+      "page": "oracle net/easy-connect.md"
     },
     {
       "id": "directory-naming-ldap",
       "kind": "subtopic",
       "label": "Directory naming (LDAP)",
       "x": -620,
-      "y": 6615
+      "y": 6615,
+      "page": "oracle net/directory-naming-ldap.md"
     },
     {
       "id": "risoluzione-dei-nomi",
       "kind": "topic",
       "label": "Risoluzione dei nomi",
       "x": -330,
-      "y": 6565
+      "y": 6565,
+      "page": "oracle net/risoluzione-dei-nomi.md"
     },
     {
       "id": "dedicated-server",
       "kind": "subtopic",
       "label": "Dedicated server",
       "x": -620,
-      "y": 6689
+      "y": 6689,
+      "page": "oracle net/dedicated-server.md"
     },
     {
       "id": "dispatcher",
       "kind": "subtopic",
       "label": "Dispatcher",
       "x": -900,
-      "y": 6739
+      "y": 6739,
+      "page": "oracle net/dispatcher.md"
     },
     {
       "id": "pool-di-shared-server",
       "kind": "subtopic",
       "label": "Pool di shared server",
       "x": -900,
-      "y": 6789
+      "y": 6789,
+      "page": "oracle net/pool-di-shared-server.md"
     },
     {
       "id": "shared-server",
       "kind": "subtopic",
       "label": "Shared server",
       "x": -620,
-      "y": 6764
+      "y": 6764,
+      "page": "oracle net/shared-server.md"
     },
     {
       "id": "processi-server",
       "kind": "topic",
       "label": "Processi server",
       "x": -330,
-      "y": 6727
+      "y": 6727,
+      "page": "oracle net/processi-server.md"
     },
     {
       "id": "tnsping",
       "kind": "subtopic",
       "label": "tnsping",
       "x": 900,
-      "y": 6727
+      "y": 6727,
+      "page": "oracle net/tnsping.md"
     },
     {
       "id": "lsnrctl-status",
       "kind": "subtopic",
       "label": "lsnrctl status",
       "x": 900,
-      "y": 6777
+      "y": 6777,
+      "page": "oracle net/status.md"
     },
     {
       "id": "lsnrctl-services",
       "kind": "subtopic",
       "label": "lsnrctl services",
       "x": 900,
-      "y": 6827
+      "y": 6827,
+      "page": "oracle net/services.md"
     },
     {
       "id": "controllo-in-tre-passi",
       "kind": "subtopic",
       "label": "Controllo in tre passi",
       "x": 620,
-      "y": 6777
+      "y": 6777,
+      "page": "oracle net/controllo-in-tre-passi.md"
     },
     {
       "id": "tns-03505",
       "kind": "subtopic",
       "label": "TNS-03505",
       "x": 900,
-      "y": 6877
+      "y": 6877,
+      "page": "oracle net/tns-03505.md"
     },
     {
       "id": "tns-12541",
       "kind": "subtopic",
       "label": "TNS-12541",
       "x": 900,
-      "y": 6927
+      "y": 6927,
+      "page": "oracle net/tns-12541.md"
     },
     {
       "id": "ora-12514",
       "kind": "subtopic",
       "label": "ORA-12514",
       "x": 900,
-      "y": 6977
+      "y": 6977,
+      "page": "oracle net/ora-12514.md"
     },
     {
       "id": "ora-01034",
       "kind": "subtopic",
       "label": "ORA-01034",
       "x": 900,
-      "y": 7027
+      "y": 7027,
+      "page": "oracle net/ora-01034.md"
     },
     {
       "id": "errori-frequenti",
@@ -2153,28 +2384,32 @@
       "kind": "subtopic",
       "label": "alert log del database",
       "x": 900,
-      "y": 7077
+      "y": 7077,
+      "page": "avvio e spegnimento/alert-log.md"
     },
     {
       "id": "listener-log",
       "kind": "subtopic",
       "label": "listener.log",
       "x": 900,
-      "y": 7127
+      "y": 7127,
+      "page": "oracle net/listener-log.md"
     },
     {
       "id": "log-adr",
       "kind": "subtopic",
       "label": "Log ADR",
       "x": 620,
-      "y": 7102
+      "y": 7102,
+      "page": "oracle net/log-adr.md"
     },
     {
       "id": "diagnostica",
       "kind": "topic",
       "label": "Diagnostica",
       "x": 330,
-      "y": 6939
+      "y": 6939,
+      "page": "oracle net/diagnostica.md"
     },
     {
       "id": "oracle-net-services",
@@ -2188,49 +2423,56 @@
       "kind": "subtopic",
       "label": "DELETE",
       "x": -900,
-      "y": 7277
+      "y": 7277,
+      "page": "oggetti sql/delete.md"
     },
     {
       "id": "truncate",
       "kind": "subtopic",
       "label": "TRUNCATE",
       "x": -900,
-      "y": 7327
+      "y": 7327,
+      "page": "oggetti sql/truncate.md"
     },
     {
       "id": "drop",
       "kind": "subtopic",
       "label": "DROP",
       "x": -900,
-      "y": 7377
+      "y": 7377,
+      "page": "oggetti sql/drop.md"
     },
     {
       "id": "rimuovere-dati",
       "kind": "subtopic",
       "label": "Rimuovere dati",
       "x": -620,
-      "y": 7327
+      "y": 7327,
+      "page": "oggetti sql/rimuovere-dati.md"
     },
     {
       "id": "flashback-to-before-drop-2",
       "kind": "subtopic",
       "label": "FLASHBACK TO BEFORE DROP",
       "x": -900,
-      "y": 7427
+      "y": 7427,
+      "page": "transazioni/flashback-to-before-drop.md"
     },
     {
       "id": "drop-purge",
       "kind": "subtopic",
       "label": "DROP … PURGE",
       "x": -900,
-      "y": 7477
+      "y": 7477,
+      "page": "oggetti sql/drop-purge.md"
     },
     {
       "id": "cestino-recycle-bin-2",
       "kind": "subtopic",
       "label": "Cestino (recycle bin)",
       "x": -620,
-      "y": 7452
+      "y": 7452,
+      "page": "transazioni/cestino-recycle-bin.md"
     },
     {
       "id": "tabelle-2",
@@ -2244,49 +2486,56 @@
       "kind": "subtopic",
       "label": "NOT NULL",
       "x": 900,
-      "y": 7277
+      "y": 7277,
+      "page": "oggetti sql/not-null.md"
     },
     {
       "id": "primary-key",
       "kind": "subtopic",
       "label": "PRIMARY KEY",
       "x": 900,
-      "y": 7327
+      "y": 7327,
+      "page": "oggetti sql/primary-key.md"
     },
     {
       "id": "unique",
       "kind": "subtopic",
       "label": "UNIQUE",
       "x": 900,
-      "y": 7377
+      "y": 7377,
+      "page": "oggetti sql/unique.md"
     },
     {
       "id": "on-delete-cascade",
       "kind": "subtopic",
       "label": "ON DELETE CASCADE",
       "x": 1180,
-      "y": 7427
+      "y": 7427,
+      "page": "oggetti sql/on-delete-cascade.md"
     },
     {
       "id": "on-delete-set-null",
       "kind": "subtopic",
       "label": "ON DELETE SET NULL",
       "x": 1180,
-      "y": 7477
+      "y": 7477,
+      "page": "oggetti sql/on-delete-set-null.md"
     },
     {
       "id": "foreign-key",
       "kind": "subtopic",
       "label": "FOREIGN KEY",
       "x": 900,
-      "y": 7452
+      "y": 7452,
+      "page": "oggetti sql/foreign-key.md"
     },
     {
       "id": "check",
       "kind": "subtopic",
       "label": "CHECK",
       "x": 900,
-      "y": 7527
+      "y": 7527,
+      "page": "oggetti sql/check.md"
     },
     {
       "id": "tipi",
@@ -2300,21 +2549,24 @@
       "kind": "subtopic",
       "label": "Inline",
       "x": 900,
-      "y": 7577
+      "y": 7577,
+      "page": "oggetti sql/inline.md"
     },
     {
       "id": "out-of-line",
       "kind": "subtopic",
       "label": "Out-of-line",
       "x": 900,
-      "y": 7627
+      "y": 7627,
+      "page": "oggetti sql/out-of-line.md"
     },
     {
       "id": "nome-del-vincolo",
       "kind": "subtopic",
       "label": "Nome del vincolo",
       "x": 900,
-      "y": 7677
+      "y": 7677,
+      "page": "oggetti sql/nome-del-vincolo.md"
     },
     {
       "id": "definizione",
@@ -2328,42 +2580,48 @@
       "kind": "subtopic",
       "label": "ENABLE / DISABLE",
       "x": 900,
-      "y": 7727
+      "y": 7727,
+      "page": "oggetti sql/enable-disable.md"
     },
     {
       "id": "validate-novalidate",
       "kind": "subtopic",
       "label": "VALIDATE / NOVALIDATE",
       "x": 900,
-      "y": 7777
+      "y": 7777,
+      "page": "oggetti sql/validate-novalidate.md"
     },
     {
       "id": "stati",
       "kind": "subtopic",
       "label": "Stati",
       "x": 620,
-      "y": 7752
+      "y": 7752,
+      "page": "oggetti sql/stati.md"
     },
     {
       "id": "not-deferrable",
       "kind": "subtopic",
       "label": "NOT DEFERRABLE",
       "x": 900,
-      "y": 7827
+      "y": 7827,
+      "page": "oggetti sql/not-deferrable.md"
     },
     {
       "id": "deferrable-initially-immediate",
       "kind": "subtopic",
       "label": "DEFERRABLE INITIALLY IMMEDIATE",
       "x": 900,
-      "y": 7877
+      "y": 7877,
+      "page": "oggetti sql/deferrable-initially-immediate.md"
     },
     {
       "id": "deferrable-initially-deferred",
       "kind": "subtopic",
       "label": "DEFERRABLE INITIALLY DEFERRED",
       "x": 900,
-      "y": 7927
+      "y": 7927,
+      "page": "oggetti sql/deferrable-initially-deferred.md"
     },
     {
       "id": "quando-viene-controllato",
@@ -2377,7 +2635,8 @@
       "kind": "subtopic",
       "label": "Viste sui vincoli",
       "x": 620,
-      "y": 7977
+      "y": 7977,
+      "page": "oggetti sql/viste-sui-vincoli.md"
     },
     {
       "id": "vincoli",
@@ -2385,7 +2644,8 @@
       "label": "Vincoli",
       "x": 330,
       "y": 7689,
-      "priority": "important"
+      "priority": "important",
+      "page": "oggetti sql/vincoli.md"
     },
     {
       "id": "ricerca-binaria",
@@ -2393,28 +2653,32 @@
       "label": "Ricerca binaria",
       "x": -620,
       "y": 7614,
-      "priority": "optional"
+      "priority": "optional",
+      "page": "oggetti sql/ricerca-binaria.md"
     },
     {
       "id": "rowid",
       "kind": "subtopic",
       "label": "Rowid",
       "x": -900,
-      "y": 7664
+      "y": 7664,
+      "page": "oggetti sql/rowid.md"
     },
     {
       "id": "colonne-selettive",
       "kind": "subtopic",
       "label": "Colonne selettive",
       "x": -900,
-      "y": 7714
+      "y": 7714,
+      "page": "oggetti sql/colonne-selettive.md"
     },
     {
       "id": "b-tree",
       "kind": "subtopic",
       "label": "B-tree",
       "x": -620,
-      "y": 7689
+      "y": 7689,
+      "page": "oggetti sql/b-tree.md"
     },
     {
       "id": "colonne-a-bassa-cardinalita",
@@ -2428,7 +2692,8 @@
       "kind": "subtopic",
       "label": "Bitmap",
       "x": -620,
-      "y": 7764
+      "y": 7764,
+      "page": "oggetti sql/bitmap.md"
     },
     {
       "id": "indici-invisibili",
@@ -2436,7 +2701,8 @@
       "label": "Indici invisibili",
       "x": -620,
       "y": 7814,
-      "priority": "optional"
+      "priority": "optional",
+      "page": "oggetti sql/indici-invisibili.md"
     },
     {
       "id": "indici-2",
@@ -2444,7 +2710,8 @@
       "label": "Indici",
       "x": -330,
       "y": 7714,
-      "priority": "important"
+      "priority": "important",
+      "page": "oggetti sql/indici-2.md"
     },
     {
       "id": "index-organized-table-iot",
@@ -2458,7 +2725,8 @@
       "kind": "subtopic",
       "label": "Cluster di tabelle",
       "x": -620,
-      "y": 7938
+      "y": 7938,
+      "page": "oggetti sql/cluster-di-tabelle.md"
     },
     {
       "id": "organizzazione-delle-tabelle",
@@ -2472,42 +2740,48 @@
       "kind": "subtopic",
       "label": "Viste semplici e su più tabelle",
       "x": -620,
-      "y": 8012
+      "y": 8012,
+      "page": "oggetti sql/viste-semplici-e-su-piu-tabelle.md"
     },
     {
       "id": "with-check-option",
       "kind": "subtopic",
       "label": "WITH CHECK OPTION",
       "x": -620,
-      "y": 8062
+      "y": 8062,
+      "page": "oggetti sql/with-check-option.md"
     },
     {
       "id": "refresh-completo",
       "kind": "subtopic",
       "label": "Refresh completo",
       "x": -900,
-      "y": 8112
+      "y": 8112,
+      "page": "oggetti sql/refresh-completo.md"
     },
     {
       "id": "refresh-fast",
       "kind": "subtopic",
       "label": "Refresh fast",
       "x": -900,
-      "y": 8162
+      "y": 8162,
+      "page": "oggetti sql/refresh-fast.md"
     },
     {
       "id": "viste-materializzate",
       "kind": "subtopic",
       "label": "Viste materializzate",
       "x": -620,
-      "y": 8137
+      "y": 8137,
+      "page": "oggetti sql/viste-materializzate.md"
     },
     {
       "id": "viste",
       "kind": "topic",
       "label": "Viste",
       "x": -330,
-      "y": 8075
+      "y": 8075,
+      "page": "oggetti sql/viste.md"
     },
     {
       "id": "sequenze",
@@ -2565,7 +2839,8 @@
       "label": "PL/SQL",
       "x": 330,
       "y": 8236,
-      "priority": "optional"
+      "priority": "optional",
+      "page": "oggetti sql/pl-sql.md"
     },
     {
       "id": "oggetti-sql",
@@ -2579,49 +2854,56 @@
       "kind": "subtopic",
       "label": "Backup a caldo (ARCHIVELOG)",
       "x": -900,
-      "y": 8524
+      "y": 8524,
+      "page": "backup e alta disponibilita/backup-a-caldo-archivelog.md"
     },
     {
       "id": "point-in-time-recovery",
       "kind": "subtopic",
       "label": "Point-in-time recovery",
       "x": -900,
-      "y": 8574
+      "y": 8574,
+      "page": "backup e alta disponibilita/point-in-time-recovery.md"
     },
     {
       "id": "controllo-corruzioni",
       "kind": "subtopic",
       "label": "Controllo corruzioni",
       "x": -900,
-      "y": 8624
+      "y": 8624,
+      "page": "backup e alta disponibilita/controllo-corruzioni.md"
     },
     {
       "id": "backup-fisico-rman",
       "kind": "subtopic",
       "label": "Backup fisico: RMAN",
       "x": -620,
-      "y": 8574
+      "y": 8574,
+      "page": "backup e alta disponibilita/backup-fisico-rman.md"
     },
     {
       "id": "expdp",
       "kind": "subtopic",
       "label": "expdp",
       "x": -900,
-      "y": 8674
+      "y": 8674,
+      "page": "backup e alta disponibilita/expdp.md"
     },
     {
       "id": "impdp",
       "kind": "subtopic",
       "label": "impdp",
       "x": -900,
-      "y": 8724
+      "y": 8724,
+      "page": "backup e alta disponibilita/impdp.md"
     },
     {
       "id": "backup-logico-data-pump",
       "kind": "subtopic",
       "label": "Backup logico: Data Pump",
       "x": -620,
-      "y": 8699
+      "y": 8699,
+      "page": "backup e alta disponibilita/backup-logico-data-pump.md"
     },
     {
       "id": "backup",
@@ -2629,35 +2911,40 @@
       "label": "Backup",
       "x": -330,
       "y": 8636,
-      "priority": "important"
+      "priority": "important",
+      "page": "backup e alta disponibilita/backup.md"
     },
     {
       "id": "data-pump",
       "kind": "subtopic",
       "label": "Data Pump",
       "x": 900,
-      "y": 8524
+      "y": 8524,
+      "page": "backup e alta disponibilita/backup-logico-data-pump.md"
     },
     {
       "id": "external-table",
       "kind": "subtopic",
       "label": "External table",
       "x": 900,
-      "y": 8574
+      "y": 8574,
+      "page": "backup e alta disponibilita/external-table.md"
     },
     {
       "id": "utl-file",
       "kind": "subtopic",
       "label": "UTL_FILE",
       "x": 900,
-      "y": 8624
+      "y": 8624,
+      "page": "backup e alta disponibilita/utl-file.md"
     },
     {
       "id": "bfile",
       "kind": "subtopic",
       "label": "BFILE",
       "x": 900,
-      "y": 8674
+      "y": 8674,
+      "page": "backup e alta disponibilita/bfile.md"
     },
     {
       "id": "a-cosa-serve",
@@ -2671,14 +2958,16 @@
       "kind": "subtopic",
       "label": "CREATE ANY DIRECTORY",
       "x": 900,
-      "y": 8724
+      "y": 8724,
+      "page": "backup e alta disponibilita/create-any-directory.md"
     },
     {
       "id": "read-write-execute",
       "kind": "subtopic",
       "label": "READ, WRITE, EXECUTE",
       "x": 900,
-      "y": 8774
+      "y": 8774,
+      "page": "backup e alta disponibilita/read-write-execute.md"
     },
     {
       "id": "privilegi-2",
@@ -2692,42 +2981,48 @@
       "kind": "subtopic",
       "label": "DATA_PUMP_DIR",
       "x": 620,
-      "y": 8824
+      "y": 8824,
+      "page": "backup e alta disponibilita/data-pump-dir.md"
     },
     {
       "id": "oracle-directory",
       "kind": "topic",
       "label": "Oracle Directory",
       "x": 410,
-      "y": 8750
+      "y": 8750,
+      "page": "backup e alta disponibilita/oracle-directory.md"
     },
     {
       "id": "cdb-root",
       "kind": "subtopic",
       "label": "CDB$ROOT",
       "x": -900,
-      "y": 8798
+      "y": 8798,
+      "page": "backup e alta disponibilita/cdb-2.md"
     },
     {
       "id": "cdb-2",
       "kind": "subtopic",
       "label": "CDB",
       "x": -620,
-      "y": 8798
+      "y": 8798,
+      "page": "backup e alta disponibilita/cdb-2.md"
     },
     {
       "id": "pdb",
       "kind": "subtopic",
       "label": "PDB",
       "x": -620,
-      "y": 8848
+      "y": 8848,
+      "page": "backup e alta disponibilita/pdb.md"
     },
     {
       "id": "pdb-seed",
       "kind": "subtopic",
       "label": "PDB$SEED",
       "x": -620,
-      "y": 8898
+      "y": 8898,
+      "page": "backup e alta disponibilita/pdb-seed.md"
     },
     {
       "id": "multitenant",
@@ -2735,42 +3030,48 @@
       "label": "Multitenant",
       "x": -330,
       "y": 8848,
-      "priority": "important"
+      "priority": "important",
+      "page": "backup e alta disponibilita/multitenant.md"
     },
     {
       "id": "in-place-deprecato",
       "kind": "subtopic",
       "label": "In place (deprecato)",
       "x": 620,
-      "y": 8898
+      "y": 8898,
+      "page": "backup e alta disponibilita/in-place-deprecato.md"
     },
     {
       "id": "out-of-place-con-dbua",
       "kind": "subtopic",
       "label": "Out of place con DBUA",
       "x": 620,
-      "y": 8948
+      "y": 8948,
+      "page": "backup e alta disponibilita/out-of-place-con-dbua.md"
     },
     {
       "id": "upgrade",
       "kind": "topic",
       "label": "Upgrade",
       "x": 420,
-      "y": 8930
+      "y": 8930,
+      "page": "backup e alta disponibilita/upgrade.md"
     },
     {
       "id": "cache-fusion",
       "kind": "subtopic",
       "label": "Cache Fusion",
       "x": -900,
-      "y": 8972
+      "y": 8972,
+      "page": "backup e alta disponibilita/cache-fusion.md"
     },
     {
       "id": "interconnect",
       "kind": "subtopic",
       "label": "Interconnect",
       "x": -900,
-      "y": 9022
+      "y": 9022,
+      "page": "backup e alta disponibilita/interconnect.md"
     },
     {
       "id": "failover-delle-sessioni",
@@ -2784,7 +3085,8 @@
       "kind": "subtopic",
       "label": "RAC",
       "x": -620,
-      "y": 9022
+      "y": 9022,
+      "page": "backup e alta disponibilita/rac.md"
     },
     {
       "id": "database-standby",
@@ -2798,35 +3100,40 @@
       "kind": "subtopic",
       "label": "Sincronizzazione con gli archive log",
       "x": -900,
-      "y": 9172
+      "y": 9172,
+      "page": "backup e alta disponibilita/sincronizzazione-con-gli-archive-log.md"
     },
     {
       "id": "switchover",
       "kind": "subtopic",
       "label": "Switchover",
       "x": -900,
-      "y": 9222
+      "y": 9222,
+      "page": "backup e alta disponibilita/switchover.md"
     },
     {
       "id": "failover",
       "kind": "subtopic",
       "label": "Failover",
       "x": -900,
-      "y": 9272
+      "y": 9272,
+      "page": "backup e alta disponibilita/failover.md"
     },
     {
       "id": "data-guard",
       "kind": "subtopic",
       "label": "Data Guard",
       "x": -620,
-      "y": 9197
+      "y": 9197,
+      "page": "backup e alta disponibilita/data-guard.md"
     },
     {
       "id": "maa-rac-data-guard",
       "kind": "subtopic",
       "label": "MAA: RAC + Data Guard",
       "x": -620,
-      "y": 9322
+      "y": 9322,
+      "page": "backup e alta disponibilita/maa-rac-data-guard.md"
     },
     {
       "id": "alta-disponibilita",
