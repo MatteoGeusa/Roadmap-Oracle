@@ -1,0 +1,223 @@
+:root {
+  --rm-ink: #1f2328;
+  --rm-edge: #2f81f7;
+  --rm-grid: #d8dee4;
+  --rm-topic: #fde68a;
+  --rm-subtopic: #fef3c7;
+  --rm-important: #cf222e;
+  --rm-done: #b7ebc6;
+  --rm-learning: #cfe2ff;
+  --rm-recover: #ffd2d2;
+  --rm-deepen: #e4d4ff;
+  --rm-skip: #e5e7eb;
+  --rm-accent: #0969da;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --rm-ink: #e6edf3;
+    --rm-edge: #4493f8;
+    --rm-grid: #30363d;
+    --rm-topic: #4d3d0c;
+    --rm-subtopic: #2e2610;
+    --rm-important: #ff7b72;
+    --rm-done: #1f4a2c;
+    --rm-learning: #1c3557;
+    --rm-recover: #5a1f22;
+    --rm-deepen: #3b2763;
+    --rm-skip: #2d333b;
+    --rm-accent: #4493f8;
+  }
+}
+
+.rm-shell { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+.rm-toolbar {
+  display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.75rem 2rem;
+  padding: 0.75rem 1rem; border-bottom: 1px solid var(--border);
+}
+.rm-heading { flex: 1 1 260px; min-width: 0; }
+.rm-heading h2 { margin: 0; font-size: 1.25rem; }
+.rm-heading p { margin: 0.25rem 0 0; color: var(--muted); }
+.rm-canvas { flex: 1; position: relative; min-height: 0; }
+.rm-canvas .react-flow { background: var(--bg); }
+.rm-muted { color: var(--muted); }
+
+/* Roadmap header: title row, then progress and filters on one line */
+.rm-view-head { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 0.6rem; }
+.rm-title-row { display: flex; align-items: center; gap: 1rem; }
+.rm-edit-link {
+  flex-shrink: 0; font-size: 0.85rem; text-decoration: none; color: var(--fg);
+  border: 1px solid var(--border); border-radius: 6px; padding: 0.3rem 0.7rem;
+}
+.rm-edit-link:hover { border-color: var(--muted); }
+.rm-stats-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.25rem; }
+.rm-progress { display: flex; align-items: center; gap: 0.6rem; font-size: 0.85rem; white-space: nowrap; }
+.rm-progress-text { color: var(--muted); }
+.rm-progress-text strong { color: var(--fg); }
+.rm-progress-bar { width: 140px; height: 6px; border-radius: 3px; background: var(--rm-skip); overflow: hidden; }
+.rm-progress-bar > div { height: 100%; background: #2da44e; transition: width 0.3s; }
+.rm-progress + .rm-filters { padding-left: 1.25rem; border-left: 1px solid var(--border); }
+@media (max-width: 900px) { .rm-progress + .rm-filters { padding-left: 0; border-left: 0; } }
+.rm-filters, .rm-status-buttons { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.rm-link-btn { background: none; border: 0; padding: 0; color: var(--rm-accent); cursor: pointer; font: inherit; text-decoration: underline; }
+
+.rm-chip {
+  font: inherit; font-size: 0.8rem; color: var(--fg); cursor: pointer;
+  border: 1px solid var(--border); border-radius: 999px; padding: 0.2rem 0.65rem; background: var(--bg);
+}
+.rm-chip span { color: var(--muted); margin-left: 0.2rem; }
+.rm-chip:disabled { opacity: 0.45; cursor: default; }
+.rm-chip-done { background: var(--rm-done); }
+.rm-chip-learning { background: var(--rm-learning); }
+.rm-chip-recover { background: var(--rm-recover); }
+.rm-chip-deepen { background: var(--rm-deepen); }
+.rm-chip-skip { background: var(--rm-skip); }
+.rm-chip-important { color: var(--rm-important); }
+.rm-chip.rm-active { outline: 2px solid var(--fg); outline-offset: 1px; font-weight: 600; }
+
+/* Nodes */
+.rm-node {
+  position: relative; box-sizing: border-box; min-width: 150px; max-width: 240px;
+  padding: 0.55rem 0.9rem; border: 2px solid var(--rm-ink); border-radius: 6px;
+  color: var(--rm-ink); font-size: 0.9rem; line-height: 1.3; text-align: center;
+  white-space: pre-wrap; overflow-wrap: anywhere;
+}
+.rm-kind-topic { background: var(--rm-topic); font-weight: 600; }
+.rm-kind-subtopic { background: var(--rm-subtopic); }
+.rm-kind-title { border-color: transparent; font-size: 1.5rem; font-weight: 700; max-width: 400px; }
+.rm-kind-note { border-color: transparent; color: var(--muted); font-style: italic; font-size: 0.85rem; }
+.rm-prio-important { border-width: 3px; border-color: var(--rm-important); }
+.rm-prio-optional { border-style: dashed; }
+
+.rm-status-done { background: var(--rm-done); }
+.rm-status-done .rm-label { text-decoration: line-through; }
+.rm-status-learning { background: var(--rm-learning); }
+.rm-status-recover { background: var(--rm-recover); }
+.rm-status-deepen { background: var(--rm-deepen); }
+.rm-status-skip { background: var(--rm-skip); opacity: 0.6; }
+.rm-status-skip .rm-label { text-decoration: line-through; }
+
+.rm-badge {
+  position: absolute; top: -10px; width: 20px; height: 20px; border-radius: 50%;
+  display: grid; place-items: center; font-size: 12px; font-weight: 700; line-height: 1;
+  background: var(--bg); border: 1.5px solid currentColor;
+}
+.rm-badge-important { left: -10px; color: var(--rm-important); }
+.rm-badge-status { right: -10px; color: var(--rm-ink); }
+.rm-page-dot { position: absolute; bottom: 4px; right: 4px; width: 6px; height: 6px; border-radius: 50%; background: var(--rm-accent); }
+
+.react-flow__node.rm-clickable { cursor: pointer; }
+.react-flow__node.rm-clickable:hover .rm-node { box-shadow: 0 0 0 3px color-mix(in srgb, var(--rm-accent) 35%, transparent); }
+.react-flow__node.rm-dim, .react-flow__edge.rm-dim { opacity: 0.2; }
+
+/* Handles: invisible for readers, shown on hover in the editor */
+.rm-handle { width: 8px; height: 8px; background: var(--rm-accent); border: 1px solid var(--bg); opacity: 0; }
+.rm-editor .react-flow__node:hover .rm-handle,
+.rm-editor .rm-selected .rm-handle { opacity: 1; }
+.rm-editor .rm-node { cursor: grab; }
+.rm-selected { box-shadow: 0 0 0 3px var(--rm-accent); }
+.rm-editor .rm-kind-title, .rm-editor .rm-kind-note { border-color: var(--border); border-style: dotted; }
+.rm-editor .rm-kind-title.rm-selected, .rm-editor .rm-kind-note.rm-selected { border-color: var(--rm-accent); }
+.react-flow__edge.rm-edge-selected path { stroke: var(--rm-important) !important; }
+
+/* Side panel (reader) and inspector (editor) */
+.rm-panel {
+  position: absolute; top: 0; right: 0; bottom: 0; z-index: 10; width: min(460px, 100%); max-width: 100%;
+  box-sizing: border-box; padding: 1rem 1.25rem; overflow-y: auto;
+  background: var(--bg); border-left: 1px solid var(--border); box-shadow: -8px 0 24px rgb(0 0 0 / 0.12);
+}
+.rm-panel-head { display: flex; align-items: flex-start; gap: 1rem; }
+.rm-panel-head h3 { flex: 1; margin: 0 0 0.5rem; font-size: 1.2rem; }
+.rm-star { color: var(--rm-important); }
+.rm-close { background: none; border: 0; font-size: 1.6rem; line-height: 1; cursor: pointer; color: var(--muted); }
+.rm-tag { display: inline-block; font-size: 0.75rem; padding: 0.1rem 0.5rem; border-radius: 4px; margin-bottom: 0.75rem; border: 1px solid currentColor; }
+.rm-tag-important { color: var(--rm-important); }
+.rm-tag-optional { color: var(--muted); border-style: dashed; }
+.rm-status-buttons { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
+.rm-panel-body .markdown-body { background: transparent; font-size: 0.95rem; }
+
+
+
+/* Node whose content is open in the side panel */
+.react-flow__node.rm-open .rm-node { box-shadow: 0 0 0 4px var(--rm-accent); }
+.rm-panel-note { font-size: 0.85rem; margin: 0 0 0.75rem; }
+
+/* Editor: toolbar on top, roadmap builder on the left, node + markdown panel on the right */
+.rm-editor input, .rm-editor textarea, .rm-editor select {
+  font: inherit; color: var(--fg); background: var(--bg); box-sizing: border-box;
+  border: 1px solid var(--border); border-radius: 6px; padding: 0.35rem 0.5rem;
+}
+.rm-editor textarea { resize: vertical; }
+/* :where keeps this base low-specificity so the variants below win */
+.rm-editor :where(button:not(.react-flow__controls-button):not(.rm-close):not(.sidebar-toggle)) {
+  font: inherit; font-size: 0.85rem; cursor: pointer; color: var(--fg);
+  background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 0.35rem 0.7rem;
+}
+.rm-editor button:disabled { opacity: 0.5; cursor: default; }
+.rm-editor button.rm-primary { background: #1f883d; border-color: #1f883d; color: #fff; }
+.rm-editor button.rm-danger { color: var(--rm-important); border-color: var(--rm-important); align-self: flex-start; }
+
+.ed-toolbar {
+  display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;
+  padding: 0.6rem 1rem; border-bottom: 1px solid var(--border);
+}
+.ed-add { display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap; font-size: 0.85rem; }
+.ed-message { flex: 1; text-align: right; font-size: 0.85rem; min-width: 0; }
+.ed-view { font-size: 0.85rem; white-space: nowrap; }
+
+.ed-body { flex: 1; display: flex; min-height: 0; }
+.ed-body .rm-canvas { min-width: 0; }
+.ed-panel {
+  position: relative; flex-shrink: 0; max-width: 70%; box-sizing: border-box;
+  display: flex; flex-direction: column; overflow-y: auto;
+  border-left: 1px solid var(--border); background: var(--bg-soft);
+}
+.ed-section { flex: 1; display: flex; flex-direction: column; gap: 0.75rem; padding: 1rem 1.25rem; min-height: 0; }
+.ed-section h3 { margin: 0; font-size: 1.1rem; }
+.ed-section h4 { margin: 0.5rem 0 0; font-size: 0.9rem; }
+.ed-panel-head { display: flex; align-items: center; gap: 1rem; }
+.ed-panel-head h3 { flex: 1; }
+.ed-field { display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.8rem; color: var(--muted); min-width: 0; }
+.ed-field input, .ed-field textarea, .ed-field select { font-size: 0.9rem; width: 100%; }
+.ed-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.ed-inline { display: flex; gap: 0.4rem; }
+.ed-inline input { flex: 1; }
+.ed-file { font-size: 0.8rem; margin: 0; }
+.ed-help { margin: 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+.ed-help kbd, .ed-help + * kbd { font-size: 0.75rem; border: 1px solid var(--border); border-radius: 4px; padding: 0 0.3rem; background: var(--bg); }
+.ed-error { margin: 0; font-size: 0.8rem; color: var(--rm-important); }
+
+/* Node content: the markdown editor takes the remaining height of the panel */
+.ed-node { min-height: 640px; }
+.ed-content { flex: 1; display: flex; flex-direction: column; gap: 0.5rem; min-height: 360px; border-top: 1px solid var(--border); padding-top: 0.75rem; }
+.ed-content-head { display: flex; align-items: center; gap: 0.5rem; }
+.ed-content-head h4 { margin: 0; flex-shrink: 0; }
+.ed-content-head select { flex: 1; min-width: 0; font-size: 0.8rem; }
+.rm-editor button.ed-link-btn { border: 0; background: none; padding: 0.2rem; color: var(--rm-accent); text-decoration: underline; }
+.ed-nocontent { display: flex; flex-direction: column; gap: 0.75rem; }
+
+.md-editor { flex: 1; display: flex; flex-direction: column; min-height: 0; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; background: var(--bg); }
+.md-editor-bar { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; padding: 0.3rem; border-bottom: 1px solid var(--border); background: var(--bg-soft); }
+.md-tabs { display: flex; gap: 0.2rem; }
+.rm-editor .md-tabs button { border-color: transparent; background: none; padding: 0.25rem 0.6rem; }
+.rm-editor .md-tabs button.active { background: var(--bg); border-color: var(--border); font-weight: 600; }
+.md-formats { display: flex; gap: 0.15rem; flex-wrap: wrap; margin-left: auto; }
+.rm-editor .md-formats button { padding: 0.15rem 0.45rem; font-size: 0.75rem; min-width: 1.9rem; border-color: transparent; background: none; }
+.rm-editor .md-formats button:hover { border-color: var(--border); background: var(--bg); }
+.rm-editor textarea.md-source {
+  flex: 1; width: 100%; min-height: 260px; resize: none; border: 0; border-radius: 0; padding: 0.75rem;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.85rem; line-height: 1.55;
+}
+.rm-editor textarea.md-source:focus { outline: none; }
+.md-preview { flex: 1; overflow-y: auto; padding: 0.75rem 1rem; }
+.md-preview .markdown-body { background: transparent; font-size: 0.9rem; }
+.ed-back { font-size: 0.85rem; white-space: nowrap; }
+.ed-title { font-size: 0.95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 28ch; }
+
+/* Markdown editor on the whole window */
+.md-editor.md-full { position: fixed; inset: 0; z-index: 1000; border: 0; border-radius: 0; }
+.md-full .md-editor-bar { padding: 0.5rem 1rem; }
+.md-full-path { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.85rem; color: var(--muted); margin-right: 0.5rem; }
+.md-full .md-source { padding: 1.5rem max(1.5rem, calc((100% - 900px) / 2)); font-size: 0.95rem; }
+.md-full .md-preview { padding: 1.5rem max(1.5rem, calc((100% - 900px) / 2)); }
+.rm-editor .md-editor-bar button.md-full-toggle { font-size: 0.75rem; padding: 0.2rem 0.55rem; white-space: nowrap; }
+.md-tabs + .md-full-toggle { margin-left: auto; }

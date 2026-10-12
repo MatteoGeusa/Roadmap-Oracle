@@ -1,0 +1,77 @@
+:root {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light dark;
+  --fg: #1f2328;
+  --muted: #59636e;
+  --bg: #ffffff;
+  --bg-soft: #f6f8fa;
+  --border: #d1d9e0;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --fg: #f0f6fc; --muted: #9198a1; --bg: #0d1117; --bg-soft: #151b23; --border: #3d444d; }
+}
+body { margin: 0; color: var(--fg); background: var(--bg); }
+
+/* App shell: content on the left, contents sidebar on the right */
+.app { display: flex; flex-direction: column; height: 100vh; }
+.app-body { flex: 1; display: flex; min-height: 0; position: relative; }
+.app-main { flex: 1; min-width: 0; display: flex; flex-direction: column; overflow-y: auto; }
+.page { width: 100%; max-width: 960px; margin: 0 auto; padding: 1.5rem 1rem 2rem; box-sizing: border-box; }
+.listing { list-style: none; padding: 0; line-height: 2; }
+a { color: #0969da; }
+@media (prefers-color-scheme: dark) { a { color: #4493f8; } }
+
+/* Contents sidebar */
+.sidebar {
+  flex-shrink: 0; width: 280px; display: flex; flex-direction: column;
+  border-left: 1px solid var(--border); background: var(--bg-soft);
+  transition: width 0.2s ease; overflow: hidden; position: relative;
+}
+.sidebar.closed { width: 44px; }
+.sidebar-head {
+  display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem;
+  border-bottom: 1px solid var(--border); font-size: 0.8rem; font-weight: 600;
+  color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap;
+}
+.sidebar-toggle {
+  width: 28px; height: 28px; flex-shrink: 0; display: grid; place-items: center;
+  font-size: 1.2rem; line-height: 1; cursor: pointer; color: var(--fg);
+  background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+}
+.sidebar-toggle:hover { border-color: var(--muted); }
+.sidebar-body { flex: 1; overflow-y: auto; padding: 0.5rem 0; font-size: 0.9rem; }
+
+.tree { list-style: none; margin: 0; padding: 0; }
+.tree-row {
+  display: flex; align-items: center; gap: 0.35rem; padding: 0.25rem 0.75rem;
+  padding-left: calc(0.75rem + var(--depth, 0) * 0.9rem);
+  color: var(--fg); text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+a.tree-row:hover, .tree-folder:hover { background: var(--bg); }
+.tree-row.active { color: #0969da; font-weight: 600; }
+@media (prefers-color-scheme: dark) { .tree-row.active { color: #4493f8; } }
+.tree-icon { width: 1.2em; text-align: center; flex-shrink: 0; }
+.tree-folder {
+  width: 100%; border: 0; background: none; font: inherit; text-align: left; cursor: pointer;
+  padding-left: calc(0.75rem + var(--depth, 0) * 0.9rem - 1.2rem);
+}
+.tree-caret {
+  width: 1.2rem; flex-shrink: 0; text-align: center;
+  color: var(--muted); font-size: 0.8rem;
+}
+
+/* Small screens: the open sidebar slides over the content instead of squeezing it */
+@media (max-width: 700px) {
+  .sidebar.open { position: absolute; top: 0; right: 0; bottom: 0; z-index: 30; box-shadow: -8px 0 24px rgb(0 0 0 / 0.2); }
+  .app-main { margin-right: 44px; }
+  .sidebar.closed { position: absolute; top: 0; right: 0; bottom: 0; }
+}
+
+/* Drag handle on the left edge of right-docked panels (see useResizable) */
+.resize-handle {
+  position: absolute; top: 0; bottom: 0; left: 0; width: 6px; z-index: 5;
+  cursor: col-resize; touch-action: none;
+}
+.resize-handle:hover, body.resizing .resize-handle { background: color-mix(in srgb, #0969da 45%, transparent); }
+body.resizing { cursor: col-resize; user-select: none; }
+body.resizing .sidebar { transition: none; }
