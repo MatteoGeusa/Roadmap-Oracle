@@ -5637,6 +5637,13 @@
       "target": "lsnrctl",
       "sourceHandle": "r",
       "targetHandle": "l"
+    },
+    {
+      "id": "e-righe-fuori-posto--row-migration",
+      "source": "righe-fuori-posto",
+      "target": "row-migration",
+      "sourceHandle": "r",
+      "targetHandle": "l"
     }
   ]
 }

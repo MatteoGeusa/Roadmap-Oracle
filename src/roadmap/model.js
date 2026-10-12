@@ -44,8 +44,9 @@ const RANK = { title: 0, topic: 1, subtopic: 2, note: 2 }
 // direction, so each node goes under the nearest node one level up (by number of hops,
 // moving only through nodes of its own level), or the nearest higher one if there is
 // none. A subtopic linked to its topic only through another subtopic goes under that
-// subtopic, so details can nest one more level. Titles are the top-level sections; nodes with nothing above them come before
-// them, and empty titles are skipped. Siblings follow the layout, top to bottom then
+// subtopic, so details can nest one more level; a node with nothing a level up goes
+// under the node it is linked to inside a section. Titles are the top-level sections;
+// nodes linked to no section come before them, and empty titles are skipped. Siblings follow the layout, top to bottom then
 // left to right.
 export function buildIndex(doc) {
   const byPos = (a, b) => (a.y ?? 0) - (b.y ?? 0) || (a.x ?? 0) - (b.x ?? 0)
@@ -74,6 +75,29 @@ export function buildIndex(doc) {
           if (!parent.has(next)) parent.set(next, level === 2 && rank(byId.get(id)) === 2 ? id : from)
           queue.push([next, from])
         }
+      }
+    }
+  }
+
+  // A node with nothing a level up, but linked to a node that is already in a section
+  // (a topic hung under a subtopic, say), goes under that node instead of before the sections
+  const inSection = (id) => {
+    for (let at = id; ; at = parent.get(at)) {
+      if (byId.get(at).kind === 'title') return true
+      if (!parent.has(at)) return false
+    }
+  }
+  for (let moved = true; moved; ) {
+    moved = false
+    for (const n of nodes) {
+      if (n.kind === 'title' || parent.has(n.id)) continue
+      const host = links
+        .get(n.id)
+        .filter(inSection)
+        .sort((a, b) => rank(byId.get(a)) - rank(byId.get(b)))[0]
+      if (host) {
+        parent.set(n.id, host)
+        moved = true
       }
     }
   }
