@@ -5,3 +5,10 @@ Una modalità di shutdown che equivale a staccare la spina: termina l'istanza is
 ## A cosa serve?
 
 Spegne subito, al prezzo di un crash recovery sicuro al riavvio successivo.
+
+## Codice
+
+```sql
+SHUTDOWN ABORT;
+STARTUP;          -- al riavvio SMON esegue il crash recovery
+```

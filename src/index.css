@@ -21,6 +21,18 @@ body { margin: 0; color: var(--fg); background: var(--bg); }
 a { color: #0969da; }
 @media (prefers-color-scheme: dark) { a { color: #4493f8; } }
 
+/* Copy button on the code blocks of a page, shown on hover (always on touch screens) */
+.code-block { position: relative; }
+.code-copy {
+  position: absolute; top: 0.4rem; right: 0.4rem; padding: 0.15rem 0.5rem;
+  font: inherit; font-size: 0.75rem; cursor: pointer; color: var(--muted);
+  background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+  opacity: 0; transition: opacity 0.15s;
+}
+.code-block:hover .code-copy, .code-copy:focus-visible { opacity: 1; }
+.code-copy:hover { color: var(--fg); border-color: var(--muted); }
+@media (hover: none) { .code-copy { opacity: 1; } }
+
 /* Contents sidebar */
 .sidebar {
   flex-shrink: 0; width: 280px; display: flex; flex-direction: column;

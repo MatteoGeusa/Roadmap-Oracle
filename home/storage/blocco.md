@@ -5,3 +5,9 @@ L'unità minima di storage di Oracle. Ha una dimensione fissa, solitamente 8 KB,
 ## A cosa serve?
 
 Suddivide il datafile in unità precise. Contiene righe di una sola tabella (eccezione: i cluster di tabelle) ed è l'unità minima di dati trasportabile. I buffer della buffer cache hanno la stessa dimensione.
+
+## Codice
+
+```sql
+SHOW PARAMETER db_block_size    -- di solito 8192
+```
