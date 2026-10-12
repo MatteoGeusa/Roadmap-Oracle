@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import SidePanel from './SidePanel.jsx'
 import { useResizable } from './useResizable.js'
 
 const KEY = 'sidebar-open'
@@ -123,9 +124,10 @@ function Entry({ entry, nav }) {
 // `index`: the roadmap's table of contents (see buildIndex), or null when there is no roadmap.
 // `active`: id of the node to highlight. `nodeHref(node)`: where a node's link points.
 // `onOpen(node)`: opens a node in place; when missing, links simply navigate.
+// It is always docked on the left, on the site and in the admin alike.
 export default function Sidebar({ index, active, nodeHref, onOpen }) {
   const [open, setOpen] = useState(loadOpen)
-  const resize = useResizable('sidebar-width', 300, 220)
+  const resize = useResizable('sidebar-width', 300, 220, 'left')
   const [query, setQuery] = useState('')
   // Expanded branches; the index starts with only the sections, plus the way to the open node
   const [expanded, setExpanded] = useState(() => new Set(pathTo(index ?? [], active) ?? []))
@@ -163,11 +165,10 @@ export default function Sidebar({ index, active, nodeHref, onOpen }) {
   }
 
   return (
-    <aside className={open ? 'sidebar open' : 'sidebar closed'} style={open ? { width: resize.width } : undefined}>
-      {open && <div className="resize-handle" {...resize.handleProps} title="Trascina per ridimensionare, doppio clic per ripristinare" />}
+    <SidePanel side="left" size={open ? resize : null} className={open ? 'sidebar open' : 'sidebar closed'}>
       <div className="sidebar-head">
         <button className="sidebar-toggle" onClick={toggleSidebar} aria-expanded={open} title={open ? 'Chiudi indice' : 'Apri indice'}>
-          {open ? '›' : '‹'}
+          {open ? '‹' : '›'}
         </button>
         {open && <span>Indice</span>}
         {open && index?.length > 0 && (
@@ -203,6 +204,6 @@ export default function Sidebar({ index, active, nodeHref, onOpen }) {
           )}
         </nav>
       )}
-    </aside>
+    </SidePanel>
   )
 }

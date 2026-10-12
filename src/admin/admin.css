@@ -1,61 +1,11 @@
-/* Admin workspace (/admin): content tree | roadmap editor (with its node/page panel) */
+/* Admin workspace (/admin): roadmap index | roadmap editor (with its node/page panel) */
 .ws { flex: 1; display: flex; min-height: 0; }
 .ws-main { flex: 1; min-width: 0; display: flex; flex-direction: column; min-height: 0; }
+.ws-error { padding: 0.75rem 1rem; }
 
-.cm-tree {
-  position: relative; flex-shrink: 0; max-width: 50%; box-sizing: border-box;
-  display: flex; flex-direction: column; min-height: 0;
-  border-right: 1px solid var(--border); background: var(--bg-soft);
-}
-/* The drag handle sits on the right edge here; dragging right widens (see useResizable) */
-.cm-resize { left: auto; right: 0; }
-.cm-tree-title { display: flex; align-items: center; justify-content: space-between; }
-.cm-collapsed { width: 44px; align-items: center; padding-top: 0.5rem; }
-.cm-tree-head { padding: 0.75rem; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 0.5rem; }
-.cm-new { display: flex; flex-wrap: wrap; gap: 0.3rem; }
-.rm-editor .cm-new button { font-size: 0.8rem; padding: 0.25rem 0.5rem; }
-
-.cm-form { padding: 0.75rem; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 0.5rem; background: var(--bg); }
-.cm-form label { display: flex; flex-direction: column; gap: 0.3rem; font-size: 0.8rem; color: var(--muted); }
-.cm-form input { width: 100%; font-size: 0.9rem; }
-.cm-form-buttons { display: flex; gap: 0.4rem; }
-
-.cm-tree-body { flex: 1; overflow-y: auto; padding: 0.4rem 0; font-size: 0.9rem; }
-.cm-row { display: flex; align-items: center; padding-left: calc(0.4rem + var(--depth, 0) * 0.9rem); padding-right: 0.3rem; }
-.cm-row:hover { background: var(--bg); }
-.cm-row.active { background: color-mix(in srgb, var(--rm-accent) 18%, transparent); }
-.rm-editor .cm-name {
-  flex: 1; min-width: 0; display: flex; align-items: center; gap: 0.3rem; text-align: left;
-  border: 0; background: none; padding: 0.3rem 0.2rem; font-size: 0.9rem;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-}
-.cm-row.active .cm-name { font-weight: 600; }
-.cm-caret { width: 1rem; flex-shrink: 0; text-align: center; color: var(--muted); font-size: 0.75rem; cursor: pointer; }
-.cm-row-actions { display: flex; gap: 0.1rem; opacity: 0; }
-.cm-row:hover .cm-row-actions, .cm-row.active .cm-row-actions { opacity: 1; }
-.rm-editor .cm-row-actions button { border: 0; background: none; padding: 0.15rem 0.3rem; font-size: 0.8rem; color: var(--muted); }
-.rm-editor .cm-row-actions button:hover { color: var(--fg); background: var(--bg-soft); }
-
-.cm-message { margin: 0; padding: 0.6rem 0.75rem; font-size: 0.8rem; border-top: 1px solid var(--border); background: var(--bg); cursor: pointer; overflow-wrap: anywhere; }
-
-.cm-main { flex: 1; min-width: 0; display: flex; flex-direction: column; min-height: 0; overflow-y: auto; }
 .cm-empty { padding: 2rem; }
 .cm-path { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.85rem; overflow-wrap: anywhere; }
 .cm-dirty { color: #d29922; font-weight: 700; }
 
-.cm-page { flex: 1; display: flex; flex-direction: column; gap: 0.6rem; padding: 0.75rem 1rem 1rem; min-height: 0; }
-.cm-page-head { display: flex; align-items: center; gap: 1rem; }
-.cm-page-head .cm-path { flex: 1; min-width: 0; }
-.cm-page-head a { font-size: 0.85rem; white-space: nowrap; }
-.cm-page .md-editor { min-height: 400px; }
-
 .cm-card { padding: 1.5rem 2rem; max-width: 760px; }
 .cm-card h2 { margin: 0.25rem 0 0.5rem; }
-.cm-card-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
-.cm-button {
-  display: inline-block; font: inherit; font-size: 0.85rem; cursor: pointer; color: var(--fg); text-decoration: none;
-  background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 0.4rem 0.8rem;
-}
-.cm-button.cm-primary { background: #1f883d; border-color: #1f883d; color: #fff; }
-.rm-editor .cm-link { border: 0; background: none; padding: 0; color: var(--rm-accent); font-size: inherit; text-decoration: underline; }
-

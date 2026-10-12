@@ -5,7 +5,7 @@ esplora la roadmap, apre gli appunti di ogni argomento in un pannello laterale e
 propri progressi. Il sito è statico e pubblicato su GitHub Pages; tutti i contenuti stanno
 nella cartella `home/`.
 
-L'**indice** a destra segue la roadmap, non le cartelle di `home/`: i titoli fanno da
+L'**indice** a sinistra segue la roadmap, non le cartelle di `home/`: i titoli fanno da
 sezioni, sotto ogni titolo compaiono gli argomenti collegati e sotto ogni argomento i suoi
 sotto-argomenti, nell'ordine in cui stanno nella mappa (dall'alto in basso). Un
 sotto-argomento collegato a un altro sotto-argomento, invece che direttamente
@@ -84,22 +84,31 @@ revisione è più rapida.
 
 La pagina ha tre colonne:
 
-- **Contenuti** (a sinistra): le cartelle e i documenti markdown di `home/`. Con i pulsanti
-  in alto crei cartelle e documenti (finiscono nella cartella selezionata); con le icone ✎ e
-  🗑 su ogni riga rinomini, sposti (scrivendo un nuovo percorso) o elimini. Gli elementi
-  eliminati finiscono in `.trash/`, che non va nei commit, e si possono recuperare da lì.
+- **Indice** (a sinistra): lo stesso indice del sito, per la roadmap aperta, con la ricerca e
+  i pulsanti ⊞ e ⊟. Cliccando una voce il nodo viene selezionato e centrato nella mappa, e il
+  suo documento si apre nel pannello. Segue le modifiche alla roadmap anche prima di salvare.
+  Si chiude con ‹ e si allarga trascinandone il bordo.
 - **Roadmap** (al centro): aggiungi titoli, argomenti, sotto-argomenti e note con i pulsanti
   in alto, trascina i nodi per posizionarli e trascina dal pallino di un nodo a un altro per
   collegarli. `Canc` elimina la selezione; `Shift`+trascina seleziona più nodi.
 - **Pannello** (a destra, quando qualcosa è selezionato): testo, tipo e priorità
   (importante / opzionale) del nodo e il suo documento, scritto nell'editor markdown
   (Scrivi / Anteprima, anche a schermo intero). Un nodo senza documento può crearne uno nuovo
-  o collegarne uno esistente. Cliccando un documento nei contenuti si apre qui, selezionando
-  il nodo collegato.
+  o collegarne uno esistente.
 
 **Salva** (o `Ctrl+S`) scrive insieme la roadmap e tutti i documenti modificati.
 
-Rinominare o spostare un documento aggiorna i nodi che lo collegano; eliminarlo li scollega.
+Cartelle, nuove roadmap e documenti da rinominare, spostare o eliminare si gestiscono
+direttamente nei file di `home/` (con un editor di codice o con git). Se rinomini o sposti un
+documento, aggiorna il campo `page` del suo nodo nel file `.roadmap.json`: la build fallisce
+se un nodo è collegato a un documento che non esiste.
+
+**Immagini**: nell'editor markdown usa il pulsante 🖼, oppure incolla un'immagine (`Ctrl+V`,
+comodo per gli screenshot) o trascinala sul testo. Il file viene salvato subito nella cartella
+del documento, con un nome senza spazi né accenti (se il nome è già preso diventa `nome-2.png`),
+e nel testo compare `![nome](nome.png)` dove si trova il cursore. Formati: `.png`, `.jpg`,
+`.gif`, `.webp`, `.svg`, fino a 10 MB. Se sposti il documento in un'altra cartella, sposta
+anche le sue immagini.
 
 ## File dei contenuti
 
@@ -111,7 +120,8 @@ Rinominare o spostare un documento aggiorna i nodi che lo collegano; eliminarlo 
   documenti funzionano.
 - Immagini e altri file (`.png`, `.svg`, `.pdf`...) si possono mettere ovunque in `home/` e
   richiamare da un documento con un percorso relativo, ad esempio `![schema](schema.png)`.
-  Vanno aggiunti con git: la pagina admin gestisce solo i documenti.
+  Le immagini si caricano dall'editor (vedi sopra); gli altri file vanno aggiunti con git.
+  In entrambi i casi finiscono nel commit con `git add home`.
 
 ## Altri comandi
 

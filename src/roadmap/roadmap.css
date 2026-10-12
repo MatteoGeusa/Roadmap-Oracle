@@ -37,7 +37,7 @@
 .rm-heading { flex: 1 1 260px; min-width: 0; }
 .rm-heading h2 { margin: 0; font-size: 1.25rem; }
 .rm-heading p { margin: 0.25rem 0 0; color: var(--muted); }
-.rm-canvas { flex: 1; position: relative; min-height: 0; }
+.rm-canvas { flex: 1; position: relative; min-height: 0; overflow: hidden; }
 .rm-canvas .react-flow { background: var(--bg); }
 .rm-muted { color: var(--muted); }
 
@@ -123,7 +123,7 @@
 .rm-panel {
   position: absolute; top: 0; right: 0; bottom: 0; z-index: 10; width: min(460px, 100%); max-width: 100%;
   box-sizing: border-box; padding: 1rem 1.25rem; overflow-y: auto;
-  background: var(--bg); border-left: 1px solid var(--border); box-shadow: -8px 0 24px rgb(0 0 0 / 0.12);
+  background: var(--bg); box-shadow: -8px 0 24px rgb(0 0 0 / 0.12);
 }
 .rm-panel-head { display: flex; align-items: flex-start; gap: 1rem; }
 .rm-panel-head h3 { flex: 1; margin: 0 0 0.5rem; font-size: 1.2rem; }
@@ -164,12 +164,12 @@
 .ed-message { flex: 1; text-align: right; font-size: 0.85rem; min-width: 0; }
 .ed-view { font-size: 0.85rem; white-space: nowrap; }
 
-.ed-body { flex: 1; display: flex; min-height: 0; }
+.ed-body { flex: 1; display: flex; min-height: 0; overflow: hidden; }
 .ed-body .rm-canvas { min-width: 0; }
 .ed-panel {
   position: relative; flex-shrink: 0; max-width: 70%; box-sizing: border-box;
   display: flex; flex-direction: column; overflow-y: auto;
-  border-left: 1px solid var(--border); background: var(--bg-soft);
+  background: var(--bg-soft);
 }
 .ed-section { flex: 1; display: flex; flex-direction: column; gap: 0.75rem; padding: 1rem 1.25rem; min-height: 0; }
 .ed-section h3 { margin: 0; font-size: 1.1rem; }
@@ -208,6 +208,13 @@
   font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.85rem; line-height: 1.55;
 }
 .rm-editor textarea.md-source:focus { outline: none; }
+/* Outcome of an image upload, between the toolbar and the text */
+.md-status {
+  display: flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0.6rem;
+  font-size: 0.8rem; color: var(--muted); border-bottom: 1px solid var(--border); overflow-wrap: anywhere;
+}
+.md-status-error { color: var(--rm-important); }
+.rm-editor .md-status button { margin-left: auto; padding: 0 0.4rem; border-color: transparent; background: none; }
 .md-preview { flex: 1; overflow-y: auto; padding: 0.75rem 1rem; }
 .md-preview .markdown-body { background: transparent; font-size: 0.9rem; }
 .ed-back { font-size: 0.85rem; white-space: nowrap; }
