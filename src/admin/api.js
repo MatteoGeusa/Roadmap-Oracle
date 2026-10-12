@@ -16,6 +16,8 @@ export const getTree = () => call('GET', 'tree')
 export const readFile = (path) => call('GET', `file?path=${encodeURIComponent(path)}`)
 export const savePage = (file, content, create = false) => call('POST', 'save', { file, content, create })
 export const saveRoadmap = (file, data, create = false) => call('POST', 'save', { file, data, create })
+// `data` is the image in base64; resolves to { file }, the path it was actually saved at
+export const uploadImage = (file, data) => call('POST', 'upload', { file, data })
 export const makeDir = (dir) => call('POST', 'mkdir', { dir })
 export const rename = (from, to) => call('POST', 'rename', { from, to })
 export const trash = (path) => call('POST', 'delete', { path })

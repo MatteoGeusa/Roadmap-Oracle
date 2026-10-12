@@ -101,6 +101,13 @@ La pagina ha tre colonne:
 
 Rinominare o spostare un documento aggiorna i nodi che lo collegano; eliminarlo li scollega.
 
+**Immagini**: nell'editor markdown usa il pulsante 🖼, oppure incolla un'immagine (`Ctrl+V`,
+comodo per gli screenshot) o trascinala sul testo. Il file viene salvato subito nella cartella
+del documento, con un nome senza spazi né accenti (se il nome è già preso diventa `nome-2.png`),
+e nel testo compare `![nome](nome.png)` dove si trova il cursore. Formati: `.png`, `.jpg`,
+`.gif`, `.webp`, `.svg`, fino a 10 MB. Se sposti il documento in un'altra cartella, sposta
+anche le sue immagini.
+
 ## File dei contenuti
 
 - `home/*.roadmap.json`: una roadmap. Quella direttamente in `home/` è mostrata nella home;
@@ -111,7 +118,8 @@ Rinominare o spostare un documento aggiorna i nodi che lo collegano; eliminarlo 
   documenti funzionano.
 - Immagini e altri file (`.png`, `.svg`, `.pdf`...) si possono mettere ovunque in `home/` e
   richiamare da un documento con un percorso relativo, ad esempio `![schema](schema.png)`.
-  Vanno aggiunti con git: la pagina admin gestisce solo i documenti.
+  Le immagini si caricano dall'editor (vedi sopra); gli altri file vanno aggiunti con git.
+  In entrambi i casi finiscono nel commit con `git add home`.
 
 ## Altri comandi
 

@@ -208,6 +208,13 @@
   font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.85rem; line-height: 1.55;
 }
 .rm-editor textarea.md-source:focus { outline: none; }
+/* Outcome of an image upload, between the toolbar and the text */
+.md-status {
+  display: flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0.6rem;
+  font-size: 0.8rem; color: var(--muted); border-bottom: 1px solid var(--border); overflow-wrap: anywhere;
+}
+.md-status-error { color: var(--rm-important); }
+.rm-editor .md-status button { margin-left: auto; padding: 0 0.4rem; border-color: transparent; background: none; }
 .md-preview { flex: 1; overflow-y: auto; padding: 0.75rem 1rem; }
 .md-preview .markdown-body { background: transparent; font-size: 0.9rem; }
 .ed-back { font-size: 0.85rem; white-space: nowrap; }

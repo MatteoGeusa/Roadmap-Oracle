@@ -6,6 +6,8 @@
 //   POST /__admin/save   { file, content }   -> write a .md page
 //   POST /__admin/save   { file, data }      -> write a .roadmap.json
 //        add "create": true to refuse overwriting an existing file
+//   POST /__admin/upload { file, data }      -> write an image (data in base64); if the name is
+//                                               taken, saves as name-2.png... and returns { file }
 //   POST /__admin/mkdir  { dir }
 //   POST /__admin/rename { from, to }        -> also rewrites roadmap links to moved pages
 //   POST /__admin/delete { path }            -> moves it to .trash/<timestamp>/, never erases,
@@ -14,6 +16,8 @@ import fs from 'node:fs'
 import path from 'node:path'
 
 const ROADMAP_EXT = '.roadmap.json'
+const IMAGE_EXT = ['.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg']
+const MAX_IMAGE_MB = 10
 
 // One path segment: no separators, no reserved characters, not hidden, not . or ..
 // Folders under OneDrive or watched by Vite often refuse a plain rename on Windows (EPERM):
@@ -126,6 +130,22 @@ export function adminApi({ homeDir, trashDir }) {
       fs.mkdirSync(path.dirname(abs), { recursive: true })
       fs.writeFileSync(abs, isRoadmap ? JSON.stringify(data, null, 2) + '\n' : content)
       return { ok: true }
+    },
+
+    'POST /upload': ({ file, data }) => {
+      let abs = resolve(file)
+      if (!IMAGE_EXT.includes(path.extname(abs).toLowerCase())) {
+        throw new Error(`si possono caricare solo immagini (${IMAGE_EXT.join(' ')})`)
+      }
+      const bytes = Buffer.from(String(data ?? ''), 'base64')
+      if (!bytes.length) throw new Error('immagine vuota')
+      if (bytes.length > MAX_IMAGE_MB * 1024 * 1024) throw new Error(`immagine troppo grande (massimo ${MAX_IMAGE_MB} MB)`)
+      // Never overwrite: another page may already show the image with this name
+      const { dir, name, ext } = path.parse(abs)
+      for (let i = 2; fs.existsSync(abs); i++) abs = path.join(dir, `${name}-${i}${ext}`)
+      fs.mkdirSync(dir, { recursive: true })
+      fs.writeFileSync(abs, bytes)
+      return { ok: true, file: rel(abs) }
     },
 
     'POST /mkdir': ({ dir }) => {
