@@ -5,3 +5,13 @@ Il comando `ALTER SYSTEM REGISTER`.
 ## A cosa serve?
 
 Chiede a LREG di registrarsi subito sul listener. Non avvia LREG, che parte già con l'istanza.
+
+## Codice
+
+```sql
+ALTER SYSTEM REGISTER;
+```
+
+```bash
+lsnrctl services    # il servizio ora compare
+```

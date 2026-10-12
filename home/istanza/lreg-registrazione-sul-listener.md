@@ -5,3 +5,14 @@ Il processo in background Listener Registration: parte con l'istanza, già in NO
 ## A cosa serve?
 
 Fa la registrazione dinamica: legge `local_listener` (e `remote_listener`), si collega al listener come un client e gli annuncia istanza, servizi, stato e carico, aggiornandolo a ogni cambiamento.
+
+## Codice
+
+```bash
+ps -ef | grep ora_lreg    # il processo LREG dell'istanza
+```
+
+```sql
+SHOW PARAMETER local_listener
+ALTER SYSTEM REGISTER;    -- chiede a LREG di registrarsi subito
+```

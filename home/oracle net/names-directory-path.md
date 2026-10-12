@@ -5,3 +5,10 @@ Un parametro del `sqlnet.ora`, es. `NAMES.DIRECTORY_PATH = (TNSNAMES, EZCONNECT)
 ## A cosa serve?
 
 Stabilisce quali metodi di risoluzione dei nomi usa il client.
+
+## Codice
+
+```text
+# sqlnet.ora: i metodi vengono provati nell'ordine scritto
+NAMES.DIRECTORY_PATH = (TNSNAMES, EZCONNECT)
+```

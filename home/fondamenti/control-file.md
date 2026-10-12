@@ -5,3 +5,10 @@ Uno dei tre tipi di file fisici del database (`.ctl`): contiene metadati di vers
 ## A cosa serve?
 
 Nella fase MOUNT l'istanza lo legge per sapere dove si trovano data file e redo log file. All'OPEN, Oracle confronta gli SCN registrati nel control file con quelli dei data file per capire se serve un recovery.
+
+## Codice
+
+```sql
+SELECT name FROM v$controlfile;    -- dove sono le copie
+SHOW PARAMETER control_files       -- dove l'istanza le cerca
+```

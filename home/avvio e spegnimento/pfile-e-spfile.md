@@ -5,3 +5,14 @@ I due formati del parameter file: il **PFILE** è un semplice file di testo che 
 ## A cosa serve?
 
 Con lo SPFILE le modifiche si rendono persistenti con `ALTER SYSTEM SET … SCOPE=…`. Con un PFILE l'unico modo è editarlo a mano.
+
+## Codice
+
+```sql
+-- da SPFILE a PFILE (per leggerlo o modificarlo a mano) e ritorno
+CREATE PFILE FROM SPFILE;
+CREATE SPFILE FROM PFILE;
+
+-- con un percorso esplicito
+CREATE PFILE = '/tmp/initORATEST.ora' FROM SPFILE;
+```
