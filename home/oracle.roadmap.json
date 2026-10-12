@@ -15,7 +15,7 @@
       "label": "Proprietà ACID",
       "x": 190,
       "y": 70,
-      "page": "ACID.md"
+      "page": "istanza e database/ACID.md"
     }
   ],
   "edges": [
