@@ -9,10 +9,11 @@ import { PRIORITIES, STATUSES, edgeStyle, isTrackable, toFlow } from './model.js
 import { useProgress } from './progress.js'
 import { useResizable } from '../useResizable.js'
 
-// `focus` ({ page, seq }) asks to show a markdown page from outside (the sidebar): it opens
-// beside the roadmap, which centers on the node linked to that page if there is one.
-// `onPageChange` reports the page currently open in the panel, or null.
-export default function RoadmapView({ file, doc, focus, onPageChange }) {
+// `focus` asks from outside (the index, the address bar) to show a node or a page:
+// { id, seq } centers on that node and opens it if it can be opened; { page, seq } opens
+// a markdown page beside the roadmap, centering on the node linked to it if there is one.
+// `onOpenChange(id, page)` reports the node and the page open in the panel, or nulls.
+export default function RoadmapView({ file, doc, focus, onOpenChange }) {
   const [progress, setStatus, resetProgress] = useProgress(file)
   // What the side panel shows: { id } for a node, { page } for a page no node links to
   const [panelItem, setPanelItem] = useState(null)
@@ -47,9 +48,20 @@ export default function RoadmapView({ file, doc, focus, onPageChange }) {
     [flow],
   )
 
+  const openNode = useCallback(
+    (id, seq = Date.now()) => {
+      const node = flow.nodes.find((n) => n.id === id)
+      if (!node) return
+      if (isTrackable(node.data.kind) || node.data.page) setPanelItem({ id })
+      setCenterOn({ id, seq })
+    },
+    [flow],
+  )
+
   useEffect(() => {
-    if (focus) openDocument(focus.page, focus.seq)
-  }, [focus, openDocument])
+    if (focus?.id) openNode(focus.id, focus.seq)
+    else if (focus?.page) openDocument(focus.page, focus.seq)
+  }, [focus, openNode, openDocument])
 
   const nodes = useMemo(
     () =>
@@ -86,8 +98,8 @@ export default function RoadmapView({ file, doc, focus, onPageChange }) {
   const openPage = open ? open.data.page || null : panelItem?.page ?? null
 
   useEffect(() => {
-    onPageChange?.(openPage)
-  }, [openPage, onPageChange])
+    onOpenChange?.(open ? open.id : null, openPage)
+  }, [open, openPage, onOpenChange])
 
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && setPanelItem(null)

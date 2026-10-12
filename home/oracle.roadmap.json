@@ -6,25 +6,5644 @@
       "id": "title",
       "kind": "title",
       "label": "Oracle Database",
-      "x": 370,
-      "y": -30
+      "x": -30,
+      "y": -120
     },
     {
-      "id": "nmv54kqnl0zqz",
+      "id": "tabelle-e-indici",
+      "kind": "subtopic",
+      "label": "Tabelle e indici",
+      "x": -900,
+      "y": 0
+    },
+    {
+      "id": "data-file",
+      "kind": "subtopic",
+      "label": "Data file",
+      "x": -620,
+      "y": 0
+    },
+    {
+      "id": "redo-record-ddl-e-dml",
+      "kind": "subtopic",
+      "label": "Redo record (DDL e DML)",
+      "x": -900,
+      "y": 50
+    },
+    {
+      "id": "redo-log-file",
+      "kind": "subtopic",
+      "label": "Redo log file",
+      "x": -620,
+      "y": 50
+    },
+    {
+      "id": "path-di-tutti-gli-altri-file",
+      "kind": "subtopic",
+      "label": "Path di tutti gli altri file",
+      "x": -900,
+      "y": 100
+    },
+    {
+      "id": "multiplexing-su-piu-path",
+      "kind": "subtopic",
+      "label": "Multiplexing su più path",
+      "x": -900,
+      "y": 150
+    },
+    {
+      "id": "control-file",
+      "kind": "subtopic",
+      "label": "Control file",
+      "x": -620,
+      "y": 125
+    },
+    {
+      "id": "database-fisico",
+      "kind": "topic",
+      "label": "Database fisico",
+      "x": -330,
+      "y": 63,
+      "priority": "important"
+    },
+    {
+      "id": "memoria-processi-si-avvia-non-si-install",
+      "kind": "subtopic",
+      "label": "Memoria + processi: si avvia, non si installa",
+      "x": 620,
+      "y": 0
+    },
+    {
+      "id": "standalone-1-istanza-1-database",
+      "kind": "subtopic",
+      "label": "Standalone: 1 istanza, 1 database",
+      "x": 900,
+      "y": 70
+    },
+    {
+      "id": "rac-n-istanze-1-database",
+      "kind": "subtopic",
+      "label": "RAC: N istanze, 1 database",
+      "x": 900,
+      "y": 138
+    },
+    {
+      "id": "rapporto-istanza-database",
+      "kind": "subtopic",
+      "label": "Rapporto istanza-database",
+      "x": 620,
+      "y": 113
+    },
+    {
+      "id": "istanza",
+      "kind": "topic",
+      "label": "Istanza",
+      "x": 320,
+      "y": 90,
+      "priority": "important"
+    },
+    {
+      "id": "sqlplus",
+      "kind": "subtopic",
+      "label": "sqlplus",
+      "x": 680,
+      "y": 260
+    },
+    {
+      "id": "dbca",
+      "kind": "subtopic",
+      "label": "dbca",
+      "x": 680,
+      "y": 310
+    },
+    {
+      "id": "lsnrctl",
+      "kind": "subtopic",
+      "label": "lsnrctl",
+      "x": 680,
+      "y": 360
+    },
+    {
+      "id": "oracle-home",
+      "kind": "topic",
+      "label": "Oracle Home",
+      "x": 360,
+      "y": 310
+    },
+    {
+      "id": "fondamenti",
+      "kind": "title",
+      "label": "Fondamenti",
+      "x": 0,
+      "y": 206
+    },
+    {
+      "id": "disco-raw",
+      "kind": "subtopic",
+      "label": "Disco RAW",
+      "x": -620,
+      "y": 562
+    },
+    {
+      "id": "physical-volume",
+      "kind": "subtopic",
+      "label": "Physical Volume",
+      "x": -900,
+      "y": 612
+    },
+    {
+      "id": "volume-group",
+      "kind": "subtopic",
+      "label": "Volume Group",
+      "x": -900,
+      "y": 662
+    },
+    {
+      "id": "logical-volume",
+      "kind": "subtopic",
+      "label": "Logical Volume",
+      "x": -900,
+      "y": 712
+    },
+    {
+      "id": "lvm",
+      "kind": "subtopic",
+      "label": "LVM",
+      "x": -620,
+      "y": 662
+    },
+    {
+      "id": "formattazione-mkfs",
+      "kind": "subtopic",
+      "label": "Formattazione (mkfs)",
+      "x": -900,
+      "y": 762
+    },
+    {
+      "id": "mount-point",
+      "kind": "subtopic",
+      "label": "Mount point",
+      "x": -900,
+      "y": 812
+    },
+    {
+      "id": "spazio-libero-df",
+      "kind": "subtopic",
+      "label": "Spazio libero (df)",
+      "x": -900,
+      "y": 862
+    },
+    {
+      "id": "file-system",
+      "kind": "subtopic",
+      "label": "File system",
+      "x": -620,
+      "y": 812
+    },
+    {
+      "id": "datafile",
+      "kind": "subtopic",
+      "label": "Datafile",
+      "x": -620,
+      "y": 937,
+      "priority": "important"
+    },
+    {
+      "id": "piano-fisico",
+      "kind": "topic",
+      "label": "Piano fisico",
+      "x": -330,
+      "y": 749
+    },
+    {
+      "id": "uno-o-piu-datafile",
+      "kind": "subtopic",
+      "label": "Uno o più datafile",
+      "x": 900,
+      "y": 562
+    },
+    {
+      "id": "system-e-sysaux",
+      "kind": "subtopic",
+      "label": "SYSTEM e SYSAUX",
+      "x": 1180,
+      "y": 612
+    },
+    {
+      "id": "users",
+      "kind": "subtopic",
+      "label": "USERS",
+      "x": 1180,
+      "y": 662
+    },
+    {
+      "id": "temp",
+      "kind": "subtopic",
+      "label": "TEMP",
+      "x": 1180,
+      "y": 712
+    },
+    {
+      "id": "undotbs",
+      "kind": "subtopic",
+      "label": "UNDOTBS",
+      "x": 1180,
+      "y": 762
+    },
+    {
+      "id": "tablespace-di-sistema",
+      "kind": "subtopic",
+      "label": "Tablespace di sistema",
+      "x": 900,
+      "y": 687
+    },
+    {
+      "id": "tablespace",
+      "kind": "subtopic",
+      "label": "Tablespace",
+      "x": 620,
+      "y": 620,
+      "priority": "important"
+    },
+    {
+      "id": "tabelle",
+      "kind": "subtopic",
+      "label": "Tabelle",
+      "x": 900,
+      "y": 790
+    },
+    {
+      "id": "indici",
+      "kind": "subtopic",
+      "label": "Indici",
+      "x": 900,
+      "y": 840
+    },
+    {
+      "id": "allocazione-all-arrivo-dei-dati",
+      "kind": "subtopic",
+      "label": "Allocazione all'arrivo dei dati",
+      "x": 900,
+      "y": 890
+    },
+    {
+      "id": "segment",
+      "kind": "subtopic",
+      "label": "Segment",
+      "x": 620,
+      "y": 862
+    },
+    {
+      "id": "blocchi-contigui",
+      "kind": "subtopic",
+      "label": "Blocchi contigui",
+      "x": 900,
+      "y": 940
+    },
+    {
+      "id": "dimensione-automatica-o-manuale",
+      "kind": "subtopic",
+      "label": "Dimensione automatica o manuale",
+      "x": 900,
+      "y": 990
+    },
+    {
+      "id": "extent",
+      "kind": "subtopic",
+      "label": "Extent",
+      "x": 620,
+      "y": 987
+    },
+    {
+      "id": "dimensione-fissa-8-kb",
+      "kind": "subtopic",
+      "label": "Dimensione fissa (8 KB)",
+      "x": 900,
+      "y": 1080
+    },
+    {
+      "id": "righe-di-una-sola-tabella",
+      "kind": "subtopic",
+      "label": "Righe di una sola tabella",
+      "x": 900,
+      "y": 1130
+    },
+    {
+      "id": "blocco",
+      "kind": "subtopic",
+      "label": "Blocco",
+      "x": 620,
+      "y": 1090,
+      "priority": "important"
+    },
+    {
+      "id": "piano-logico",
+      "kind": "topic",
+      "label": "Piano logico",
+      "x": 330,
+      "y": 855,
+      "priority": "important"
+    },
+    {
+      "id": "struttura",
+      "kind": "subtopic",
+      "label": "Struttura",
+      "x": 850,
+      "y": 1190
+    },
+    {
+      "id": "pctfree",
+      "kind": "subtopic",
+      "label": "PCTFREE",
+      "x": 1110,
+      "y": 1210
+    },
+    {
+      "id": "pctused",
+      "kind": "subtopic",
+      "label": "PCTUSED",
+      "x": 1110,
+      "y": 1270
+    },
+    {
+      "id": "gestione-dello-spazio",
+      "kind": "subtopic",
+      "label": "Gestione dello spazio",
+      "x": 850,
+      "y": 1250
+    },
+    {
+      "id": "row-migration",
+      "kind": "subtopic",
+      "label": "Row migration",
+      "x": 1110,
+      "y": 1330
+    },
+    {
+      "id": "chained-row",
+      "kind": "subtopic",
+      "label": "Chained row",
+      "x": 1110,
+      "y": 1390,
+      "priority": "optional"
+    },
+    {
+      "id": "righe-fuori-posto",
+      "kind": "subtopic",
+      "label": "Righe fuori posto",
+      "x": 850,
+      "y": 1310
+    },
+    {
+      "id": "high-water-mark",
+      "kind": "subtopic",
+      "label": "High water mark",
+      "x": 850,
+      "y": 1370
+    },
+    {
+      "id": "organizzazione-del-blocco",
+      "kind": "topic",
+      "label": "Organizzazione del blocco",
+      "x": 590,
+      "y": 1220
+    },
+    {
+      "id": "storage",
+      "kind": "title",
+      "label": "Storage",
+      "x": 10,
+      "y": 980
+    },
+    {
+      "id": "buffer-clean-e-dirty",
+      "kind": "subtopic",
+      "label": "Buffer clean e dirty",
+      "x": -900,
+      "y": 1536
+    },
+    {
+      "id": "algoritmo-lru",
+      "kind": "subtopic",
+      "label": "Algoritmo LRU",
+      "x": -900,
+      "y": 1586
+    },
+    {
+      "id": "dimensione-blocco-del-database",
+      "kind": "subtopic",
+      "label": "Dimensione = blocco del database",
+      "x": -900,
+      "y": 1636
+    },
+    {
+      "id": "buffer-cache",
+      "kind": "subtopic",
+      "label": "Buffer cache",
+      "x": -620,
+      "y": 1586
+    },
+    {
+      "id": "parsing-e-piano-di-esecuzione",
+      "kind": "subtopic",
+      "label": "Parsing e piano di esecuzione",
+      "x": -1180,
+      "y": 1686
+    },
+    {
+      "id": "soft-parse",
+      "kind": "subtopic",
+      "label": "Soft parse",
+      "x": -1180,
+      "y": 1736
+    },
+    {
+      "id": "hard-parse",
+      "kind": "subtopic",
+      "label": "Hard parse",
+      "x": -1180,
+      "y": 1786
+    },
+    {
+      "id": "library-cache",
+      "kind": "subtopic",
+      "label": "Library cache",
+      "x": -900,
+      "y": 1736
+    },
+    {
+      "id": "data-dictionary-cache",
+      "kind": "subtopic",
+      "label": "Data dictionary cache",
+      "x": -900,
+      "y": 1836
+    },
+    {
+      "id": "shared-pool",
+      "kind": "subtopic",
+      "label": "Shared pool",
+      "x": -620,
+      "y": 1786
+    },
+    {
+      "id": "redo-log-buffer",
+      "kind": "subtopic",
+      "label": "Redo log buffer",
+      "x": -620,
+      "y": 1886
+    },
+    {
+      "id": "sga",
+      "kind": "topic",
+      "label": "SGA",
+      "x": -330,
+      "y": 1736,
+      "priority": "important"
+    },
+    {
+      "id": "order-by-e-group-by",
+      "kind": "subtopic",
+      "label": "ORDER BY e GROUP BY",
+      "x": 900,
+      "y": 1661
+    },
+    {
+      "id": "hash-join",
+      "kind": "subtopic",
+      "label": "Hash join",
+      "x": 900,
+      "y": 1711
+    },
+    {
+      "id": "sql-work-area",
+      "kind": "subtopic",
+      "label": "SQL work area",
+      "x": 620,
+      "y": 1686
+    },
+    {
+      "id": "variabili-e-credenziali",
+      "kind": "subtopic",
+      "label": "Variabili e credenziali",
+      "x": 900,
+      "y": 1761
+    },
+    {
+      "id": "cursori",
+      "kind": "subtopic",
+      "label": "Cursori",
+      "x": 900,
+      "y": 1811
+    },
+    {
+      "id": "memoria-di-sessione",
+      "kind": "subtopic",
+      "label": "Memoria di sessione",
+      "x": 620,
+      "y": 1786
+    },
+    {
+      "id": "spill-sul-tablespace-temp",
+      "kind": "subtopic",
+      "label": "Spill sul tablespace TEMP",
+      "x": 620,
+      "y": 1861
+    },
+    {
+      "id": "pga",
+      "kind": "topic",
+      "label": "PGA",
+      "x": 330,
+      "y": 1773,
+      "priority": "important"
+    },
+    {
+      "id": "dbwn-scrittura-differita",
+      "kind": "subtopic",
+      "label": "DBWn: scrittura differita",
+      "x": 900,
+      "y": 1935
+    },
+    {
+      "id": "lgwr-scrittura-al-commit",
+      "kind": "subtopic",
+      "label": "LGWR: scrittura al COMMIT",
+      "x": 900,
+      "y": 1985
+    },
+    {
+      "id": "scn-system-change-number",
+      "kind": "subtopic",
+      "label": "SCN (System Change Number)",
+      "x": 1180,
+      "y": 2035
+    },
+    {
+      "id": "ckpt",
+      "kind": "subtopic",
+      "label": "CKPT",
+      "x": 900,
+      "y": 2035
+    },
+    {
+      "id": "pmon-pulizia-sessioni",
+      "kind": "subtopic",
+      "label": "PMON: pulizia sessioni",
+      "x": 900,
+      "y": 2085
+    },
+    {
+      "id": "smon-recovery-dell-istanza",
+      "kind": "subtopic",
+      "label": "SMON: recovery dell'istanza",
+      "x": 900,
+      "y": 2135
+    },
+    {
+      "id": "lreg-registrazione-sul-listener",
+      "kind": "subtopic",
+      "label": "LREG: registrazione sul listener",
+      "x": 900,
+      "y": 2185
+    },
+    {
+      "id": "sempre-presenti",
+      "kind": "subtopic",
+      "label": "Sempre presenti",
+      "x": 620,
+      "y": 2060
+    },
+    {
+      "id": "modalita-archivelog",
+      "kind": "subtopic",
+      "label": "Modalità ARCHIVELOG",
+      "x": 1180,
+      "y": 2235
+    },
+    {
+      "id": "archived-redo-log",
+      "kind": "subtopic",
+      "label": "Archived redo log",
+      "x": 1180,
+      "y": 2285
+    },
+    {
+      "id": "arcn",
+      "kind": "subtopic",
+      "label": "ARCn",
+      "x": 900,
+      "y": 2260
+    },
+    {
+      "id": "opzionali",
+      "kind": "subtopic",
+      "label": "Opzionali",
+      "x": 620,
+      "y": 2260
+    },
+    {
+      "id": "processi-in-background",
+      "kind": "topic",
+      "label": "Processi in background",
+      "x": 340,
+      "y": 2090,
+      "priority": "important"
+    },
+    {
+      "id": "istanza-memoria-e-processi",
+      "kind": "title",
+      "label": "Istanza: memoria e processi",
+      "x": -90,
+      "y": 1910
+    },
+    {
+      "id": "insert-update-delete-select",
+      "kind": "subtopic",
+      "label": "INSERT, UPDATE, DELETE, SELECT",
+      "x": -900,
+      "y": 2420
+    },
+    {
+      "id": "dml",
+      "kind": "subtopic",
+      "label": "DML",
+      "x": -620,
+      "y": 2435
+    },
+    {
+      "id": "create-alter-drop-truncate",
+      "kind": "subtopic",
+      "label": "CREATE, ALTER, DROP, TRUNCATE",
+      "x": -910,
+      "y": 2500
+    },
+    {
+      "id": "ddl",
+      "kind": "subtopic",
+      "label": "DDL",
+      "x": -620,
+      "y": 2510
+    },
+    {
+      "id": "commit",
+      "kind": "subtopic",
+      "label": "COMMIT",
+      "x": -900,
+      "y": 2585
+    },
+    {
+      "id": "rollback",
+      "kind": "subtopic",
+      "label": "ROLLBACK",
+      "x": -900,
+      "y": 2635
+    },
+    {
+      "id": "savepoint",
+      "kind": "subtopic",
+      "label": "SAVEPOINT",
+      "x": -900,
+      "y": 2685
+    },
+    {
+      "id": "tcl",
+      "kind": "subtopic",
+      "label": "TCL",
+      "x": -620,
+      "y": 2635
+    },
+    {
+      "id": "linguaggi-sql",
+      "kind": "topic",
+      "label": "Linguaggi SQL",
+      "x": -330,
+      "y": 2535
+    },
+    {
+      "id": "parse-e-controllo-permessi",
+      "kind": "subtopic",
+      "label": "Parse e controllo permessi",
+      "x": 900,
+      "y": 2435
+    },
+    {
+      "id": "buffer-hit-buffer-miss",
+      "kind": "subtopic",
+      "label": "Buffer hit / buffer miss",
+      "x": 900,
+      "y": 2485
+    },
+    {
+      "id": "lock-sulla-riga",
+      "kind": "subtopic",
+      "label": "Lock sulla riga",
+      "x": 900,
+      "y": 2535
+    },
+    {
+      "id": "scrittura-dell-undo",
+      "kind": "subtopic",
+      "label": "Scrittura dell'UNDO",
+      "x": 900,
+      "y": 2585
+    },
+    {
+      "id": "redo-record-e-dirty-buffer",
+      "kind": "subtopic",
+      "label": "Redo record e dirty buffer",
+      "x": 900,
+      "y": 2635
+    },
+    {
+      "id": "prima-del-commit",
+      "kind": "subtopic",
+      "label": "Prima del COMMIT",
+      "x": 620,
+      "y": 2535
+    },
+    {
+      "id": "assegnazione-dell-scn",
+      "kind": "subtopic",
+      "label": "Assegnazione dell'SCN",
+      "x": 900,
+      "y": 2685
+    },
+    {
+      "id": "scrittura-sincrona-di-lgwr",
+      "kind": "subtopic",
+      "label": "Scrittura sincrona di LGWR",
+      "x": 900,
+      "y": 2735
+    },
+    {
+      "id": "rilascio-dei-lock",
+      "kind": "subtopic",
+      "label": "Rilascio dei lock",
+      "x": 900,
+      "y": 2785
+    },
+    {
+      "id": "scrittura-asincrona-di-dbwn",
+      "kind": "subtopic",
+      "label": "Scrittura asincrona di DBWn",
+      "x": 900,
+      "y": 2835
+    },
+    {
+      "id": "al-commit",
+      "kind": "subtopic",
+      "label": "Al COMMIT",
+      "x": 620,
+      "y": 2760
+    },
+    {
+      "id": "ciclo-di-una-transazione",
+      "kind": "topic",
+      "label": "Ciclo di una transazione",
+      "x": 330,
+      "y": 2647,
+      "priority": "important"
+    },
+    {
+      "id": "rollback-con-l-undo",
+      "kind": "subtopic",
+      "label": "Rollback con l'UNDO",
+      "x": -900,
+      "y": 2759
+    },
+    {
+      "id": "atomicita",
+      "kind": "subtopic",
+      "label": "Atomicità",
+      "x": -620,
+      "y": 2759
+    },
+    {
+      "id": "vincoli-di-integrita",
+      "kind": "subtopic",
+      "label": "Vincoli di integrità",
+      "x": -900,
+      "y": 2809
+    },
+    {
+      "id": "coerenza",
+      "kind": "subtopic",
+      "label": "Coerenza",
+      "x": -620,
+      "y": 2809
+    },
+    {
+      "id": "read-consistency",
+      "kind": "subtopic",
+      "label": "Read consistency",
+      "x": -900,
+      "y": 2859
+    },
+    {
+      "id": "isolamento",
+      "kind": "subtopic",
+      "label": "Isolamento",
+      "x": -620,
+      "y": 2859
+    },
+    {
+      "id": "redo-log-e-lgwr",
+      "kind": "subtopic",
+      "label": "Redo log e LGWR",
+      "x": -900,
+      "y": 2909
+    },
+    {
+      "id": "durabilita",
+      "kind": "subtopic",
+      "label": "Durabilità",
+      "x": -620,
+      "y": 2909
+    },
+    {
+      "id": "proprieta-acid",
       "kind": "topic",
       "label": "Proprietà ACID",
-      "x": 190,
-      "y": 70,
-      "page": "ACID.md"
+      "x": -330,
+      "y": 2834,
+      "priority": "important",
+      "page": "istanza e database/ACID.md"
+    },
+    {
+      "id": "solo-i-vecchi-valori-delle-colonne-modif",
+      "kind": "subtopic",
+      "label": "Solo i vecchi valori delle colonne modificate",
+      "x": 900,
+      "y": 2909
+    },
+    {
+      "id": "undo-record",
+      "kind": "subtopic",
+      "label": "Undo record",
+      "x": 620,
+      "y": 2909
+    },
+    {
+      "id": "copia-del-buffer-corrente",
+      "kind": "subtopic",
+      "label": "Copia del buffer corrente",
+      "x": 900,
+      "y": 2959
+    },
+    {
+      "id": "undo-applicato-fino-all-scn",
+      "kind": "subtopic",
+      "label": "Undo applicato fino all'SCN",
+      "x": 900,
+      "y": 3009
+    },
+    {
+      "id": "consistent-read-cr-clone",
+      "kind": "subtopic",
+      "label": "Consistent read (CR) clone",
+      "x": 620,
+      "y": 2984
+    },
+    {
+      "id": "read-committed",
+      "kind": "subtopic",
+      "label": "READ COMMITTED",
+      "x": 900,
+      "y": 3059
+    },
+    {
+      "id": "serializable",
+      "kind": "subtopic",
+      "label": "SERIALIZABLE",
+      "x": 900,
+      "y": 3109
+    },
+    {
+      "id": "isolation-level",
+      "kind": "subtopic",
+      "label": "Isolation level",
+      "x": 620,
+      "y": 3084
+    },
+    {
+      "id": "undo-retention",
+      "kind": "subtopic",
+      "label": "UNDO_RETENTION",
+      "x": 1180,
+      "y": 3159
+    },
+    {
+      "id": "retention-guarantee",
+      "kind": "subtopic",
+      "label": "RETENTION GUARANTEE",
+      "x": 1180,
+      "y": 3209
+    },
+    {
+      "id": "ora-01555",
+      "kind": "subtopic",
+      "label": "ORA-01555",
+      "x": 900,
+      "y": 3184
+    },
+    {
+      "id": "ora-30036-undo-pieno",
+      "kind": "subtopic",
+      "label": "ORA-30036: undo pieno",
+      "x": 900,
+      "y": 3259
+    },
+    {
+      "id": "errori",
+      "kind": "subtopic",
+      "label": "Errori",
+      "x": 620,
+      "y": 3221
+    },
+    {
+      "id": "undo-e-read-consistency",
+      "kind": "topic",
+      "label": "UNDO e read consistency",
+      "x": 330,
+      "y": 3065,
+      "priority": "important"
+    },
+    {
+      "id": "a-un-timestamp",
+      "kind": "subtopic",
+      "label": "A un timestamp",
+      "x": -900,
+      "y": 3040
+    },
+    {
+      "id": "a-un-scn",
+      "kind": "subtopic",
+      "label": "A un SCN",
+      "x": -900,
+      "y": 3090
+    },
+    {
+      "id": "flashback-table",
+      "kind": "subtopic",
+      "label": "FLASHBACK TABLE",
+      "x": -620,
+      "y": 3065
+    },
+    {
+      "id": "cestino-recycle-bin",
+      "kind": "subtopic",
+      "label": "Cestino (recycle bin)",
+      "x": -900,
+      "y": 3140
+    },
+    {
+      "id": "flashback-to-before-drop",
+      "kind": "subtopic",
+      "label": "FLASHBACK TO BEFORE DROP",
+      "x": -620,
+      "y": 3140
+    },
+    {
+      "id": "flashback",
+      "kind": "topic",
+      "label": "Flashback",
+      "x": -330,
+      "y": 3102
+    },
+    {
+      "id": "transazioni",
+      "kind": "title",
+      "label": "Transazioni",
+      "x": 0,
+      "y": 2847
+    },
+    {
+      "id": "pfile-e-spfile",
+      "kind": "subtopic",
+      "label": "PFILE e SPFILE",
+      "x": -620,
+      "y": 3409
+    },
+    {
+      "id": "statici",
+      "kind": "subtopic",
+      "label": "Statici",
+      "x": -900,
+      "y": 3459
+    },
+    {
+      "id": "dinamici",
+      "kind": "subtopic",
+      "label": "Dinamici",
+      "x": -900,
+      "y": 3509
+    },
+    {
+      "id": "v-parameter",
+      "kind": "subtopic",
+      "label": "v$parameter",
+      "x": -900,
+      "y": 3559
+    },
+    {
+      "id": "parametri",
+      "kind": "subtopic",
+      "label": "Parametri",
+      "x": -620,
+      "y": 3509
+    },
+    {
+      "id": "memory",
+      "kind": "subtopic",
+      "label": "MEMORY",
+      "x": -900,
+      "y": 3609
+    },
+    {
+      "id": "spfile",
+      "kind": "subtopic",
+      "label": "SPFILE",
+      "x": -900,
+      "y": 3659
+    },
+    {
+      "id": "both",
+      "kind": "subtopic",
+      "label": "BOTH",
+      "x": -900,
+      "y": 3709
+    },
+    {
+      "id": "alter-system-scope",
+      "kind": "subtopic",
+      "label": "ALTER SYSTEM … SCOPE",
+      "x": -620,
+      "y": 3659
+    },
+    {
+      "id": "parameter-file",
+      "kind": "topic",
+      "label": "Parameter file",
+      "x": -330,
+      "y": 3534,
+      "priority": "important"
+    },
+    {
+      "id": "lettura-del-parameter-file",
+      "kind": "subtopic",
+      "label": "Lettura del parameter file",
+      "x": 900,
+      "y": 3409
+    },
+    {
+      "id": "allocazione-sga-e-processi",
+      "kind": "subtopic",
+      "label": "Allocazione SGA e processi",
+      "x": 900,
+      "y": 3459
+    },
+    {
+      "id": "db-name",
+      "kind": "subtopic",
+      "label": "DB_NAME",
+      "x": 900,
+      "y": 3509
+    },
+    {
+      "id": "nomount",
+      "kind": "subtopic",
+      "label": "NOMOUNT",
+      "x": 620,
+      "y": 3459
+    },
+    {
+      "id": "apertura-del-control-file",
+      "kind": "subtopic",
+      "label": "Apertura del control file",
+      "x": 900,
+      "y": 3559
+    },
+    {
+      "id": "parametro-control-files",
+      "kind": "subtopic",
+      "label": "Parametro CONTROL_FILES",
+      "x": 900,
+      "y": 3609
+    },
+    {
+      "id": "mount",
+      "kind": "subtopic",
+      "label": "MOUNT",
+      "x": 620,
+      "y": 3584
+    },
+    {
+      "id": "data-file-e-redo-log",
+      "kind": "subtopic",
+      "label": "Data file e redo log",
+      "x": 900,
+      "y": 3659
+    },
+    {
+      "id": "controllo-degli-scn",
+      "kind": "subtopic",
+      "label": "Controllo degli SCN",
+      "x": 900,
+      "y": 3709
+    },
+    {
+      "id": "open",
+      "kind": "subtopic",
+      "label": "OPEN",
+      "x": 620,
+      "y": 3684
+    },
+    {
+      "id": "startup",
+      "kind": "topic",
+      "label": "STARTUP",
+      "x": 330,
+      "y": 3571,
+      "priority": "important"
+    },
+    {
+      "id": "normal",
+      "kind": "subtopic",
+      "label": "NORMAL",
+      "x": -620,
+      "y": 3783
+    },
+    {
+      "id": "transactional",
+      "kind": "subtopic",
+      "label": "TRANSACTIONAL",
+      "x": -620,
+      "y": 3833
+    },
+    {
+      "id": "checkpoint",
+      "kind": "subtopic",
+      "label": "Checkpoint",
+      "x": -900,
+      "y": 3883
+    },
+    {
+      "id": "rollback-delle-transazioni-aperte",
+      "kind": "subtopic",
+      "label": "Rollback delle transazioni aperte",
+      "x": -900,
+      "y": 3933
+    },
+    {
+      "id": "immediate",
+      "kind": "subtopic",
+      "label": "IMMEDIATE",
+      "x": -620,
+      "y": 3908
+    },
+    {
+      "id": "recovery-al-riavvio",
+      "kind": "subtopic",
+      "label": "Recovery al riavvio",
+      "x": -900,
+      "y": 3983
+    },
+    {
+      "id": "abort",
+      "kind": "subtopic",
+      "label": "ABORT",
+      "x": -620,
+      "y": 3983
+    },
+    {
+      "id": "shutdown",
+      "kind": "topic",
+      "label": "SHUTDOWN",
+      "x": -330,
+      "y": 3883,
+      "priority": "important"
+    },
+    {
+      "id": "roll-forward-con-il-redo",
+      "kind": "subtopic",
+      "label": "Roll forward con il redo",
+      "x": 620,
+      "y": 3883
+    },
+    {
+      "id": "roll-backward-con-l-undo",
+      "kind": "subtopic",
+      "label": "Roll backward con l'undo",
+      "x": 620,
+      "y": 3933
+    },
+    {
+      "id": "crash-recovery-smon",
+      "kind": "topic",
+      "label": "Crash recovery (SMON)",
+      "x": 330,
+      "y": 3908
+    },
+    {
+      "id": "path-del-file",
+      "kind": "subtopic",
+      "label": "Path del file",
+      "x": 620,
+      "y": 4007
+    },
+    {
+      "id": "lettura-di-uno-startup",
+      "kind": "subtopic",
+      "label": "Lettura di uno STARTUP",
+      "x": 620,
+      "y": 4057
+    },
+    {
+      "id": "lettura-di-uno-shutdown-immediate",
+      "kind": "subtopic",
+      "label": "Lettura di uno SHUTDOWN IMMEDIATE",
+      "x": 620,
+      "y": 4107
+    },
+    {
+      "id": "lettura-di-uno-shutdown-abort",
+      "kind": "subtopic",
+      "label": "Lettura di uno SHUTDOWN ABORT",
+      "x": 620,
+      "y": 4157
+    },
+    {
+      "id": "alert-log",
+      "kind": "topic",
+      "label": "Alert log",
+      "x": 330,
+      "y": 4082,
+      "priority": "optional"
+    },
+    {
+      "id": "variabili-oracle-sid-e-oracle-home",
+      "kind": "subtopic",
+      "label": "Variabili ORACLE_SID e ORACLE_HOME",
+      "x": -900,
+      "y": 4057
+    },
+    {
+      "id": "password-file-orapwd",
+      "kind": "subtopic",
+      "label": "Password file (orapwd)",
+      "x": -900,
+      "y": 4107
+    },
+    {
+      "id": "pfile-minimo",
+      "kind": "subtopic",
+      "label": "PFILE minimo",
+      "x": -900,
+      "y": 4157
+    },
+    {
+      "id": "preparazione",
+      "kind": "subtopic",
+      "label": "Preparazione",
+      "x": -620,
+      "y": 4107
+    },
+    {
+      "id": "startup-nomount-e-create-database",
+      "kind": "subtopic",
+      "label": "STARTUP NOMOUNT e CREATE DATABASE",
+      "x": -620,
+      "y": 4207
+    },
+    {
+      "id": "catalog-sql",
+      "kind": "subtopic",
+      "label": "catalog.sql",
+      "x": -900,
+      "y": 4257
+    },
+    {
+      "id": "catproc-sql",
+      "kind": "subtopic",
+      "label": "catproc.sql",
+      "x": -900,
+      "y": 4307
+    },
+    {
+      "id": "script-del-dizionario",
+      "kind": "subtopic",
+      "label": "Script del dizionario",
+      "x": -620,
+      "y": 4282
+    },
+    {
+      "id": "dbca-tutto-in-automatico",
+      "kind": "subtopic",
+      "label": "DBCA: tutto in automatico",
+      "x": -620,
+      "y": 4357
+    },
+    {
+      "id": "creazione-manuale-del-database",
+      "kind": "topic",
+      "label": "Creazione manuale del database",
+      "x": -330,
+      "y": 4232
+    },
+    {
+      "id": "avvio-e-spegnimento",
+      "kind": "title",
+      "label": "Avvio e spegnimento",
+      "x": 0,
+      "y": 3883
+    },
+    {
+      "id": "as-sysdba",
+      "kind": "subtopic",
+      "label": "/ as sysdba",
+      "x": -900,
+      "y": 4507
+    },
+    {
+      "id": "nolog",
+      "kind": "subtopic",
+      "label": "/NOLOG",
+      "x": -900,
+      "y": 4557
+    },
+    {
+      "id": "sql-plus",
+      "kind": "subtopic",
+      "label": "SQL*Plus",
+      "x": -620,
+      "y": 4532
+    },
+    {
+      "id": "connessione",
+      "kind": "topic",
+      "label": "Connessione",
+      "x": -330,
+      "y": 4532
+    },
+    {
+      "id": "privilegio-sysdba",
+      "kind": "subtopic",
+      "label": "Privilegio SYSDBA",
+      "x": 900,
+      "y": 4507
+    },
+    {
+      "id": "proprietario-del-dizionario",
+      "kind": "subtopic",
+      "label": "Proprietario del dizionario",
+      "x": 900,
+      "y": 4557
+    },
+    {
+      "id": "sys",
+      "kind": "subtopic",
+      "label": "SYS",
+      "x": 620,
+      "y": 4532
+    },
+    {
+      "id": "ruolo-dba",
+      "kind": "subtopic",
+      "label": "Ruolo DBA",
+      "x": 900,
+      "y": 4607
+    },
+    {
+      "id": "amministrazione-quotidiana",
+      "kind": "subtopic",
+      "label": "Amministrazione quotidiana",
+      "x": 900,
+      "y": 4657
+    },
+    {
+      "id": "system",
+      "kind": "subtopic",
+      "label": "SYSTEM",
+      "x": 620,
+      "y": 4632
+    },
+    {
+      "id": "utenti-amministrativi",
+      "kind": "topic",
+      "label": "Utenti amministrativi",
+      "x": 330,
+      "y": 4582,
+      "priority": "important"
+    },
+    {
+      "id": "create-user",
+      "kind": "subtopic",
+      "label": "CREATE USER",
+      "x": -620,
+      "y": 4631
+    },
+    {
+      "id": "schema-gli-oggetti-dell-utente",
+      "kind": "subtopic",
+      "label": "Schema: gli oggetti dell'utente",
+      "x": -620,
+      "y": 4681
+    },
+    {
+      "id": "profili",
+      "kind": "subtopic",
+      "label": "Profili",
+      "x": -620,
+      "y": 4731
+    },
+    {
+      "id": "lock-dell-utente",
+      "kind": "subtopic",
+      "label": "Lock dell'utente",
+      "x": -620,
+      "y": 4781
+    },
+    {
+      "id": "quota",
+      "kind": "subtopic",
+      "label": "Quota",
+      "x": -900,
+      "y": 4831
+    },
+    {
+      "id": "tablespace-di-default",
+      "kind": "subtopic",
+      "label": "Tablespace di default",
+      "x": -900,
+      "y": 4881
+    },
+    {
+      "id": "tablespace-temp-di-default",
+      "kind": "subtopic",
+      "label": "Tablespace TEMP di default",
+      "x": -900,
+      "y": 4931
+    },
+    {
+      "id": "spazio",
+      "kind": "subtopic",
+      "label": "Spazio",
+      "x": -620,
+      "y": 4881
+    },
+    {
+      "id": "utenti-e-schemi",
+      "kind": "topic",
+      "label": "Utenti e schemi",
+      "x": -330,
+      "y": 4756,
+      "priority": "important"
+    },
+    {
+      "id": "create-session-create-table",
+      "kind": "subtopic",
+      "label": "CREATE SESSION, CREATE TABLE…",
+      "x": 900,
+      "y": 4731
+    },
+    {
+      "id": "with-admin-option",
+      "kind": "subtopic",
+      "label": "WITH ADMIN OPTION",
+      "x": 900,
+      "y": 4781
+    },
+    {
+      "id": "di-sistema",
+      "kind": "subtopic",
+      "label": "Di sistema",
+      "x": 620,
+      "y": 4756
+    },
+    {
+      "id": "select-insert-on-oggetto",
+      "kind": "subtopic",
+      "label": "SELECT, INSERT… ON oggetto",
+      "x": 900,
+      "y": 4831
+    },
+    {
+      "id": "with-grant-option",
+      "kind": "subtopic",
+      "label": "WITH GRANT OPTION",
+      "x": 900,
+      "y": 4881
+    },
+    {
+      "id": "di-oggetto",
+      "kind": "subtopic",
+      "label": "Di oggetto",
+      "x": 620,
+      "y": 4856
+    },
+    {
+      "id": "utente",
+      "kind": "subtopic",
+      "label": "Utente",
+      "x": 900,
+      "y": 4931
+    },
+    {
+      "id": "ruolo",
+      "kind": "subtopic",
+      "label": "Ruolo",
+      "x": 900,
+      "y": 4981
+    },
+    {
+      "id": "public",
+      "kind": "subtopic",
+      "label": "PUBLIC",
+      "x": 900,
+      "y": 5031
+    },
+    {
+      "id": "grantor-e-grantee",
+      "kind": "subtopic",
+      "label": "Grantor e grantee",
+      "x": 620,
+      "y": 4981
+    },
+    {
+      "id": "a-cascata-grant-option",
+      "kind": "subtopic",
+      "label": "A cascata (GRANT OPTION)",
+      "x": 900,
+      "y": 5081
+    },
+    {
+      "id": "non-a-cascata-admin-option",
+      "kind": "subtopic",
+      "label": "Non a cascata (ADMIN OPTION)",
+      "x": 900,
+      "y": 5131
+    },
+    {
+      "id": "revoke",
+      "kind": "subtopic",
+      "label": "REVOKE",
+      "x": 620,
+      "y": 5106
+    },
+    {
+      "id": "privilegi",
+      "kind": "topic",
+      "label": "Privilegi",
+      "x": 330,
+      "y": 4931,
+      "priority": "important"
+    },
+    {
+      "id": "create-role-e-grant-del-ruolo",
+      "kind": "subtopic",
+      "label": "CREATE ROLE e GRANT del ruolo",
+      "x": -620,
+      "y": 5005
+    },
+    {
+      "id": "connect",
+      "kind": "subtopic",
+      "label": "CONNECT",
+      "x": -900,
+      "y": 5055
+    },
+    {
+      "id": "resource",
+      "kind": "subtopic",
+      "label": "RESOURCE",
+      "x": -900,
+      "y": 5105
+    },
+    {
+      "id": "dba",
+      "kind": "subtopic",
+      "label": "DBA",
+      "x": -900,
+      "y": 5155
+    },
+    {
+      "id": "ruoli-predefiniti",
+      "kind": "subtopic",
+      "label": "Ruoli predefiniti",
+      "x": -620,
+      "y": 5105
+    },
+    {
+      "id": "set-role-e-ruoli-di-default",
+      "kind": "subtopic",
+      "label": "SET ROLE e ruoli di default",
+      "x": -620,
+      "y": 5205
+    },
+    {
+      "id": "ruoli-e-pl-sql-definer-s-rights",
+      "kind": "subtopic",
+      "label": "Ruoli e PL/SQL (definer's rights)",
+      "x": -620,
+      "y": 5255
+    },
+    {
+      "id": "ruoli",
+      "kind": "topic",
+      "label": "Ruoli",
+      "x": -330,
+      "y": 5130
+    },
+    {
+      "id": "tabelle-base-tab-col-user",
+      "kind": "subtopic",
+      "label": "Tabelle base (TAB$, COL$, USER$)",
+      "x": 620,
+      "y": 5205
+    },
+    {
+      "id": "dict-e-cat",
+      "kind": "subtopic",
+      "label": "DICT e CAT",
+      "x": 620,
+      "y": 5255
+    },
+    {
+      "id": "user",
+      "kind": "subtopic",
+      "label": "USER_",
+      "x": 900,
+      "y": 5305
+    },
+    {
+      "id": "all",
+      "kind": "subtopic",
+      "label": "ALL_",
+      "x": 900,
+      "y": 5355
+    },
+    {
+      "id": "dba-2",
+      "kind": "subtopic",
+      "label": "DBA_",
+      "x": 900,
+      "y": 5405
+    },
+    {
+      "id": "cdb",
+      "kind": "subtopic",
+      "label": "CDB_",
+      "x": 900,
+      "y": 5455
+    },
+    {
+      "id": "viste-statiche",
+      "kind": "subtopic",
+      "label": "Viste statiche",
+      "x": 620,
+      "y": 5380
+    },
+    {
+      "id": "v",
+      "kind": "subtopic",
+      "label": "V$",
+      "x": 900,
+      "y": 5505
+    },
+    {
+      "id": "gv",
+      "kind": "subtopic",
+      "label": "GV$",
+      "x": 900,
+      "y": 5555
+    },
+    {
+      "id": "viste-dinamiche",
+      "kind": "subtopic",
+      "label": "Viste dinamiche",
+      "x": 620,
+      "y": 5530
+    },
+    {
+      "id": "dizionario-dati",
+      "kind": "topic",
+      "label": "Dizionario dati",
+      "x": 330,
+      "y": 5367,
+      "priority": "important"
+    },
+    {
+      "id": "accesso-e-sicurezza",
+      "kind": "title",
+      "label": "Accesso e sicurezza",
+      "x": 0,
+      "y": 5031
+    },
+    {
+      "id": "indirizzi-di-ascolto",
+      "kind": "subtopic",
+      "label": "Indirizzi di ascolto",
+      "x": -900,
+      "y": 5705
+    },
+    {
+      "id": "servizi-statici",
+      "kind": "subtopic",
+      "label": "Servizi statici",
+      "x": -900,
+      "y": 5755
+    },
+    {
+      "id": "parametri-di-controllo",
+      "kind": "subtopic",
+      "label": "Parametri di controllo",
+      "x": -900,
+      "y": 5805
+    },
+    {
+      "id": "listener-ora",
+      "kind": "subtopic",
+      "label": "listener.ora",
+      "x": -620,
+      "y": 5755
+    },
+    {
+      "id": "tnsnames-ora",
+      "kind": "subtopic",
+      "label": "tnsnames.ora",
+      "x": -620,
+      "y": 5855
+    },
+    {
+      "id": "names-directory-path",
+      "kind": "subtopic",
+      "label": "NAMES.DIRECTORY_PATH",
+      "x": -900,
+      "y": 5905
+    },
+    {
+      "id": "dead-connection-detection",
+      "kind": "subtopic",
+      "label": "Dead Connection Detection",
+      "x": -900,
+      "y": 5955
+    },
+    {
+      "id": "sqlnet-ora",
+      "kind": "subtopic",
+      "label": "sqlnet.ora",
+      "x": -620,
+      "y": 5930
+    },
+    {
+      "id": "tns-admin",
+      "kind": "subtopic",
+      "label": "TNS_ADMIN",
+      "x": -620,
+      "y": 6005
+    },
+    {
+      "id": "file-di-configurazione",
+      "kind": "topic",
+      "label": "File di configurazione",
+      "x": -330,
+      "y": 5880
+    },
+    {
+      "id": "percorso-di-una-connessione",
+      "kind": "topic",
+      "label": "Percorso di una connessione",
+      "x": 330,
+      "y": 5905
+    },
+    {
+      "id": "start-e-stop",
+      "kind": "subtopic",
+      "label": "start e stop",
+      "x": 900,
+      "y": 5970
+    },
+    {
+      "id": "status",
+      "kind": "subtopic",
+      "label": "status",
+      "x": 900,
+      "y": 6029
+    },
+    {
+      "id": "services",
+      "kind": "subtopic",
+      "label": "services",
+      "x": 900,
+      "y": 6079
+    },
+    {
+      "id": "reload",
+      "kind": "subtopic",
+      "label": "reload",
+      "x": 900,
+      "y": 6129
+    },
+    {
+      "id": "lsnrctl-2",
+      "kind": "subtopic",
+      "label": "lsnrctl",
+      "x": 620,
+      "y": 6054
+    },
+    {
+      "id": "dbstart-e-etc-oratab",
+      "kind": "subtopic",
+      "label": "dbstart e /etc/oratab",
+      "x": 900,
+      "y": 6179
+    },
+    {
+      "id": "servizio-systemd",
+      "kind": "subtopic",
+      "label": "Servizio systemd",
+      "x": 900,
+      "y": 6229
+    },
+    {
+      "id": "avvio-al-boot",
+      "kind": "subtopic",
+      "label": "Avvio al boot",
+      "x": 620,
+      "y": 6204
+    },
+    {
+      "id": "default-senza-listener-ora",
+      "kind": "subtopic",
+      "label": "Default senza listener.ora",
+      "x": 620,
+      "y": 6279
+    },
+    {
+      "id": "chi-occupa-una-porta-ss-lsof",
+      "kind": "subtopic",
+      "label": "Chi occupa una porta (ss, lsof)",
+      "x": 620,
+      "y": 6329
+    },
+    {
+      "id": "listener",
+      "kind": "topic",
+      "label": "Listener",
+      "x": 330,
+      "y": 6191,
+      "priority": "important"
+    },
+    {
+      "id": "processo-lreg",
+      "kind": "subtopic",
+      "label": "Processo LREG",
+      "x": -900,
+      "y": 6091
+    },
+    {
+      "id": "local-listener",
+      "kind": "subtopic",
+      "label": "local_listener",
+      "x": -900,
+      "y": 6141
+    },
+    {
+      "id": "remote-listener",
+      "kind": "subtopic",
+      "label": "remote_listener",
+      "x": -900,
+      "y": 6191
+    },
+    {
+      "id": "alter-system-register",
+      "kind": "subtopic",
+      "label": "ALTER SYSTEM REGISTER",
+      "x": -900,
+      "y": 6241
+    },
+    {
+      "id": "dinamica",
+      "kind": "subtopic",
+      "label": "Dinamica",
+      "x": -620,
+      "y": 6166
+    },
+    {
+      "id": "sid-list-nel-listener-ora",
+      "kind": "subtopic",
+      "label": "SID_LIST nel listener.ora",
+      "x": -900,
+      "y": 6291
+    },
+    {
+      "id": "avvio-remoto-di-un-istanza",
+      "kind": "subtopic",
+      "label": "Avvio remoto di un'istanza",
+      "x": -900,
+      "y": 6341
+    },
+    {
+      "id": "statica",
+      "kind": "subtopic",
+      "label": "Statica",
+      "x": -620,
+      "y": 6316
+    },
+    {
+      "id": "registrazione-dei-servizi",
+      "kind": "topic",
+      "label": "Registrazione dei servizi",
+      "x": -330,
+      "y": 6241,
+      "priority": "important"
+    },
+    {
+      "id": "db-name-e-db-domain",
+      "kind": "subtopic",
+      "label": "db_name e db_domain",
+      "x": 900,
+      "y": 6403
+    },
+    {
+      "id": "db-unique-name",
+      "kind": "subtopic",
+      "label": "db_unique_name",
+      "x": 900,
+      "y": 6453
+    },
+    {
+      "id": "servizio-di-default",
+      "kind": "subtopic",
+      "label": "Servizio di default",
+      "x": 620,
+      "y": 6428
+    },
+    {
+      "id": "create-service",
+      "kind": "subtopic",
+      "label": "CREATE_SERVICE",
+      "x": 900,
+      "y": 6503
+    },
+    {
+      "id": "start-service",
+      "kind": "subtopic",
+      "label": "START_SERVICE",
+      "x": 900,
+      "y": 6553
+    },
+    {
+      "id": "stop-service-e-delete-service",
+      "kind": "subtopic",
+      "label": "STOP_SERVICE e DELETE_SERVICE",
+      "x": 900,
+      "y": 6603
+    },
+    {
+      "id": "dbms-service",
+      "kind": "subtopic",
+      "label": "DBMS_SERVICE",
+      "x": 620,
+      "y": 6553
+    },
+    {
+      "id": "viste-sui-servizi",
+      "kind": "subtopic",
+      "label": "Viste sui servizi",
+      "x": 620,
+      "y": 6653
+    },
+    {
+      "id": "servizi",
+      "kind": "topic",
+      "label": "Servizi",
+      "x": 330,
+      "y": 6540,
+      "priority": "important"
+    },
+    {
+      "id": "local-naming-tnsnames-ora",
+      "kind": "subtopic",
+      "label": "Local naming (tnsnames.ora)",
+      "x": -680,
+      "y": 6510
+    },
+    {
+      "id": "easy-connect",
+      "kind": "subtopic",
+      "label": "Easy Connect",
+      "x": -620,
+      "y": 6565
+    },
+    {
+      "id": "directory-naming-ldap",
+      "kind": "subtopic",
+      "label": "Directory naming (LDAP)",
+      "x": -620,
+      "y": 6615
+    },
+    {
+      "id": "risoluzione-dei-nomi",
+      "kind": "topic",
+      "label": "Risoluzione dei nomi",
+      "x": -330,
+      "y": 6565
+    },
+    {
+      "id": "dedicated-server",
+      "kind": "subtopic",
+      "label": "Dedicated server",
+      "x": -620,
+      "y": 6689
+    },
+    {
+      "id": "dispatcher",
+      "kind": "subtopic",
+      "label": "Dispatcher",
+      "x": -900,
+      "y": 6739
+    },
+    {
+      "id": "pool-di-shared-server",
+      "kind": "subtopic",
+      "label": "Pool di shared server",
+      "x": -900,
+      "y": 6789
+    },
+    {
+      "id": "shared-server",
+      "kind": "subtopic",
+      "label": "Shared server",
+      "x": -620,
+      "y": 6764
+    },
+    {
+      "id": "processi-server",
+      "kind": "topic",
+      "label": "Processi server",
+      "x": -330,
+      "y": 6727
+    },
+    {
+      "id": "tnsping",
+      "kind": "subtopic",
+      "label": "tnsping",
+      "x": 900,
+      "y": 6727
+    },
+    {
+      "id": "lsnrctl-status",
+      "kind": "subtopic",
+      "label": "lsnrctl status",
+      "x": 900,
+      "y": 6777
+    },
+    {
+      "id": "lsnrctl-services",
+      "kind": "subtopic",
+      "label": "lsnrctl services",
+      "x": 900,
+      "y": 6827
+    },
+    {
+      "id": "controllo-in-tre-passi",
+      "kind": "subtopic",
+      "label": "Controllo in tre passi",
+      "x": 620,
+      "y": 6777
+    },
+    {
+      "id": "tns-03505",
+      "kind": "subtopic",
+      "label": "TNS-03505",
+      "x": 900,
+      "y": 6877
+    },
+    {
+      "id": "tns-12541",
+      "kind": "subtopic",
+      "label": "TNS-12541",
+      "x": 900,
+      "y": 6927
+    },
+    {
+      "id": "ora-12514",
+      "kind": "subtopic",
+      "label": "ORA-12514",
+      "x": 900,
+      "y": 6977
+    },
+    {
+      "id": "ora-01034",
+      "kind": "subtopic",
+      "label": "ORA-01034",
+      "x": 900,
+      "y": 7027
+    },
+    {
+      "id": "errori-frequenti",
+      "kind": "subtopic",
+      "label": "Errori frequenti",
+      "x": 620,
+      "y": 6952
+    },
+    {
+      "id": "alert-log-del-database",
+      "kind": "subtopic",
+      "label": "alert log del database",
+      "x": 900,
+      "y": 7077
+    },
+    {
+      "id": "listener-log",
+      "kind": "subtopic",
+      "label": "listener.log",
+      "x": 900,
+      "y": 7127
+    },
+    {
+      "id": "log-adr",
+      "kind": "subtopic",
+      "label": "Log ADR",
+      "x": 620,
+      "y": 7102
+    },
+    {
+      "id": "diagnostica",
+      "kind": "topic",
+      "label": "Diagnostica",
+      "x": 330,
+      "y": 6939
+    },
+    {
+      "id": "oracle-net-services",
+      "kind": "title",
+      "label": "Oracle Net Services",
+      "x": 0,
+      "y": 6416
+    },
+    {
+      "id": "delete",
+      "kind": "subtopic",
+      "label": "DELETE",
+      "x": -900,
+      "y": 7277
+    },
+    {
+      "id": "truncate",
+      "kind": "subtopic",
+      "label": "TRUNCATE",
+      "x": -900,
+      "y": 7327
+    },
+    {
+      "id": "drop",
+      "kind": "subtopic",
+      "label": "DROP",
+      "x": -900,
+      "y": 7377
+    },
+    {
+      "id": "rimuovere-dati",
+      "kind": "subtopic",
+      "label": "Rimuovere dati",
+      "x": -620,
+      "y": 7327
+    },
+    {
+      "id": "flashback-to-before-drop-2",
+      "kind": "subtopic",
+      "label": "FLASHBACK TO BEFORE DROP",
+      "x": -900,
+      "y": 7427
+    },
+    {
+      "id": "drop-purge",
+      "kind": "subtopic",
+      "label": "DROP … PURGE",
+      "x": -900,
+      "y": 7477
+    },
+    {
+      "id": "cestino-recycle-bin-2",
+      "kind": "subtopic",
+      "label": "Cestino (recycle bin)",
+      "x": -620,
+      "y": 7452
+    },
+    {
+      "id": "tabelle-2",
+      "kind": "topic",
+      "label": "Tabelle",
+      "x": -330,
+      "y": 7389
+    },
+    {
+      "id": "not-null",
+      "kind": "subtopic",
+      "label": "NOT NULL",
+      "x": 900,
+      "y": 7277
+    },
+    {
+      "id": "primary-key",
+      "kind": "subtopic",
+      "label": "PRIMARY KEY",
+      "x": 900,
+      "y": 7327
+    },
+    {
+      "id": "unique",
+      "kind": "subtopic",
+      "label": "UNIQUE",
+      "x": 900,
+      "y": 7377
+    },
+    {
+      "id": "on-delete-cascade",
+      "kind": "subtopic",
+      "label": "ON DELETE CASCADE",
+      "x": 1180,
+      "y": 7427
+    },
+    {
+      "id": "on-delete-set-null",
+      "kind": "subtopic",
+      "label": "ON DELETE SET NULL",
+      "x": 1180,
+      "y": 7477
+    },
+    {
+      "id": "foreign-key",
+      "kind": "subtopic",
+      "label": "FOREIGN KEY",
+      "x": 900,
+      "y": 7452
+    },
+    {
+      "id": "check",
+      "kind": "subtopic",
+      "label": "CHECK",
+      "x": 900,
+      "y": 7527
+    },
+    {
+      "id": "tipi",
+      "kind": "subtopic",
+      "label": "Tipi",
+      "x": 620,
+      "y": 7402
+    },
+    {
+      "id": "inline",
+      "kind": "subtopic",
+      "label": "Inline",
+      "x": 900,
+      "y": 7577
+    },
+    {
+      "id": "out-of-line",
+      "kind": "subtopic",
+      "label": "Out-of-line",
+      "x": 900,
+      "y": 7627
+    },
+    {
+      "id": "nome-del-vincolo",
+      "kind": "subtopic",
+      "label": "Nome del vincolo",
+      "x": 900,
+      "y": 7677
+    },
+    {
+      "id": "definizione",
+      "kind": "subtopic",
+      "label": "Definizione",
+      "x": 620,
+      "y": 7627
+    },
+    {
+      "id": "enable-disable",
+      "kind": "subtopic",
+      "label": "ENABLE / DISABLE",
+      "x": 900,
+      "y": 7727
+    },
+    {
+      "id": "validate-novalidate",
+      "kind": "subtopic",
+      "label": "VALIDATE / NOVALIDATE",
+      "x": 900,
+      "y": 7777
+    },
+    {
+      "id": "stati",
+      "kind": "subtopic",
+      "label": "Stati",
+      "x": 620,
+      "y": 7752
+    },
+    {
+      "id": "not-deferrable",
+      "kind": "subtopic",
+      "label": "NOT DEFERRABLE",
+      "x": 900,
+      "y": 7827
+    },
+    {
+      "id": "deferrable-initially-immediate",
+      "kind": "subtopic",
+      "label": "DEFERRABLE INITIALLY IMMEDIATE",
+      "x": 900,
+      "y": 7877
+    },
+    {
+      "id": "deferrable-initially-deferred",
+      "kind": "subtopic",
+      "label": "DEFERRABLE INITIALLY DEFERRED",
+      "x": 900,
+      "y": 7927
+    },
+    {
+      "id": "quando-viene-controllato",
+      "kind": "subtopic",
+      "label": "Quando viene controllato",
+      "x": 620,
+      "y": 7877
+    },
+    {
+      "id": "viste-sui-vincoli",
+      "kind": "subtopic",
+      "label": "Viste sui vincoli",
+      "x": 620,
+      "y": 7977
+    },
+    {
+      "id": "vincoli",
+      "kind": "topic",
+      "label": "Vincoli",
+      "x": 330,
+      "y": 7689,
+      "priority": "important"
+    },
+    {
+      "id": "ricerca-binaria",
+      "kind": "subtopic",
+      "label": "Ricerca binaria",
+      "x": -620,
+      "y": 7614,
+      "priority": "optional"
+    },
+    {
+      "id": "rowid",
+      "kind": "subtopic",
+      "label": "Rowid",
+      "x": -900,
+      "y": 7664
+    },
+    {
+      "id": "colonne-selettive",
+      "kind": "subtopic",
+      "label": "Colonne selettive",
+      "x": -900,
+      "y": 7714
+    },
+    {
+      "id": "b-tree",
+      "kind": "subtopic",
+      "label": "B-tree",
+      "x": -620,
+      "y": 7689
+    },
+    {
+      "id": "colonne-a-bassa-cardinalita",
+      "kind": "subtopic",
+      "label": "Colonne a bassa cardinalità",
+      "x": -900,
+      "y": 7764
+    },
+    {
+      "id": "bitmap",
+      "kind": "subtopic",
+      "label": "Bitmap",
+      "x": -620,
+      "y": 7764
+    },
+    {
+      "id": "indici-invisibili",
+      "kind": "subtopic",
+      "label": "Indici invisibili",
+      "x": -620,
+      "y": 7814,
+      "priority": "optional"
+    },
+    {
+      "id": "indici-2",
+      "kind": "topic",
+      "label": "Indici",
+      "x": -330,
+      "y": 7714,
+      "priority": "important"
+    },
+    {
+      "id": "index-organized-table-iot",
+      "kind": "subtopic",
+      "label": "Index-organized table (IOT)",
+      "x": -620,
+      "y": 7888
+    },
+    {
+      "id": "cluster-di-tabelle",
+      "kind": "subtopic",
+      "label": "Cluster di tabelle",
+      "x": -620,
+      "y": 7938
+    },
+    {
+      "id": "organizzazione-delle-tabelle",
+      "kind": "topic",
+      "label": "Organizzazione delle tabelle",
+      "x": -330,
+      "y": 7913
+    },
+    {
+      "id": "viste-semplici-e-su-piu-tabelle",
+      "kind": "subtopic",
+      "label": "Viste semplici e su più tabelle",
+      "x": -620,
+      "y": 8012
+    },
+    {
+      "id": "with-check-option",
+      "kind": "subtopic",
+      "label": "WITH CHECK OPTION",
+      "x": -620,
+      "y": 8062
+    },
+    {
+      "id": "refresh-completo",
+      "kind": "subtopic",
+      "label": "Refresh completo",
+      "x": -900,
+      "y": 8112
+    },
+    {
+      "id": "refresh-fast",
+      "kind": "subtopic",
+      "label": "Refresh fast",
+      "x": -900,
+      "y": 8162
+    },
+    {
+      "id": "viste-materializzate",
+      "kind": "subtopic",
+      "label": "Viste materializzate",
+      "x": -620,
+      "y": 8137
+    },
+    {
+      "id": "viste",
+      "kind": "topic",
+      "label": "Viste",
+      "x": -330,
+      "y": 8075
+    },
+    {
+      "id": "sequenze",
+      "kind": "topic",
+      "label": "Sequenze",
+      "x": 330,
+      "y": 8100,
+      "priority": "optional"
+    },
+    {
+      "id": "sql-e-pl-sql-a-confronto",
+      "kind": "subtopic",
+      "label": "SQL e PL/SQL a confronto",
+      "x": 620,
+      "y": 8174
+    },
+    {
+      "id": "stored-procedure",
+      "kind": "subtopic",
+      "label": "Stored procedure",
+      "x": 900,
+      "y": 8224
+    },
+    {
+      "id": "function",
+      "kind": "subtopic",
+      "label": "Function",
+      "x": 900,
+      "y": 8274
+    },
+    {
+      "id": "package",
+      "kind": "subtopic",
+      "label": "Package",
+      "x": 900,
+      "y": 8324
+    },
+    {
+      "id": "trigger",
+      "kind": "subtopic",
+      "label": "Trigger",
+      "x": 900,
+      "y": 8374
+    },
+    {
+      "id": "oggetti-pl-sql",
+      "kind": "subtopic",
+      "label": "Oggetti PL/SQL",
+      "x": 620,
+      "y": 8299
+    },
+    {
+      "id": "pl-sql",
+      "kind": "topic",
+      "label": "PL/SQL",
+      "x": 330,
+      "y": 8236,
+      "priority": "optional"
+    },
+    {
+      "id": "oggetti-sql",
+      "kind": "title",
+      "label": "Oggetti SQL",
+      "x": 0,
+      "y": 7825
+    },
+    {
+      "id": "backup-a-caldo-archivelog",
+      "kind": "subtopic",
+      "label": "Backup a caldo (ARCHIVELOG)",
+      "x": -900,
+      "y": 8524
+    },
+    {
+      "id": "point-in-time-recovery",
+      "kind": "subtopic",
+      "label": "Point-in-time recovery",
+      "x": -900,
+      "y": 8574
+    },
+    {
+      "id": "controllo-corruzioni",
+      "kind": "subtopic",
+      "label": "Controllo corruzioni",
+      "x": -900,
+      "y": 8624
+    },
+    {
+      "id": "backup-fisico-rman",
+      "kind": "subtopic",
+      "label": "Backup fisico: RMAN",
+      "x": -620,
+      "y": 8574
+    },
+    {
+      "id": "expdp",
+      "kind": "subtopic",
+      "label": "expdp",
+      "x": -900,
+      "y": 8674
+    },
+    {
+      "id": "impdp",
+      "kind": "subtopic",
+      "label": "impdp",
+      "x": -900,
+      "y": 8724
+    },
+    {
+      "id": "backup-logico-data-pump",
+      "kind": "subtopic",
+      "label": "Backup logico: Data Pump",
+      "x": -620,
+      "y": 8699
+    },
+    {
+      "id": "backup",
+      "kind": "topic",
+      "label": "Backup",
+      "x": -330,
+      "y": 8636,
+      "priority": "important"
+    },
+    {
+      "id": "data-pump",
+      "kind": "subtopic",
+      "label": "Data Pump",
+      "x": 900,
+      "y": 8524
+    },
+    {
+      "id": "external-table",
+      "kind": "subtopic",
+      "label": "External table",
+      "x": 900,
+      "y": 8574
+    },
+    {
+      "id": "utl-file",
+      "kind": "subtopic",
+      "label": "UTL_FILE",
+      "x": 900,
+      "y": 8624
+    },
+    {
+      "id": "bfile",
+      "kind": "subtopic",
+      "label": "BFILE",
+      "x": 900,
+      "y": 8674
+    },
+    {
+      "id": "a-cosa-serve",
+      "kind": "subtopic",
+      "label": "A cosa serve",
+      "x": 620,
+      "y": 8599
+    },
+    {
+      "id": "create-any-directory",
+      "kind": "subtopic",
+      "label": "CREATE ANY DIRECTORY",
+      "x": 900,
+      "y": 8724
+    },
+    {
+      "id": "read-write-execute",
+      "kind": "subtopic",
+      "label": "READ, WRITE, EXECUTE",
+      "x": 900,
+      "y": 8774
+    },
+    {
+      "id": "privilegi-2",
+      "kind": "subtopic",
+      "label": "Privilegi",
+      "x": 620,
+      "y": 8749
+    },
+    {
+      "id": "data-pump-dir",
+      "kind": "subtopic",
+      "label": "DATA_PUMP_DIR",
+      "x": 620,
+      "y": 8824
+    },
+    {
+      "id": "oracle-directory",
+      "kind": "topic",
+      "label": "Oracle Directory",
+      "x": 410,
+      "y": 8750
+    },
+    {
+      "id": "cdb-root",
+      "kind": "subtopic",
+      "label": "CDB$ROOT",
+      "x": -900,
+      "y": 8798
+    },
+    {
+      "id": "cdb-2",
+      "kind": "subtopic",
+      "label": "CDB",
+      "x": -620,
+      "y": 8798
+    },
+    {
+      "id": "pdb",
+      "kind": "subtopic",
+      "label": "PDB",
+      "x": -620,
+      "y": 8848
+    },
+    {
+      "id": "pdb-seed",
+      "kind": "subtopic",
+      "label": "PDB$SEED",
+      "x": -620,
+      "y": 8898
+    },
+    {
+      "id": "multitenant",
+      "kind": "topic",
+      "label": "Multitenant",
+      "x": -330,
+      "y": 8848,
+      "priority": "important"
+    },
+    {
+      "id": "in-place-deprecato",
+      "kind": "subtopic",
+      "label": "In place (deprecato)",
+      "x": 620,
+      "y": 8898
+    },
+    {
+      "id": "out-of-place-con-dbua",
+      "kind": "subtopic",
+      "label": "Out of place con DBUA",
+      "x": 620,
+      "y": 8948
+    },
+    {
+      "id": "upgrade",
+      "kind": "topic",
+      "label": "Upgrade",
+      "x": 420,
+      "y": 8930
+    },
+    {
+      "id": "cache-fusion",
+      "kind": "subtopic",
+      "label": "Cache Fusion",
+      "x": -900,
+      "y": 8972
+    },
+    {
+      "id": "interconnect",
+      "kind": "subtopic",
+      "label": "Interconnect",
+      "x": -900,
+      "y": 9022
+    },
+    {
+      "id": "failover-delle-sessioni",
+      "kind": "subtopic",
+      "label": "Failover delle sessioni",
+      "x": -900,
+      "y": 9072
+    },
+    {
+      "id": "rac",
+      "kind": "subtopic",
+      "label": "RAC",
+      "x": -620,
+      "y": 9022
+    },
+    {
+      "id": "database-standby",
+      "kind": "subtopic",
+      "label": "Database standby",
+      "x": -900,
+      "y": 9122
+    },
+    {
+      "id": "sincronizzazione-con-gli-archive-log",
+      "kind": "subtopic",
+      "label": "Sincronizzazione con gli archive log",
+      "x": -900,
+      "y": 9172
+    },
+    {
+      "id": "switchover",
+      "kind": "subtopic",
+      "label": "Switchover",
+      "x": -900,
+      "y": 9222
+    },
+    {
+      "id": "failover",
+      "kind": "subtopic",
+      "label": "Failover",
+      "x": -900,
+      "y": 9272
+    },
+    {
+      "id": "data-guard",
+      "kind": "subtopic",
+      "label": "Data Guard",
+      "x": -620,
+      "y": 9197
+    },
+    {
+      "id": "maa-rac-data-guard",
+      "kind": "subtopic",
+      "label": "MAA: RAC + Data Guard",
+      "x": -620,
+      "y": 9322
+    },
+    {
+      "id": "alta-disponibilita",
+      "kind": "topic",
+      "label": "Alta disponibilità",
+      "x": -330,
+      "y": 9172,
+      "priority": "important"
+    },
+    {
+      "id": "backup-e-alta-disponibilita",
+      "kind": "title",
+      "label": "Backup e alta disponibilità",
+      "x": 0,
+      "y": 8923
     }
   ],
   "edges": [
     {
-      "id": "emv54m5ygkyct",
-      "source": "nmv54kqnl0zqz",
-      "target": "title",
+      "id": "e-data-file--tabelle-e-indici",
+      "source": "data-file",
+      "target": "tabelle-e-indici",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-database-fisico--data-file",
+      "source": "database-fisico",
+      "target": "data-file",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-redo-log-file--redo-record-ddl-e-dml",
+      "source": "redo-log-file",
+      "target": "redo-record-ddl-e-dml",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-database-fisico--redo-log-file",
+      "source": "database-fisico",
+      "target": "redo-log-file",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-control-file--path-di-tutti-gli-altri-file",
+      "source": "control-file",
+      "target": "path-di-tutti-gli-altri-file",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-control-file--multiplexing-su-piu-path",
+      "source": "control-file",
+      "target": "multiplexing-su-piu-path",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-database-fisico--control-file",
+      "source": "database-fisico",
+      "target": "control-file",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-fondamenti--database-fisico",
+      "source": "fondamenti",
+      "target": "database-fisico",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-istanza--memoria-processi-si-avvia-non-si-install",
+      "source": "istanza",
+      "target": "memoria-processi-si-avvia-non-si-install",
       "sourceHandle": "r",
-      "targetHandle": "b"
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-rapporto-istanza-database--standalone-1-istanza-1-database",
+      "source": "rapporto-istanza-database",
+      "target": "standalone-1-istanza-1-database",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-rapporto-istanza-database--rac-n-istanze-1-database",
+      "source": "rapporto-istanza-database",
+      "target": "rac-n-istanze-1-database",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-istanza--rapporto-istanza-database",
+      "source": "istanza",
+      "target": "rapporto-istanza-database",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-fondamenti--istanza",
+      "source": "fondamenti",
+      "target": "istanza",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-fondamenti--oracle-home",
+      "source": "fondamenti",
+      "target": "oracle-home",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-title--fondamenti",
+      "source": "title",
+      "target": "fondamenti",
+      "sourceHandle": "b",
+      "targetHandle": "t"
+    },
+    {
+      "id": "e-piano-fisico--disco-raw",
+      "source": "piano-fisico",
+      "target": "disco-raw",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-lvm--physical-volume",
+      "source": "lvm",
+      "target": "physical-volume",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-lvm--volume-group",
+      "source": "lvm",
+      "target": "volume-group",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-lvm--logical-volume",
+      "source": "lvm",
+      "target": "logical-volume",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-piano-fisico--lvm",
+      "source": "piano-fisico",
+      "target": "lvm",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-file-system--formattazione-mkfs",
+      "source": "file-system",
+      "target": "formattazione-mkfs",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-file-system--mount-point",
+      "source": "file-system",
+      "target": "mount-point",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-file-system--spazio-libero-df",
+      "source": "file-system",
+      "target": "spazio-libero-df",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-piano-fisico--file-system",
+      "source": "piano-fisico",
+      "target": "file-system",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-piano-fisico--datafile",
+      "source": "piano-fisico",
+      "target": "datafile",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-storage--piano-fisico",
+      "source": "storage",
+      "target": "piano-fisico",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-tablespace--uno-o-piu-datafile",
+      "source": "tablespace",
+      "target": "uno-o-piu-datafile",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-tablespace-di-sistema--system-e-sysaux",
+      "source": "tablespace-di-sistema",
+      "target": "system-e-sysaux",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-tablespace-di-sistema--users",
+      "source": "tablespace-di-sistema",
+      "target": "users",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-tablespace-di-sistema--temp",
+      "source": "tablespace-di-sistema",
+      "target": "temp",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-tablespace-di-sistema--undotbs",
+      "source": "tablespace-di-sistema",
+      "target": "undotbs",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-tablespace--tablespace-di-sistema",
+      "source": "tablespace",
+      "target": "tablespace-di-sistema",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-piano-logico--tablespace",
+      "source": "piano-logico",
+      "target": "tablespace",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-segment--tabelle",
+      "source": "segment",
+      "target": "tabelle",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-segment--indici",
+      "source": "segment",
+      "target": "indici",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-segment--allocazione-all-arrivo-dei-dati",
+      "source": "segment",
+      "target": "allocazione-all-arrivo-dei-dati",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-piano-logico--segment",
+      "source": "piano-logico",
+      "target": "segment",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-extent--blocchi-contigui",
+      "source": "extent",
+      "target": "blocchi-contigui",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-extent--dimensione-automatica-o-manuale",
+      "source": "extent",
+      "target": "dimensione-automatica-o-manuale",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-piano-logico--extent",
+      "source": "piano-logico",
+      "target": "extent",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-blocco--dimensione-fissa-8-kb",
+      "source": "blocco",
+      "target": "dimensione-fissa-8-kb",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-blocco--righe-di-una-sola-tabella",
+      "source": "blocco",
+      "target": "righe-di-una-sola-tabella",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-piano-logico--blocco",
+      "source": "piano-logico",
+      "target": "blocco",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-storage--piano-logico",
+      "source": "storage",
+      "target": "piano-logico",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-fondamenti--storage",
+      "source": "fondamenti",
+      "target": "storage",
+      "sourceHandle": "b",
+      "targetHandle": "t"
+    },
+    {
+      "id": "e-buffer-cache--buffer-clean-e-dirty",
+      "source": "buffer-cache",
+      "target": "buffer-clean-e-dirty",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-buffer-cache--algoritmo-lru",
+      "source": "buffer-cache",
+      "target": "algoritmo-lru",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-buffer-cache--dimensione-blocco-del-database",
+      "source": "buffer-cache",
+      "target": "dimensione-blocco-del-database",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-sga--buffer-cache",
+      "source": "sga",
+      "target": "buffer-cache",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-library-cache--parsing-e-piano-di-esecuzione",
+      "source": "library-cache",
+      "target": "parsing-e-piano-di-esecuzione",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-library-cache--soft-parse",
+      "source": "library-cache",
+      "target": "soft-parse",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-library-cache--hard-parse",
+      "source": "library-cache",
+      "target": "hard-parse",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-shared-pool--library-cache",
+      "source": "shared-pool",
+      "target": "library-cache",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-shared-pool--data-dictionary-cache",
+      "source": "shared-pool",
+      "target": "data-dictionary-cache",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-sga--shared-pool",
+      "source": "sga",
+      "target": "shared-pool",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-sga--redo-log-buffer",
+      "source": "sga",
+      "target": "redo-log-buffer",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-istanza-memoria-e-processi--sga",
+      "source": "istanza-memoria-e-processi",
+      "target": "sga",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-sql-work-area--order-by-e-group-by",
+      "source": "sql-work-area",
+      "target": "order-by-e-group-by",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-sql-work-area--hash-join",
+      "source": "sql-work-area",
+      "target": "hash-join",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-pga--sql-work-area",
+      "source": "pga",
+      "target": "sql-work-area",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-memoria-di-sessione--variabili-e-credenziali",
+      "source": "memoria-di-sessione",
+      "target": "variabili-e-credenziali",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-memoria-di-sessione--cursori",
+      "source": "memoria-di-sessione",
+      "target": "cursori",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-pga--memoria-di-sessione",
+      "source": "pga",
+      "target": "memoria-di-sessione",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-pga--spill-sul-tablespace-temp",
+      "source": "pga",
+      "target": "spill-sul-tablespace-temp",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-istanza-memoria-e-processi--pga",
+      "source": "istanza-memoria-e-processi",
+      "target": "pga",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-sempre-presenti--dbwn-scrittura-differita",
+      "source": "sempre-presenti",
+      "target": "dbwn-scrittura-differita",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-sempre-presenti--lgwr-scrittura-al-commit",
+      "source": "sempre-presenti",
+      "target": "lgwr-scrittura-al-commit",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-ckpt--scn-system-change-number",
+      "source": "ckpt",
+      "target": "scn-system-change-number",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-sempre-presenti--ckpt",
+      "source": "sempre-presenti",
+      "target": "ckpt",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-sempre-presenti--pmon-pulizia-sessioni",
+      "source": "sempre-presenti",
+      "target": "pmon-pulizia-sessioni",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-sempre-presenti--smon-recovery-dell-istanza",
+      "source": "sempre-presenti",
+      "target": "smon-recovery-dell-istanza",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-sempre-presenti--lreg-registrazione-sul-listener",
+      "source": "sempre-presenti",
+      "target": "lreg-registrazione-sul-listener",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-processi-in-background--sempre-presenti",
+      "source": "processi-in-background",
+      "target": "sempre-presenti",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-arcn--modalita-archivelog",
+      "source": "arcn",
+      "target": "modalita-archivelog",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-arcn--archived-redo-log",
+      "source": "arcn",
+      "target": "archived-redo-log",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-opzionali--arcn",
+      "source": "opzionali",
+      "target": "arcn",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-processi-in-background--opzionali",
+      "source": "processi-in-background",
+      "target": "opzionali",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-istanza-memoria-e-processi--processi-in-background",
+      "source": "istanza-memoria-e-processi",
+      "target": "processi-in-background",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-storage--istanza-memoria-e-processi",
+      "source": "storage",
+      "target": "istanza-memoria-e-processi",
+      "sourceHandle": "b",
+      "targetHandle": "t"
+    },
+    {
+      "id": "e-dml--insert-update-delete-select",
+      "source": "dml",
+      "target": "insert-update-delete-select",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-linguaggi-sql--dml",
+      "source": "linguaggi-sql",
+      "target": "dml",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-ddl--create-alter-drop-truncate",
+      "source": "ddl",
+      "target": "create-alter-drop-truncate",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-linguaggi-sql--ddl",
+      "source": "linguaggi-sql",
+      "target": "ddl",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-tcl--commit",
+      "source": "tcl",
+      "target": "commit",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-tcl--rollback",
+      "source": "tcl",
+      "target": "rollback",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-tcl--savepoint",
+      "source": "tcl",
+      "target": "savepoint",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-linguaggi-sql--tcl",
+      "source": "linguaggi-sql",
+      "target": "tcl",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-transazioni--linguaggi-sql",
+      "source": "transazioni",
+      "target": "linguaggi-sql",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-prima-del-commit--parse-e-controllo-permessi",
+      "source": "prima-del-commit",
+      "target": "parse-e-controllo-permessi",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-prima-del-commit--buffer-hit-buffer-miss",
+      "source": "prima-del-commit",
+      "target": "buffer-hit-buffer-miss",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-prima-del-commit--lock-sulla-riga",
+      "source": "prima-del-commit",
+      "target": "lock-sulla-riga",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-prima-del-commit--scrittura-dell-undo",
+      "source": "prima-del-commit",
+      "target": "scrittura-dell-undo",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-prima-del-commit--redo-record-e-dirty-buffer",
+      "source": "prima-del-commit",
+      "target": "redo-record-e-dirty-buffer",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-ciclo-di-una-transazione--prima-del-commit",
+      "source": "ciclo-di-una-transazione",
+      "target": "prima-del-commit",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-al-commit--assegnazione-dell-scn",
+      "source": "al-commit",
+      "target": "assegnazione-dell-scn",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-al-commit--scrittura-sincrona-di-lgwr",
+      "source": "al-commit",
+      "target": "scrittura-sincrona-di-lgwr",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-al-commit--rilascio-dei-lock",
+      "source": "al-commit",
+      "target": "rilascio-dei-lock",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-al-commit--scrittura-asincrona-di-dbwn",
+      "source": "al-commit",
+      "target": "scrittura-asincrona-di-dbwn",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-ciclo-di-una-transazione--al-commit",
+      "source": "ciclo-di-una-transazione",
+      "target": "al-commit",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-transazioni--ciclo-di-una-transazione",
+      "source": "transazioni",
+      "target": "ciclo-di-una-transazione",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-atomicita--rollback-con-l-undo",
+      "source": "atomicita",
+      "target": "rollback-con-l-undo",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-proprieta-acid--atomicita",
+      "source": "proprieta-acid",
+      "target": "atomicita",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-coerenza--vincoli-di-integrita",
+      "source": "coerenza",
+      "target": "vincoli-di-integrita",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-proprieta-acid--coerenza",
+      "source": "proprieta-acid",
+      "target": "coerenza",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-isolamento--read-consistency",
+      "source": "isolamento",
+      "target": "read-consistency",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-proprieta-acid--isolamento",
+      "source": "proprieta-acid",
+      "target": "isolamento",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-durabilita--redo-log-e-lgwr",
+      "source": "durabilita",
+      "target": "redo-log-e-lgwr",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-proprieta-acid--durabilita",
+      "source": "proprieta-acid",
+      "target": "durabilita",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-transazioni--proprieta-acid",
+      "source": "transazioni",
+      "target": "proprieta-acid",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-undo-record--solo-i-vecchi-valori-delle-colonne-modif",
+      "source": "undo-record",
+      "target": "solo-i-vecchi-valori-delle-colonne-modif",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-undo-e-read-consistency--undo-record",
+      "source": "undo-e-read-consistency",
+      "target": "undo-record",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-consistent-read-cr-clone--copia-del-buffer-corrente",
+      "source": "consistent-read-cr-clone",
+      "target": "copia-del-buffer-corrente",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-consistent-read-cr-clone--undo-applicato-fino-all-scn",
+      "source": "consistent-read-cr-clone",
+      "target": "undo-applicato-fino-all-scn",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-undo-e-read-consistency--consistent-read-cr-clone",
+      "source": "undo-e-read-consistency",
+      "target": "consistent-read-cr-clone",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-isolation-level--read-committed",
+      "source": "isolation-level",
+      "target": "read-committed",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-isolation-level--serializable",
+      "source": "isolation-level",
+      "target": "serializable",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-undo-e-read-consistency--isolation-level",
+      "source": "undo-e-read-consistency",
+      "target": "isolation-level",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-ora-01555--undo-retention",
+      "source": "ora-01555",
+      "target": "undo-retention",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-ora-01555--retention-guarantee",
+      "source": "ora-01555",
+      "target": "retention-guarantee",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-errori--ora-01555",
+      "source": "errori",
+      "target": "ora-01555",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-errori--ora-30036-undo-pieno",
+      "source": "errori",
+      "target": "ora-30036-undo-pieno",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-undo-e-read-consistency--errori",
+      "source": "undo-e-read-consistency",
+      "target": "errori",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-transazioni--undo-e-read-consistency",
+      "source": "transazioni",
+      "target": "undo-e-read-consistency",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-flashback-table--a-un-timestamp",
+      "source": "flashback-table",
+      "target": "a-un-timestamp",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-flashback-table--a-un-scn",
+      "source": "flashback-table",
+      "target": "a-un-scn",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-flashback--flashback-table",
+      "source": "flashback",
+      "target": "flashback-table",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-flashback-to-before-drop--cestino-recycle-bin",
+      "source": "flashback-to-before-drop",
+      "target": "cestino-recycle-bin",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-flashback--flashback-to-before-drop",
+      "source": "flashback",
+      "target": "flashback-to-before-drop",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-transazioni--flashback",
+      "source": "transazioni",
+      "target": "flashback",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-istanza-memoria-e-processi--transazioni",
+      "source": "istanza-memoria-e-processi",
+      "target": "transazioni",
+      "sourceHandle": "b",
+      "targetHandle": "t"
+    },
+    {
+      "id": "e-parameter-file--pfile-e-spfile",
+      "source": "parameter-file",
+      "target": "pfile-e-spfile",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-parametri--statici",
+      "source": "parametri",
+      "target": "statici",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-parametri--dinamici",
+      "source": "parametri",
+      "target": "dinamici",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-parametri--v-parameter",
+      "source": "parametri",
+      "target": "v-parameter",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-parameter-file--parametri",
+      "source": "parameter-file",
+      "target": "parametri",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-alter-system-scope--memory",
+      "source": "alter-system-scope",
+      "target": "memory",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-alter-system-scope--spfile",
+      "source": "alter-system-scope",
+      "target": "spfile",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-alter-system-scope--both",
+      "source": "alter-system-scope",
+      "target": "both",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-parameter-file--alter-system-scope",
+      "source": "parameter-file",
+      "target": "alter-system-scope",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-avvio-e-spegnimento--parameter-file",
+      "source": "avvio-e-spegnimento",
+      "target": "parameter-file",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-nomount--lettura-del-parameter-file",
+      "source": "nomount",
+      "target": "lettura-del-parameter-file",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-nomount--allocazione-sga-e-processi",
+      "source": "nomount",
+      "target": "allocazione-sga-e-processi",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-nomount--db-name",
+      "source": "nomount",
+      "target": "db-name",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-startup--nomount",
+      "source": "startup",
+      "target": "nomount",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-mount--apertura-del-control-file",
+      "source": "mount",
+      "target": "apertura-del-control-file",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-mount--parametro-control-files",
+      "source": "mount",
+      "target": "parametro-control-files",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-startup--mount",
+      "source": "startup",
+      "target": "mount",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-open--data-file-e-redo-log",
+      "source": "open",
+      "target": "data-file-e-redo-log",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-open--controllo-degli-scn",
+      "source": "open",
+      "target": "controllo-degli-scn",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-startup--open",
+      "source": "startup",
+      "target": "open",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-avvio-e-spegnimento--startup",
+      "source": "avvio-e-spegnimento",
+      "target": "startup",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-shutdown--normal",
+      "source": "shutdown",
+      "target": "normal",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-shutdown--transactional",
+      "source": "shutdown",
+      "target": "transactional",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-immediate--checkpoint",
+      "source": "immediate",
+      "target": "checkpoint",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-immediate--rollback-delle-transazioni-aperte",
+      "source": "immediate",
+      "target": "rollback-delle-transazioni-aperte",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-shutdown--immediate",
+      "source": "shutdown",
+      "target": "immediate",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-abort--recovery-al-riavvio",
+      "source": "abort",
+      "target": "recovery-al-riavvio",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-shutdown--abort",
+      "source": "shutdown",
+      "target": "abort",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-avvio-e-spegnimento--shutdown",
+      "source": "avvio-e-spegnimento",
+      "target": "shutdown",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-crash-recovery-smon--roll-forward-con-il-redo",
+      "source": "crash-recovery-smon",
+      "target": "roll-forward-con-il-redo",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-crash-recovery-smon--roll-backward-con-l-undo",
+      "source": "crash-recovery-smon",
+      "target": "roll-backward-con-l-undo",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-avvio-e-spegnimento--crash-recovery-smon",
+      "source": "avvio-e-spegnimento",
+      "target": "crash-recovery-smon",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-alert-log--path-del-file",
+      "source": "alert-log",
+      "target": "path-del-file",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-alert-log--lettura-di-uno-startup",
+      "source": "alert-log",
+      "target": "lettura-di-uno-startup",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-alert-log--lettura-di-uno-shutdown-immediate",
+      "source": "alert-log",
+      "target": "lettura-di-uno-shutdown-immediate",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-alert-log--lettura-di-uno-shutdown-abort",
+      "source": "alert-log",
+      "target": "lettura-di-uno-shutdown-abort",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-avvio-e-spegnimento--alert-log",
+      "source": "avvio-e-spegnimento",
+      "target": "alert-log",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-preparazione--variabili-oracle-sid-e-oracle-home",
+      "source": "preparazione",
+      "target": "variabili-oracle-sid-e-oracle-home",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-preparazione--password-file-orapwd",
+      "source": "preparazione",
+      "target": "password-file-orapwd",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-preparazione--pfile-minimo",
+      "source": "preparazione",
+      "target": "pfile-minimo",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-creazione-manuale-del-database--preparazione",
+      "source": "creazione-manuale-del-database",
+      "target": "preparazione",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-creazione-manuale-del-database--startup-nomount-e-create-database",
+      "source": "creazione-manuale-del-database",
+      "target": "startup-nomount-e-create-database",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-script-del-dizionario--catalog-sql",
+      "source": "script-del-dizionario",
+      "target": "catalog-sql",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-script-del-dizionario--catproc-sql",
+      "source": "script-del-dizionario",
+      "target": "catproc-sql",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-creazione-manuale-del-database--script-del-dizionario",
+      "source": "creazione-manuale-del-database",
+      "target": "script-del-dizionario",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-creazione-manuale-del-database--dbca-tutto-in-automatico",
+      "source": "creazione-manuale-del-database",
+      "target": "dbca-tutto-in-automatico",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-avvio-e-spegnimento--creazione-manuale-del-database",
+      "source": "avvio-e-spegnimento",
+      "target": "creazione-manuale-del-database",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-transazioni--avvio-e-spegnimento",
+      "source": "transazioni",
+      "target": "avvio-e-spegnimento",
+      "sourceHandle": "b",
+      "targetHandle": "t"
+    },
+    {
+      "id": "e-sql-plus--as-sysdba",
+      "source": "sql-plus",
+      "target": "as-sysdba",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-sql-plus--nolog",
+      "source": "sql-plus",
+      "target": "nolog",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-connessione--sql-plus",
+      "source": "connessione",
+      "target": "sql-plus",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-accesso-e-sicurezza--connessione",
+      "source": "accesso-e-sicurezza",
+      "target": "connessione",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-sys--privilegio-sysdba",
+      "source": "sys",
+      "target": "privilegio-sysdba",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-sys--proprietario-del-dizionario",
+      "source": "sys",
+      "target": "proprietario-del-dizionario",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-utenti-amministrativi--sys",
+      "source": "utenti-amministrativi",
+      "target": "sys",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-system--ruolo-dba",
+      "source": "system",
+      "target": "ruolo-dba",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-system--amministrazione-quotidiana",
+      "source": "system",
+      "target": "amministrazione-quotidiana",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-utenti-amministrativi--system",
+      "source": "utenti-amministrativi",
+      "target": "system",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-accesso-e-sicurezza--utenti-amministrativi",
+      "source": "accesso-e-sicurezza",
+      "target": "utenti-amministrativi",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-utenti-e-schemi--create-user",
+      "source": "utenti-e-schemi",
+      "target": "create-user",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-utenti-e-schemi--schema-gli-oggetti-dell-utente",
+      "source": "utenti-e-schemi",
+      "target": "schema-gli-oggetti-dell-utente",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-utenti-e-schemi--profili",
+      "source": "utenti-e-schemi",
+      "target": "profili",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-utenti-e-schemi--lock-dell-utente",
+      "source": "utenti-e-schemi",
+      "target": "lock-dell-utente",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-spazio--quota",
+      "source": "spazio",
+      "target": "quota",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-spazio--tablespace-di-default",
+      "source": "spazio",
+      "target": "tablespace-di-default",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-spazio--tablespace-temp-di-default",
+      "source": "spazio",
+      "target": "tablespace-temp-di-default",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-utenti-e-schemi--spazio",
+      "source": "utenti-e-schemi",
+      "target": "spazio",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-accesso-e-sicurezza--utenti-e-schemi",
+      "source": "accesso-e-sicurezza",
+      "target": "utenti-e-schemi",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-di-sistema--create-session-create-table",
+      "source": "di-sistema",
+      "target": "create-session-create-table",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-di-sistema--with-admin-option",
+      "source": "di-sistema",
+      "target": "with-admin-option",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-privilegi--di-sistema",
+      "source": "privilegi",
+      "target": "di-sistema",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-di-oggetto--select-insert-on-oggetto",
+      "source": "di-oggetto",
+      "target": "select-insert-on-oggetto",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-di-oggetto--with-grant-option",
+      "source": "di-oggetto",
+      "target": "with-grant-option",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-privilegi--di-oggetto",
+      "source": "privilegi",
+      "target": "di-oggetto",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-grantor-e-grantee--utente",
+      "source": "grantor-e-grantee",
+      "target": "utente",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-grantor-e-grantee--ruolo",
+      "source": "grantor-e-grantee",
+      "target": "ruolo",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-grantor-e-grantee--public",
+      "source": "grantor-e-grantee",
+      "target": "public",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-privilegi--grantor-e-grantee",
+      "source": "privilegi",
+      "target": "grantor-e-grantee",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-revoke--a-cascata-grant-option",
+      "source": "revoke",
+      "target": "a-cascata-grant-option",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-revoke--non-a-cascata-admin-option",
+      "source": "revoke",
+      "target": "non-a-cascata-admin-option",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-privilegi--revoke",
+      "source": "privilegi",
+      "target": "revoke",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-accesso-e-sicurezza--privilegi",
+      "source": "accesso-e-sicurezza",
+      "target": "privilegi",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-ruoli--create-role-e-grant-del-ruolo",
+      "source": "ruoli",
+      "target": "create-role-e-grant-del-ruolo",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-ruoli-predefiniti--connect",
+      "source": "ruoli-predefiniti",
+      "target": "connect",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-ruoli-predefiniti--resource",
+      "source": "ruoli-predefiniti",
+      "target": "resource",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-ruoli-predefiniti--dba",
+      "source": "ruoli-predefiniti",
+      "target": "dba",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-ruoli--ruoli-predefiniti",
+      "source": "ruoli",
+      "target": "ruoli-predefiniti",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-ruoli--set-role-e-ruoli-di-default",
+      "source": "ruoli",
+      "target": "set-role-e-ruoli-di-default",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-ruoli--ruoli-e-pl-sql-definer-s-rights",
+      "source": "ruoli",
+      "target": "ruoli-e-pl-sql-definer-s-rights",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-accesso-e-sicurezza--ruoli",
+      "source": "accesso-e-sicurezza",
+      "target": "ruoli",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-dizionario-dati--tabelle-base-tab-col-user",
+      "source": "dizionario-dati",
+      "target": "tabelle-base-tab-col-user",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-dizionario-dati--dict-e-cat",
+      "source": "dizionario-dati",
+      "target": "dict-e-cat",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-viste-statiche--user",
+      "source": "viste-statiche",
+      "target": "user",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-viste-statiche--all",
+      "source": "viste-statiche",
+      "target": "all",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-viste-statiche--dba-2",
+      "source": "viste-statiche",
+      "target": "dba-2",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-viste-statiche--cdb",
+      "source": "viste-statiche",
+      "target": "cdb",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-dizionario-dati--viste-statiche",
+      "source": "dizionario-dati",
+      "target": "viste-statiche",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-viste-dinamiche--v",
+      "source": "viste-dinamiche",
+      "target": "v",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-viste-dinamiche--gv",
+      "source": "viste-dinamiche",
+      "target": "gv",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-dizionario-dati--viste-dinamiche",
+      "source": "dizionario-dati",
+      "target": "viste-dinamiche",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-accesso-e-sicurezza--dizionario-dati",
+      "source": "accesso-e-sicurezza",
+      "target": "dizionario-dati",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-avvio-e-spegnimento--accesso-e-sicurezza",
+      "source": "avvio-e-spegnimento",
+      "target": "accesso-e-sicurezza",
+      "sourceHandle": "b",
+      "targetHandle": "t"
+    },
+    {
+      "id": "e-listener-ora--indirizzi-di-ascolto",
+      "source": "listener-ora",
+      "target": "indirizzi-di-ascolto",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-listener-ora--servizi-statici",
+      "source": "listener-ora",
+      "target": "servizi-statici",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-listener-ora--parametri-di-controllo",
+      "source": "listener-ora",
+      "target": "parametri-di-controllo",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-file-di-configurazione--listener-ora",
+      "source": "file-di-configurazione",
+      "target": "listener-ora",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-file-di-configurazione--tnsnames-ora",
+      "source": "file-di-configurazione",
+      "target": "tnsnames-ora",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-sqlnet-ora--names-directory-path",
+      "source": "sqlnet-ora",
+      "target": "names-directory-path",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-sqlnet-ora--dead-connection-detection",
+      "source": "sqlnet-ora",
+      "target": "dead-connection-detection",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-file-di-configurazione--sqlnet-ora",
+      "source": "file-di-configurazione",
+      "target": "sqlnet-ora",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-file-di-configurazione--tns-admin",
+      "source": "file-di-configurazione",
+      "target": "tns-admin",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-oracle-net-services--file-di-configurazione",
+      "source": "oracle-net-services",
+      "target": "file-di-configurazione",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-oracle-net-services--percorso-di-una-connessione",
+      "source": "oracle-net-services",
+      "target": "percorso-di-una-connessione",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-lsnrctl-2--start-e-stop",
+      "source": "lsnrctl-2",
+      "target": "start-e-stop",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-lsnrctl-2--status",
+      "source": "lsnrctl-2",
+      "target": "status",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-lsnrctl-2--services",
+      "source": "lsnrctl-2",
+      "target": "services",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-lsnrctl-2--reload",
+      "source": "lsnrctl-2",
+      "target": "reload",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-listener--lsnrctl-2",
+      "source": "listener",
+      "target": "lsnrctl-2",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-avvio-al-boot--dbstart-e-etc-oratab",
+      "source": "avvio-al-boot",
+      "target": "dbstart-e-etc-oratab",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-avvio-al-boot--servizio-systemd",
+      "source": "avvio-al-boot",
+      "target": "servizio-systemd",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-listener--avvio-al-boot",
+      "source": "listener",
+      "target": "avvio-al-boot",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-listener--default-senza-listener-ora",
+      "source": "listener",
+      "target": "default-senza-listener-ora",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-listener--chi-occupa-una-porta-ss-lsof",
+      "source": "listener",
+      "target": "chi-occupa-una-porta-ss-lsof",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-oracle-net-services--listener",
+      "source": "oracle-net-services",
+      "target": "listener",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-dinamica--processo-lreg",
+      "source": "dinamica",
+      "target": "processo-lreg",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-dinamica--local-listener",
+      "source": "dinamica",
+      "target": "local-listener",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-dinamica--remote-listener",
+      "source": "dinamica",
+      "target": "remote-listener",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-dinamica--alter-system-register",
+      "source": "dinamica",
+      "target": "alter-system-register",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-registrazione-dei-servizi--dinamica",
+      "source": "registrazione-dei-servizi",
+      "target": "dinamica",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-statica--sid-list-nel-listener-ora",
+      "source": "statica",
+      "target": "sid-list-nel-listener-ora",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-statica--avvio-remoto-di-un-istanza",
+      "source": "statica",
+      "target": "avvio-remoto-di-un-istanza",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-registrazione-dei-servizi--statica",
+      "source": "registrazione-dei-servizi",
+      "target": "statica",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-oracle-net-services--registrazione-dei-servizi",
+      "source": "oracle-net-services",
+      "target": "registrazione-dei-servizi",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-servizio-di-default--db-name-e-db-domain",
+      "source": "servizio-di-default",
+      "target": "db-name-e-db-domain",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-servizio-di-default--db-unique-name",
+      "source": "servizio-di-default",
+      "target": "db-unique-name",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-servizi--servizio-di-default",
+      "source": "servizi",
+      "target": "servizio-di-default",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-dbms-service--create-service",
+      "source": "dbms-service",
+      "target": "create-service",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-dbms-service--start-service",
+      "source": "dbms-service",
+      "target": "start-service",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-dbms-service--stop-service-e-delete-service",
+      "source": "dbms-service",
+      "target": "stop-service-e-delete-service",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-servizi--dbms-service",
+      "source": "servizi",
+      "target": "dbms-service",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-servizi--viste-sui-servizi",
+      "source": "servizi",
+      "target": "viste-sui-servizi",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-oracle-net-services--servizi",
+      "source": "oracle-net-services",
+      "target": "servizi",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-risoluzione-dei-nomi--local-naming-tnsnames-ora",
+      "source": "risoluzione-dei-nomi",
+      "target": "local-naming-tnsnames-ora",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-risoluzione-dei-nomi--easy-connect",
+      "source": "risoluzione-dei-nomi",
+      "target": "easy-connect",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-risoluzione-dei-nomi--directory-naming-ldap",
+      "source": "risoluzione-dei-nomi",
+      "target": "directory-naming-ldap",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-oracle-net-services--risoluzione-dei-nomi",
+      "source": "oracle-net-services",
+      "target": "risoluzione-dei-nomi",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-processi-server--dedicated-server",
+      "source": "processi-server",
+      "target": "dedicated-server",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-shared-server--dispatcher",
+      "source": "shared-server",
+      "target": "dispatcher",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-shared-server--pool-di-shared-server",
+      "source": "shared-server",
+      "target": "pool-di-shared-server",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-processi-server--shared-server",
+      "source": "processi-server",
+      "target": "shared-server",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-oracle-net-services--processi-server",
+      "source": "oracle-net-services",
+      "target": "processi-server",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-controllo-in-tre-passi--tnsping",
+      "source": "controllo-in-tre-passi",
+      "target": "tnsping",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-controllo-in-tre-passi--lsnrctl-status",
+      "source": "controllo-in-tre-passi",
+      "target": "lsnrctl-status",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-controllo-in-tre-passi--lsnrctl-services",
+      "source": "controllo-in-tre-passi",
+      "target": "lsnrctl-services",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-diagnostica--controllo-in-tre-passi",
+      "source": "diagnostica",
+      "target": "controllo-in-tre-passi",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-errori-frequenti--tns-03505",
+      "source": "errori-frequenti",
+      "target": "tns-03505",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-errori-frequenti--tns-12541",
+      "source": "errori-frequenti",
+      "target": "tns-12541",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-errori-frequenti--ora-12514",
+      "source": "errori-frequenti",
+      "target": "ora-12514",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-errori-frequenti--ora-01034",
+      "source": "errori-frequenti",
+      "target": "ora-01034",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-diagnostica--errori-frequenti",
+      "source": "diagnostica",
+      "target": "errori-frequenti",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-log-adr--alert-log-del-database",
+      "source": "log-adr",
+      "target": "alert-log-del-database",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-log-adr--listener-log",
+      "source": "log-adr",
+      "target": "listener-log",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-diagnostica--log-adr",
+      "source": "diagnostica",
+      "target": "log-adr",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-oracle-net-services--diagnostica",
+      "source": "oracle-net-services",
+      "target": "diagnostica",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-accesso-e-sicurezza--oracle-net-services",
+      "source": "accesso-e-sicurezza",
+      "target": "oracle-net-services",
+      "sourceHandle": "b",
+      "targetHandle": "t"
+    },
+    {
+      "id": "e-rimuovere-dati--delete",
+      "source": "rimuovere-dati",
+      "target": "delete",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-rimuovere-dati--truncate",
+      "source": "rimuovere-dati",
+      "target": "truncate",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-rimuovere-dati--drop",
+      "source": "rimuovere-dati",
+      "target": "drop",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-tabelle-2--rimuovere-dati",
+      "source": "tabelle-2",
+      "target": "rimuovere-dati",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-cestino-recycle-bin-2--flashback-to-before-drop-2",
+      "source": "cestino-recycle-bin-2",
+      "target": "flashback-to-before-drop-2",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-cestino-recycle-bin-2--drop-purge",
+      "source": "cestino-recycle-bin-2",
+      "target": "drop-purge",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-tabelle-2--cestino-recycle-bin-2",
+      "source": "tabelle-2",
+      "target": "cestino-recycle-bin-2",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-oggetti-sql--tabelle-2",
+      "source": "oggetti-sql",
+      "target": "tabelle-2",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-tipi--not-null",
+      "source": "tipi",
+      "target": "not-null",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-tipi--primary-key",
+      "source": "tipi",
+      "target": "primary-key",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-tipi--unique",
+      "source": "tipi",
+      "target": "unique",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-foreign-key--on-delete-cascade",
+      "source": "foreign-key",
+      "target": "on-delete-cascade",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-foreign-key--on-delete-set-null",
+      "source": "foreign-key",
+      "target": "on-delete-set-null",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-tipi--foreign-key",
+      "source": "tipi",
+      "target": "foreign-key",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-tipi--check",
+      "source": "tipi",
+      "target": "check",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-vincoli--tipi",
+      "source": "vincoli",
+      "target": "tipi",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-definizione--inline",
+      "source": "definizione",
+      "target": "inline",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-definizione--out-of-line",
+      "source": "definizione",
+      "target": "out-of-line",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-definizione--nome-del-vincolo",
+      "source": "definizione",
+      "target": "nome-del-vincolo",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-vincoli--definizione",
+      "source": "vincoli",
+      "target": "definizione",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-stati--enable-disable",
+      "source": "stati",
+      "target": "enable-disable",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-stati--validate-novalidate",
+      "source": "stati",
+      "target": "validate-novalidate",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-vincoli--stati",
+      "source": "vincoli",
+      "target": "stati",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-quando-viene-controllato--not-deferrable",
+      "source": "quando-viene-controllato",
+      "target": "not-deferrable",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-quando-viene-controllato--deferrable-initially-immediate",
+      "source": "quando-viene-controllato",
+      "target": "deferrable-initially-immediate",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-quando-viene-controllato--deferrable-initially-deferred",
+      "source": "quando-viene-controllato",
+      "target": "deferrable-initially-deferred",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-vincoli--quando-viene-controllato",
+      "source": "vincoli",
+      "target": "quando-viene-controllato",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-vincoli--viste-sui-vincoli",
+      "source": "vincoli",
+      "target": "viste-sui-vincoli",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-oggetti-sql--vincoli",
+      "source": "oggetti-sql",
+      "target": "vincoli",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-indici-2--ricerca-binaria",
+      "source": "indici-2",
+      "target": "ricerca-binaria",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-b-tree--rowid",
+      "source": "b-tree",
+      "target": "rowid",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-b-tree--colonne-selettive",
+      "source": "b-tree",
+      "target": "colonne-selettive",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-indici-2--b-tree",
+      "source": "indici-2",
+      "target": "b-tree",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-bitmap--colonne-a-bassa-cardinalita",
+      "source": "bitmap",
+      "target": "colonne-a-bassa-cardinalita",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-indici-2--bitmap",
+      "source": "indici-2",
+      "target": "bitmap",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-indici-2--indici-invisibili",
+      "source": "indici-2",
+      "target": "indici-invisibili",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-oggetti-sql--indici-2",
+      "source": "oggetti-sql",
+      "target": "indici-2",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-organizzazione-delle-tabelle--index-organized-table-iot",
+      "source": "organizzazione-delle-tabelle",
+      "target": "index-organized-table-iot",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-organizzazione-delle-tabelle--cluster-di-tabelle",
+      "source": "organizzazione-delle-tabelle",
+      "target": "cluster-di-tabelle",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-oggetti-sql--organizzazione-delle-tabelle",
+      "source": "oggetti-sql",
+      "target": "organizzazione-delle-tabelle",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-viste--viste-semplici-e-su-piu-tabelle",
+      "source": "viste",
+      "target": "viste-semplici-e-su-piu-tabelle",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-viste--with-check-option",
+      "source": "viste",
+      "target": "with-check-option",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-viste-materializzate--refresh-completo",
+      "source": "viste-materializzate",
+      "target": "refresh-completo",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-viste-materializzate--refresh-fast",
+      "source": "viste-materializzate",
+      "target": "refresh-fast",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-viste--viste-materializzate",
+      "source": "viste",
+      "target": "viste-materializzate",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-oggetti-sql--viste",
+      "source": "oggetti-sql",
+      "target": "viste",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-oggetti-sql--sequenze",
+      "source": "oggetti-sql",
+      "target": "sequenze",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-pl-sql--sql-e-pl-sql-a-confronto",
+      "source": "pl-sql",
+      "target": "sql-e-pl-sql-a-confronto",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-oggetti-pl-sql--stored-procedure",
+      "source": "oggetti-pl-sql",
+      "target": "stored-procedure",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-oggetti-pl-sql--function",
+      "source": "oggetti-pl-sql",
+      "target": "function",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-oggetti-pl-sql--package",
+      "source": "oggetti-pl-sql",
+      "target": "package",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-oggetti-pl-sql--trigger",
+      "source": "oggetti-pl-sql",
+      "target": "trigger",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-pl-sql--oggetti-pl-sql",
+      "source": "pl-sql",
+      "target": "oggetti-pl-sql",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-oggetti-sql--pl-sql",
+      "source": "oggetti-sql",
+      "target": "pl-sql",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-oracle-net-services--oggetti-sql",
+      "source": "oracle-net-services",
+      "target": "oggetti-sql",
+      "sourceHandle": "b",
+      "targetHandle": "t"
+    },
+    {
+      "id": "e-backup-fisico-rman--backup-a-caldo-archivelog",
+      "source": "backup-fisico-rman",
+      "target": "backup-a-caldo-archivelog",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-backup-fisico-rman--point-in-time-recovery",
+      "source": "backup-fisico-rman",
+      "target": "point-in-time-recovery",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-backup-fisico-rman--controllo-corruzioni",
+      "source": "backup-fisico-rman",
+      "target": "controllo-corruzioni",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-backup--backup-fisico-rman",
+      "source": "backup",
+      "target": "backup-fisico-rman",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-backup-logico-data-pump--expdp",
+      "source": "backup-logico-data-pump",
+      "target": "expdp",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-backup-logico-data-pump--impdp",
+      "source": "backup-logico-data-pump",
+      "target": "impdp",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-backup--backup-logico-data-pump",
+      "source": "backup",
+      "target": "backup-logico-data-pump",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-backup-e-alta-disponibilita--backup",
+      "source": "backup-e-alta-disponibilita",
+      "target": "backup",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-a-cosa-serve--data-pump",
+      "source": "a-cosa-serve",
+      "target": "data-pump",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-a-cosa-serve--external-table",
+      "source": "a-cosa-serve",
+      "target": "external-table",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-a-cosa-serve--utl-file",
+      "source": "a-cosa-serve",
+      "target": "utl-file",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-a-cosa-serve--bfile",
+      "source": "a-cosa-serve",
+      "target": "bfile",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-oracle-directory--a-cosa-serve",
+      "source": "oracle-directory",
+      "target": "a-cosa-serve",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-privilegi-2--create-any-directory",
+      "source": "privilegi-2",
+      "target": "create-any-directory",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-privilegi-2--read-write-execute",
+      "source": "privilegi-2",
+      "target": "read-write-execute",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-oracle-directory--privilegi-2",
+      "source": "oracle-directory",
+      "target": "privilegi-2",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-oracle-directory--data-pump-dir",
+      "source": "oracle-directory",
+      "target": "data-pump-dir",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-backup-e-alta-disponibilita--oracle-directory",
+      "source": "backup-e-alta-disponibilita",
+      "target": "oracle-directory",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-cdb-2--cdb-root",
+      "source": "cdb-2",
+      "target": "cdb-root",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-multitenant--cdb-2",
+      "source": "multitenant",
+      "target": "cdb-2",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-multitenant--pdb",
+      "source": "multitenant",
+      "target": "pdb",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-multitenant--pdb-seed",
+      "source": "multitenant",
+      "target": "pdb-seed",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-backup-e-alta-disponibilita--multitenant",
+      "source": "backup-e-alta-disponibilita",
+      "target": "multitenant",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-upgrade--in-place-deprecato",
+      "source": "upgrade",
+      "target": "in-place-deprecato",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-upgrade--out-of-place-con-dbua",
+      "source": "upgrade",
+      "target": "out-of-place-con-dbua",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-backup-e-alta-disponibilita--upgrade",
+      "source": "backup-e-alta-disponibilita",
+      "target": "upgrade",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "e-rac--cache-fusion",
+      "source": "rac",
+      "target": "cache-fusion",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-rac--interconnect",
+      "source": "rac",
+      "target": "interconnect",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-rac--failover-delle-sessioni",
+      "source": "rac",
+      "target": "failover-delle-sessioni",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-alta-disponibilita--rac",
+      "source": "alta-disponibilita",
+      "target": "rac",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-data-guard--database-standby",
+      "source": "data-guard",
+      "target": "database-standby",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-data-guard--sincronizzazione-con-gli-archive-log",
+      "source": "data-guard",
+      "target": "sincronizzazione-con-gli-archive-log",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-data-guard--switchover",
+      "source": "data-guard",
+      "target": "switchover",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-data-guard--failover",
+      "source": "data-guard",
+      "target": "failover",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-alta-disponibilita--data-guard",
+      "source": "alta-disponibilita",
+      "target": "data-guard",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-alta-disponibilita--maa-rac-data-guard",
+      "source": "alta-disponibilita",
+      "target": "maa-rac-data-guard",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-backup-e-alta-disponibilita--alta-disponibilita",
+      "source": "backup-e-alta-disponibilita",
+      "target": "alta-disponibilita",
+      "sourceHandle": "l",
+      "targetHandle": "r"
+    },
+    {
+      "id": "e-oggetti-sql--backup-e-alta-disponibilita",
+      "source": "oggetti-sql",
+      "target": "backup-e-alta-disponibilita",
+      "sourceHandle": "b",
+      "targetHandle": "t"
+    },
+    {
+      "id": "emv58e0807pxb",
+      "source": "row-migration",
+      "target": "chained-row",
+      "sourceHandle": "b",
+      "targetHandle": "t"
+    },
+    {
+      "id": "emv58fkq85ij5",
+      "source": "blocco",
+      "target": "organizzazione-del-blocco",
+      "sourceHandle": "b",
+      "targetHandle": "t"
+    },
+    {
+      "id": "emv58flun0b97",
+      "source": "organizzazione-del-blocco",
+      "target": "struttura",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "emv58fmvlzfe0",
+      "source": "organizzazione-del-blocco",
+      "target": "gestione-dello-spazio",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "emv58fnyrcm81",
+      "source": "organizzazione-del-blocco",
+      "target": "righe-fuori-posto",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "emv58fpbvhbu6",
+      "source": "organizzazione-del-blocco",
+      "target": "high-water-mark",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "emv58fvnwgqzp",
+      "source": "full-table-scan-fino-all-hwm",
+      "target": "gestione-dello-spazio",
+      "sourceHandle": "b",
+      "targetHandle": "r"
+    },
+    {
+      "id": "emv58g1axd1bh",
+      "source": "gestione-dello-spazio",
+      "target": "pctfree",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "emv58g2xww70z",
+      "source": "gestione-dello-spazio",
+      "target": "pctused",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "emv58hzpkpmtt",
+      "source": "oracle-home",
+      "target": "sqlplus",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "emv58i1e8pg45",
+      "source": "oracle-home",
+      "target": "dbca",
+      "sourceHandle": "r",
+      "targetHandle": "l"
+    },
+    {
+      "id": "emv58i3oh5r1k",
+      "source": "oracle-home",
+      "target": "lsnrctl",
+      "sourceHandle": "r",
+      "targetHandle": "l"
     }
   ]
 }
