@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import {
   Background,
   ConnectionMode,
@@ -17,7 +17,7 @@ import { readFile, savePage, saveRoadmap } from '../admin/api.js'
 import InitialViewport from './InitialViewport.jsx'
 import MarkdownEditor from './MarkdownEditor.jsx'
 import { nodeTypes } from './RoadmapNode.jsx'
-import { KINDS, LINES, PRIORITIES, edgeStyle, fromFlow, newId, toFlow } from './model.js'
+import { KINDS, LINES, PRIORITIES, buildIndex, edgeStyle, fromFlow, newId, toFlow } from './model.js'
 
 const NEW_LABELS = { title: 'Titolo', topic: 'Nuovo argomento', subtopic: 'Nuovo sotto-argomento', note: 'Nota' }
 
@@ -40,11 +40,11 @@ export default function RoadmapEditor(props) {
   )
 }
 
-// `pageFiles`: the .md files currently in home/. `openRequest` ({ path, seq }) opens a page
-// from outside (the content tree): it selects and centers the node linked to it, or shows
-// the page on its own in the panel. `apiRef.current` lets the workspace ask about unsaved
-// work and report renames/deletions made in the tree.
-function Editor({ file, doc, pageFiles, openRequest, apiRef }) {
+// `pageFiles`: the .md files currently in home/. `openRequest` ({ id, seq } or { path, seq })
+// opens a node from outside (the index): it selects and centers it, or the node linked to the
+// page, or else shows the page on its own in the panel. `onOutline({ index, active })` hands
+// the workspace the roadmap's index as it is being edited and the selected node's id.
+function Editor({ file, doc, pageFiles, openRequest, onOutline }) {
   const initial = useMemo(() => toFlow(doc), [doc])
   const [nodes, setNodes, onNodesChange] = useNodesState(initial.nodes)
   const [edges, setEdges, onEdgesChange] = useEdgesState(initial.edges)
@@ -84,13 +84,13 @@ function Editor({ file, doc, pageFiles, openRequest, apiRef }) {
     )
   }, [shownPage, disk, drafts])
 
-  // Open a page asked for by the content tree
+  // Open a node, or a page, asked for from outside
   useEffect(() => {
     if (!openRequest) return
-    const linked = nodes.find((n) => n.data.page === openRequest.path)
+    const linked = nodes.find((n) => (openRequest.id ? n.id === openRequest.id : n.data.page === openRequest.path))
     setNodes((nds) => nds.map((n) => ({ ...n, selected: n.id === linked?.id })))
     setEdges((eds) => eds.map((e) => (e.selected ? { ...e, selected: false } : e)))
-    setPanelPage(linked ? null : openRequest.path)
+    setPanelPage(linked ? null : openRequest.path ?? null)
     const internal = linked && getInternalNode(linked.id)
     if (internal?.measured?.width) {
       const { x, y } = internal.internals.positionAbsolute
@@ -100,29 +100,13 @@ function Editor({ file, doc, pageFiles, openRequest, apiRef }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [openRequest])
 
-  if (apiRef) {
-    apiRef.current = {
-      hasUnsaved: () => unsaved > 0,
-      // A page or folder moved in the tree: follow it in the open nodes and drafts
-      applyRename(from, to) {
-        const move = (p) => (p === from || p.startsWith(from + '/') ? to + p.slice(from.length) : p)
-        const rekey = (obj) => Object.fromEntries(Object.entries(obj).map(([p, v]) => [move(p), v]))
-        setNodes((nds) => nds.map((n) => (n.data.page && move(n.data.page) !== n.data.page ? { ...n, data: { ...n.data, page: move(n.data.page) } } : n)))
-        setDrafts(rekey)
-        setDisk(rekey)
-        setPanelPage((p) => p && move(p))
-      },
-      // A page or folder was deleted in the tree (the server already unlinked it on disk)
-      applyDelete(path) {
-        const gone = (p) => p === path || p.startsWith(path + '/')
-        const keep = (obj) => Object.fromEntries(Object.entries(obj).filter(([p]) => !gone(p)))
-        setNodes((nds) => nds.map((n) => (n.data.page && gone(n.data.page) ? { ...n, data: { ...n.data, page: '' } } : n)))
-        setDrafts(keep)
-        setDisk(keep)
-        setPanelPage((p) => (p && gone(p) ? null : p))
-      },
-    }
-  }
+  // The index follows the roadmap as it is being edited, saved or not. Deferred, so that
+  // dragging a node doesn't rebuild it at every step.
+  const liveNodes = useDeferredValue(nodes)
+  const liveEdges = useDeferredValue(edges)
+  const index = useMemo(() => buildIndex(fromFlow(meta, liveNodes, liveEdges)), [meta, liveNodes, liveEdges])
+  const activeId = node?.id ?? null
+  useEffect(() => onOutline?.({ index, active: activeId }), [index, activeId, onOutline])
 
   // Any change except selection and React Flow's own measuring counts as unsaved work
   const track = (changes) => changes.some((c) => c.type !== 'select' && c.type !== 'dimensions') && setDirty(true)

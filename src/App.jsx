@@ -111,7 +111,7 @@ export default function App() {
             <Content path={path} />
           )}
         </main>
-        {/* The admin pages have their own content tree */}
+        {/* The admin pages show the index of the roadmap being edited, on the left */}
         {!isAdmin(path) && (
           <Sidebar
             index={index}
