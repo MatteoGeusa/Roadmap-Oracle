@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Background, ConnectionMode, Controls, ReactFlow, ReactFlowProvider } from '@xyflow/react'
 import { href, pages } from '../content.js'
 import Markdown from '../Markdown.jsx'
+import SidePanel from '../SidePanel.jsx'
 import FocusNode from './FocusNode.jsx'
 import InitialViewport from './InitialViewport.jsx'
 import { nodeTypes } from './RoadmapNode.jsx'
@@ -193,70 +194,70 @@ export default function RoadmapView({ file, doc, focus, onOpenChange }) {
           </ReactFlow>
         </ReactFlowProvider>
 
-        {!open && panelItem?.page && (
-          <aside className="rm-panel" style={{ width: panel.width }}>
-            <div className="resize-handle" {...panel.handleProps} title="Trascina per ridimensionare, doppio clic per ripristinare" />
-            <div className="rm-panel-head">
-              <h3>{panelItem.page.split('/').pop()}</h3>
-              <button className="rm-close" onClick={() => setPanelItem(null)} aria-label="Chiudi">
-                ×
-              </button>
-            </div>
-            {pages[panelItem.page] === undefined ? (
-              // e.g. an old ?doc= link to a page that has since been removed
-              <p className="rm-muted">Questo documento non esiste (più).</p>
-            ) : (
+        {(open || panelItem?.page) && (
+          <SidePanel side="right" size={panel} className="rm-panel">
+            {open ? (
               <>
-                <p className="rm-muted rm-panel-note">Nessun argomento della roadmap è collegato a questo documento.</p>
+                <div className="rm-panel-head">
+                  <h3>
+                    {open.data.priority === 'important' && <span className="rm-star">★ </span>}
+                    {open.data.label}
+                  </h3>
+                  <button className="rm-close" onClick={() => setOpenId(null)} aria-label="Chiudi">
+                    ×
+                  </button>
+                </div>
+                {open.data.priority !== 'normal' && (
+                  <span className={`rm-tag rm-tag-${open.data.priority}`}>{PRIORITIES[open.data.priority]}</span>
+                )}
+                {isTrackable(open.data.kind) && (
+                  <div className="rm-status-buttons">
+                    {Object.entries(STATUSES).map(([s, label]) => (
+                      <button
+                        key={s}
+                        className={`rm-chip rm-chip-${s}${progress[open.id] === s ? ' rm-active' : ''}`}
+                        onClick={() => setStatus(open.id, progress[open.id] === s ? null : s)}
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                )}
                 <div className="rm-panel-body">
-                  <Markdown path={panelItem.page} onOpen={openDocument} />
+                  {open.data.page && pages[open.data.page] !== undefined ? (
+                    <>
+                      <Markdown path={open.data.page} onOpen={openDocument} />
+                      <p>
+                        <a href={href(open.data.page)}>Apri come pagina →</a>
+                      </p>
+                    </>
+                  ) : (
+                    <p className="rm-muted">Nessun contenuto collegato a questo argomento.</p>
+                  )}
                 </div>
               </>
-            )}
-          </aside>
-        )}
-
-        {open && (
-          <aside className="rm-panel" style={{ width: panel.width }}>
-            <div className="resize-handle" {...panel.handleProps} title="Trascina per ridimensionare, doppio clic per ripristinare" />
-            <div className="rm-panel-head">
-              <h3>
-                {open.data.priority === 'important' && <span className="rm-star">★ </span>}
-                {open.data.label}
-              </h3>
-              <button className="rm-close" onClick={() => setOpenId(null)} aria-label="Chiudi">
-                ×
-              </button>
-            </div>
-            {open.data.priority !== 'normal' && (
-              <span className={`rm-tag rm-tag-${open.data.priority}`}>{PRIORITIES[open.data.priority]}</span>
-            )}
-            {isTrackable(open.data.kind) && (
-              <div className="rm-status-buttons">
-                {Object.entries(STATUSES).map(([s, label]) => (
-                  <button
-                    key={s}
-                    className={`rm-chip rm-chip-${s}${progress[open.id] === s ? ' rm-active' : ''}`}
-                    onClick={() => setStatus(open.id, progress[open.id] === s ? null : s)}
-                  >
-                    {label}
+            ) : (
+              <>
+                <div className="rm-panel-head">
+                  <h3>{panelItem.page.split('/').pop()}</h3>
+                  <button className="rm-close" onClick={() => setPanelItem(null)} aria-label="Chiudi">
+                    ×
                   </button>
-                ))}
-              </div>
+                </div>
+                {pages[panelItem.page] === undefined ? (
+                  // e.g. an old ?doc= link to a page that has since been removed
+                  <p className="rm-muted">Questo documento non esiste (più).</p>
+                ) : (
+                  <>
+                    <p className="rm-muted rm-panel-note">Nessun argomento della roadmap è collegato a questo documento.</p>
+                    <div className="rm-panel-body">
+                      <Markdown path={panelItem.page} onOpen={openDocument} />
+                    </div>
+                  </>
+                )}
+              </>
             )}
-            <div className="rm-panel-body">
-              {open.data.page && pages[open.data.page] !== undefined ? (
-                <>
-                  <Markdown path={open.data.page} onOpen={openDocument} />
-                  <p>
-                    <a href={href(open.data.page)}>Apri come pagina →</a>
-                  </p>
-                </>
-              ) : (
-                <p className="rm-muted">Nessun contenuto collegato a questo argomento.</p>
-              )}
-            </div>
-          </aside>
+          </SidePanel>
         )}
       </div>
     </div>

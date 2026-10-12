@@ -5,7 +5,7 @@ esplora la roadmap, apre gli appunti di ogni argomento in un pannello laterale e
 propri progressi. Il sito è statico e pubblicato su GitHub Pages; tutti i contenuti stanno
 nella cartella `home/`.
 
-L'**indice** a destra segue la roadmap, non le cartelle di `home/`: i titoli fanno da
+L'**indice** a sinistra segue la roadmap, non le cartelle di `home/`: i titoli fanno da
 sezioni, sotto ogni titolo compaiono gli argomenti collegati e sotto ogni argomento i suoi
 sotto-argomenti, nell'ordine in cui stanno nella mappa (dall'alto in basso). Un
 sotto-argomento collegato a un altro sotto-argomento, invece che direttamente

@@ -86,7 +86,7 @@ export default function AdminWorkspace({ initialRoadmap }) {
 
   return (
     <div className="ws">
-      <Sidebar side="left" index={loaded ? outline?.index ?? null : null} active={outline?.active} nodeHref={nodeHref} onOpen={openNode} />
+      <Sidebar index={loaded ? outline?.index ?? null : null} active={outline?.active} nodeHref={nodeHref} onOpen={openNode} />
       <div className="ws-main">
         {error && <p className="ed-error ws-error">{error}</p>}
         {loaded ? (

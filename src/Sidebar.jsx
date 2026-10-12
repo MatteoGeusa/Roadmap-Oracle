@@ -1,12 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
+import SidePanel from './SidePanel.jsx'
 import { useResizable } from './useResizable.js'
 
-// Remembered per side, so the site's index and the admin's are opened and sized separately
-const keys = (side) => (side === 'left' ? { open: 'index-left-open', width: 'index-left-width' } : { open: 'sidebar-open', width: 'sidebar-width' })
+const KEY = 'sidebar-open'
 
-function loadOpen(key) {
+function loadOpen() {
   try {
-    const v = localStorage.getItem(key)
+    const v = localStorage.getItem(KEY)
     if (v !== null) return v === '1'
   } catch {
     // Storage blocked: fall back to the screen-size default
@@ -124,11 +124,10 @@ function Entry({ entry, nav }) {
 // `index`: the roadmap's table of contents (see buildIndex), or null when there is no roadmap.
 // `active`: id of the node to highlight. `nodeHref(node)`: where a node's link points.
 // `onOpen(node)`: opens a node in place; when missing, links simply navigate.
-// `side`: "right" beside the site's pages, "left" in the admin workspace.
-export default function Sidebar({ index, active, nodeHref, onOpen, side = 'right' }) {
-  const key = keys(side)
-  const [open, setOpen] = useState(() => loadOpen(key.open))
-  const resize = useResizable(key.width, 300, 220, side)
+// It is always docked on the left, on the site and in the admin alike.
+export default function Sidebar({ index, active, nodeHref, onOpen }) {
+  const [open, setOpen] = useState(loadOpen)
+  const resize = useResizable('sidebar-width', 300, 220, 'left')
   const [query, setQuery] = useState('')
   // Expanded branches; the index starts with only the sections, plus the way to the open node
   const [expanded, setExpanded] = useState(() => new Set(pathTo(index ?? [], active) ?? []))
@@ -159,24 +158,17 @@ export default function Sidebar({ index, active, nodeHref, onOpen, side = 'right
   const toggleSidebar = () => {
     setOpen(!open)
     try {
-      localStorage.setItem(key.open, open ? '0' : '1')
+      localStorage.setItem(KEY, open ? '0' : '1')
     } catch {
       // Not remembered across visits, still works for this one
     }
   }
 
-  // The arrow points the way the panel will go
-  const arrow = open === (side === 'right') ? '›' : '‹'
-
   return (
-    <aside
-      className={['sidebar', open ? 'open' : 'closed', side === 'left' ? 'sidebar-left' : ''].join(' ')}
-      style={open ? { width: resize.width } : undefined}
-    >
-      {open && <div className="resize-handle" {...resize.handleProps} title="Trascina per ridimensionare, doppio clic per ripristinare" />}
+    <SidePanel side="left" size={open ? resize : null} className={open ? 'sidebar open' : 'sidebar closed'}>
       <div className="sidebar-head">
         <button className="sidebar-toggle" onClick={toggleSidebar} aria-expanded={open} title={open ? 'Chiudi indice' : 'Apri indice'}>
-          {arrow}
+          {open ? '‹' : '›'}
         </button>
         {open && <span>Indice</span>}
         {open && index?.length > 0 && (
@@ -212,6 +204,6 @@ export default function Sidebar({ index, active, nodeHref, onOpen, side = 'right
           )}
         </nav>
       )}
-    </aside>
+    </SidePanel>
   )
 }

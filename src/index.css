@@ -33,16 +33,22 @@ a { color: #0969da; }
 .code-copy:hover { color: var(--fg); border-color: var(--muted); }
 @media (hover: none) { .code-copy { opacity: 1; } }
 
-/* Contents sidebar */
+/* Side panels (SidePanel.jsx): the index on the left, a node's content on the right. Each
+   slides in from its own side, with its border and drag handle on the inner edge. */
+.side-panel { position: relative; box-sizing: border-box; }
+.side-panel-left { border-right: 1px solid var(--border); animation: slide-from-left 0.22s ease-out; }
+.side-panel-right { border-left: 1px solid var(--border); animation: slide-from-right 0.22s ease-out; }
+.side-panel-left > .resize-handle { left: auto; right: 0; }
+@keyframes slide-from-left { from { transform: translateX(-100%); } }
+@keyframes slide-from-right { from { transform: translateX(100%); } }
+@media (prefers-reduced-motion: reduce) { .side-panel { animation: none; } }
+
+/* The index, docked on the left */
 .sidebar {
   flex-shrink: 0; width: 280px; display: flex; flex-direction: column;
-  border-left: 1px solid var(--border); background: var(--bg-soft);
-  transition: width 0.2s ease; overflow: hidden; position: relative;
+  background: var(--bg-soft); transition: width 0.2s ease; overflow: hidden;
 }
 .sidebar.closed { width: 44px; }
-/* Docked on the left (admin): border and drag handle on the right edge */
-.sidebar-left { border-left: 0; border-right: 1px solid var(--border); }
-.sidebar-left .resize-handle { left: auto; right: 0; }
 .sidebar-head {
   display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem;
   border-bottom: 1px solid var(--border); font-size: 0.8rem; font-weight: 600;
@@ -107,14 +113,12 @@ button.tree-caret:hover { color: var(--fg); }
 
 /* Small screens: the open sidebar slides over the content instead of squeezing it */
 @media (max-width: 700px) {
-  .sidebar.open { position: absolute; top: 0; right: 0; bottom: 0; z-index: 30; box-shadow: -8px 0 24px rgb(0 0 0 / 0.2); }
-  .app-main { margin-right: 44px; }
-  .sidebar.closed { position: absolute; top: 0; right: 0; bottom: 0; }
-  /* The admin's index stays in the layout: nothing reserves room for it over the editor */
-  .sidebar-left.open, .sidebar-left.closed { position: static; box-shadow: none; }
+  .sidebar.open { position: absolute; top: 0; left: 0; bottom: 0; z-index: 30; box-shadow: 8px 0 24px rgb(0 0 0 / 0.2); }
+  .app-main { margin-left: 44px; }
+  .sidebar.closed { position: absolute; top: 0; left: 0; bottom: 0; }
 }
 
-/* Drag handle on the left edge of right-docked panels (see useResizable) */
+/* Drag handle on the inner edge of a side panel: the left one here, see .side-panel-left (useResizable) */
 .resize-handle {
   position: absolute; top: 0; bottom: 0; left: 0; width: 6px; z-index: 5;
   cursor: col-resize; touch-action: none;

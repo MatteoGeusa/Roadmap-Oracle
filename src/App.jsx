@@ -98,6 +98,15 @@ export default function App() {
   return (
     <div className="app">
       <div className="app-body">
+        {/* The admin pages show the index of the roadmap being edited themselves */}
+        {!isAdmin(path) && (
+          <Sidebar
+            index={index}
+            active={active}
+            nodeHref={nodeHref}
+            onOpen={roadmapFile ? (node) => setFocus({ id: node.id, seq: Date.now() }) : null}
+          />
+        )}
         <main className="app-main">
           {roadmapFile ? (
             <RoadmapView
@@ -111,15 +120,6 @@ export default function App() {
             <Content path={path} />
           )}
         </main>
-        {/* The admin pages show the index of the roadmap being edited, on the left */}
-        {!isAdmin(path) && (
-          <Sidebar
-            index={index}
-            active={active}
-            nodeHref={nodeHref}
-            onOpen={roadmapFile ? (node) => setFocus({ id: node.id, seq: Date.now() }) : null}
-          />
-        )}
       </div>
     </div>
   )

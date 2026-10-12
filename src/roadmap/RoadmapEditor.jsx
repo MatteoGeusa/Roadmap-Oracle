@@ -12,6 +12,7 @@ import {
   useReactFlow,
 } from '@xyflow/react'
 import { href, roadmapRoute } from '../content.js'
+import SidePanel from '../SidePanel.jsx'
 import { useResizable } from '../useResizable.js'
 import { readFile, savePage, saveRoadmap } from '../admin/api.js'
 import InitialViewport from './InitialViewport.jsx'
@@ -257,8 +258,7 @@ function Editor({ file, doc, pageFiles, openRequest, onOutline }) {
 
         {/* The panel only appears when there is something to edit */}
         {(selectionCount > 0 || panelPage) && (
-        <aside className="ed-panel" style={{ width: panel.width }}>
-          <div className="resize-handle" {...panel.handleProps} title="Trascina per ridimensionare, doppio clic per ripristinare" />
+        <SidePanel side="right" size={panel} className="ed-panel">
 
           {node ? (
             <NodePanel
@@ -310,7 +310,7 @@ function Editor({ file, doc, pageFiles, openRequest, onOutline }) {
               </button>
             </section>
           ) : null}
-        </aside>
+        </SidePanel>
         )}
       </div>
     </div>
