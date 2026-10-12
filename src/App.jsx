@@ -1,8 +1,9 @@
-import { Suspense, useCallback, useState } from 'react'
+import { Suspense, useCallback, useMemo, useState } from 'react'
 import { BASE, ROADMAP_EXT, currentPath, href, isFolder, listFolder, pages, roadmapByRoute, roadmapRoute, roadmaps } from './content.js'
 import Markdown from './Markdown.jsx'
 import Sidebar from './Sidebar.jsx'
 import RoadmapView from './roadmap/RoadmapView.jsx'
+import { buildIndex } from './roadmap/model.js'
 import { AdminWorkspace } from './admin.js'
 
 // The home page shows the first roadmap directly inside home/, if there is one
@@ -53,28 +54,46 @@ function Content({ path }) {
   return <div className="page">{body}</div>
 }
 
-const docFromUrl = () => new URLSearchParams(window.location.search).get('doc')
+const searchParam = (name) => new URLSearchParams(window.location.search).get(name)
 
 export default function App() {
   const path = currentPath()
   const roadmapFile = roadmapAt(path)
-  // Documents open beside this roadmap; off a roadmap page they open beside the home one
-  const docRoute = roadmapFile ? path : homeRoadmap ? '' : null
+  // The index shows this roadmap; off a roadmap page it shows the home one
+  const indexFile = roadmapFile ?? (isAdmin(path) ? undefined : homeRoadmap)
+  const indexRoute = roadmapFile ? path : ''
+  const index = useMemo(() => (indexFile ? buildIndex(roadmaps[indexFile]) : null), [indexFile])
 
-  const [openDoc, setOpenDoc] = useState(() => (roadmapFile ? docFromUrl() : null))
-  const [focus, setFocus] = useState(() => (openDoc ? { page: openDoc, seq: 0 } : null))
+  // ?node= or ?doc= reopens a node or a document beside the roadmap
+  const [focus, setFocus] = useState(() => {
+    if (!roadmapFile) return null
+    const id = searchParam('node')
+    const page = searchParam('doc')
+    return id ? { id, seq: 0 } : page ? { page, seq: 0 } : null
+  })
+  const [openId, setOpenId] = useState(null)
 
-  // Keep ?doc= in the address bar in step with the panel, so a reload or a shared link reopens it
-  const onPageChange = useCallback((page) => {
-    setOpenDoc(page)
+  // Keep the address bar in step with the panel, so a reload or a shared link reopens it:
+  // ?doc= for a node with a document (or a document alone), ?node= for one without
+  const onOpenChange = useCallback((id, page) => {
+    setOpenId(id)
     const url = new URL(window.location.href)
+    url.searchParams.delete('doc')
+    url.searchParams.delete('node')
     if (page) url.searchParams.set('doc', page)
-    else url.searchParams.delete('doc')
+    else if (id) url.searchParams.set('node', id)
     window.history.replaceState(null, '', url)
   }, [])
 
-  const fileHref = (file) =>
-    docRoute === null ? href(file) : `${docRoute ? href(docRoute) : BASE}?doc=${encodeURIComponent(file)}`
+  const nodeHref = (node) =>
+    `${indexRoute ? href(indexRoute) : BASE}?${node.page ? `doc=${encodeURIComponent(node.page)}` : `node=${encodeURIComponent(node.id)}`}`
+
+  // On a document's own page, highlight the node of the home roadmap that links to it
+  const active = roadmapFile
+    ? openId
+    : indexFile && pages[path] !== undefined
+      ? (roadmaps[indexFile].nodes ?? []).find((n) => n.page === path)?.id ?? null
+      : null
 
   return (
     <div className="app">
@@ -86,7 +105,7 @@ export default function App() {
               file={roadmapFile}
               doc={roadmaps[roadmapFile]}
               focus={focus}
-              onPageChange={onPageChange}
+              onOpenChange={onOpenChange}
             />
           ) : (
             <Content path={path} />
@@ -95,9 +114,10 @@ export default function App() {
         {/* The admin pages have their own content tree */}
         {!isAdmin(path) && (
           <Sidebar
-            active={roadmapFile ? openDoc : pages[path] !== undefined ? path : null}
-            fileHref={fileHref}
-            onOpen={roadmapFile ? (file) => setFocus({ page: file, seq: Date.now() }) : null}
+            index={index}
+            active={active}
+            nodeHref={nodeHref}
+            onOpen={roadmapFile ? (node) => setFocus({ id: node.id, seq: Date.now() }) : null}
           />
         )}
       </div>

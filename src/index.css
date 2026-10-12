@@ -44,21 +44,34 @@ a { color: #0969da; }
 .tree { list-style: none; margin: 0; padding: 0; }
 .tree-row {
   display: flex; align-items: center; gap: 0.35rem; padding: 0.25rem 0.75rem;
-  padding-left: calc(0.75rem + var(--depth, 0) * 0.9rem);
-  color: var(--fg); text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  color: var(--fg); text-decoration: none; white-space: nowrap; min-width: 0;
 }
-a.tree-row:hover, .tree-folder:hover { background: var(--bg); }
+a.tree-row:hover { background: var(--bg); }
 .tree-row.active { color: #0969da; font-weight: 600; }
 @media (prefers-color-scheme: dark) { .tree-row.active { color: #4493f8; } }
-.tree-icon { width: 1.2em; text-align: center; flex-shrink: 0; }
-.tree-folder {
-  width: 100%; border: 0; background: none; font: inherit; text-align: left; cursor: pointer;
-  padding-left: calc(0.75rem + var(--depth, 0) * 0.9rem - 1.2rem);
-}
+.tree-label { overflow: hidden; text-overflow: ellipsis; }
+.tree-star { color: #bf8700; flex-shrink: 0; font-size: 0.8em; }
+
+/* Index entries: a caret (or its empty slot) then the link, indented by depth */
+.tree-item { display: flex; align-items: center; padding-left: calc(0.25rem + var(--depth, 0) * 1rem); }
+.tree-item .tree-row { flex: 1; padding-left: 0.15rem; }
 .tree-caret {
-  width: 1.2rem; flex-shrink: 0; text-align: center;
-  color: var(--muted); font-size: 0.8rem;
+  width: 1.2rem; height: 1.6rem; flex-shrink: 0; padding: 0; border: 0; background: none;
+  color: var(--muted); font-size: 0.8rem; text-align: center;
 }
+button.tree-caret { cursor: pointer; }
+button.tree-caret:hover { color: var(--fg); }
+.tree-subtopic, .tree-note { font-size: 0.85rem; color: var(--muted); }
+
+/* Titles head a section of the index */
+.tree-section { margin-top: 0.5rem; }
+.tree-section > .tree-row {
+  font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.04em; color: var(--muted);
+}
+.tree-section > .tree-row.active { color: #0969da; }
+@media (prefers-color-scheme: dark) { .tree-section > .tree-row.active { color: #4493f8; } }
+.sidebar-empty { padding: 0 0.75rem; color: var(--muted); }
 
 /* Small screens: the open sidebar slides over the content instead of squeezing it */
 @media (max-width: 700px) {

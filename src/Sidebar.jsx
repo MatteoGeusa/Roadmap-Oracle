@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { href, pages } from './content.js'
+import { useEffect, useState } from 'react'
 import { useResizable } from './useResizable.js'
 
 const KEY = 'sidebar-open'
@@ -14,74 +13,81 @@ function loadOpen() {
   return window.innerWidth > 800
 }
 
-// Nested { folders: { name: tree }, files: [path] } from the markdown pages in home/.
-// Roadmaps are left out: they are shown in the main area, not listed as content.
-function buildTree() {
-  const root = { folders: {}, files: [] }
-  for (const file of Object.keys(pages)) {
-    const parts = file.split('/')
-    let node = root
-    for (const dir of parts.slice(0, -1)) node = node.folders[dir] ??= { folders: {}, files: [] }
-    node.files.push(file)
-  }
-  return root
-}
-
-const tree = buildTree()
-
-// A plain click opens the file through onOpen (beside the roadmap); ctrl/cmd/middle
+// A plain click opens the node through onOpen (on the roadmap); ctrl/cmd/middle
 // click keeps the browser's own behaviour on the link
 const isPlainClick = (e) => e.button === 0 && !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey
 
-function Folder({ node, prefix, depth, nav }) {
+const contains = (entry, id) => entry.node.id === id || entry.children.some((c) => contains(c, id))
+
+function Entries({ entries, depth, nav }) {
   return (
     <ul className="tree" style={{ '--depth': depth }}>
-      {Object.keys(node.folders)
-        .sort()
-        .map((name) => (
-          <FolderItem key={name} name={name} node={node.folders[name]} path={prefix + name} depth={depth} nav={nav} />
-        ))}
-      {[...node.files].sort().map((file) => (
-        <li key={file}>
-          <a
-            href={nav.fileHref(file)}
-            className={file === nav.active ? 'tree-row active' : 'tree-row'}
-            onClick={(e) => {
-              if (nav.onOpen && isPlainClick(e)) {
-                e.preventDefault()
-                nav.onOpen(file)
-              }
-            }}
-          >
-            <span className="tree-icon">📄</span>
-            {file.split('/').pop()}
-          </a>
-        </li>
+      {entries.map((entry) => (
+        <Entry key={entry.node.id} entry={entry} depth={depth} nav={nav} />
       ))}
     </ul>
   )
 }
 
-// Folders only expand and collapse, they are not pages of their own
-function FolderItem({ name, node, path, depth, nav }) {
-  // Folders on the way to the open file start expanded
-  const [open, setOpen] = useState(Boolean(nav.active?.startsWith(path + '/')))
+function Entry({ entry, depth, nav }) {
+  const { node, children } = entry
+  // Branches on the way to the open node expand, also when it is opened from the map
+  const leadsToActive = children.some((c) => contains(c, nav.active))
+  const [open, setOpen] = useState(leadsToActive)
+  useEffect(() => {
+    if (leadsToActive) setOpen(true)
+  }, [leadsToActive])
+  const label = node.label || 'Senza nome'
+
+  const link = (
+    <a
+      href={nav.nodeHref(node)}
+      className={['tree-row', `tree-${node.kind ?? 'topic'}`, node.id === nav.active ? 'active' : ''].join(' ')}
+      title={label}
+      onClick={(e) => {
+        if (nav.onOpen && isPlainClick(e)) {
+          e.preventDefault()
+          nav.onOpen(node)
+        }
+      }}
+    >
+      {node.priority === 'important' && <span className="tree-star">★</span>}
+      <span className="tree-label">{label}</span>
+    </a>
+  )
+
+  // Titles are section headings: their content is always shown
+  if (node.kind === 'title') {
+    return (
+      <li className="tree-section">
+        {link}
+        {children.length > 0 && <Entries entries={children} depth={depth} nav={nav} />}
+      </li>
+    )
+  }
+
   return (
     <li>
-      <button className="tree-row tree-folder" onClick={() => setOpen(!open)} aria-expanded={open}>
-        <span className="tree-caret">{open ? '▾' : '▸'}</span>
-        <span className="tree-icon">📁</span>
-        {name}
-      </button>
-      {open && <Folder node={node} prefix={path + '/'} depth={depth + 1} nav={nav} />}
+      <div className="tree-item">
+        {children.length > 0 ? (
+          <button className="tree-caret" onClick={() => setOpen(!open)} aria-expanded={open} aria-label={open ? 'Comprimi' : 'Espandi'}>
+            {open ? '▾' : '▸'}
+          </button>
+        ) : (
+          <span className="tree-caret" />
+        )}
+        {link}
+      </div>
+      {open && children.length > 0 && <Entries entries={children} depth={depth + 1} nav={nav} />}
     </li>
   )
 }
 
-// `active`: the file to highlight. `fileHref(file)`: where a file's link points.
-// `onOpen(file)`: opens a file in place; when missing, links simply navigate.
-export default function Sidebar({ active, fileHref, onOpen }) {
-  const nav = { active, fileHref, onOpen }
+// `index`: the roadmap's table of contents (see buildIndex), or null when there is no roadmap.
+// `active`: id of the node to highlight. `nodeHref(node)`: where a node's link points.
+// `onOpen(node)`: opens a node in place; when missing, links simply navigate.
+export default function Sidebar({ index, active, nodeHref, onOpen }) {
+  const nav = { active, nodeHref, onOpen }
   const [open, setOpen] = useState(loadOpen)
   const resize = useResizable('sidebar-width', 280, 200)
 
@@ -98,17 +104,18 @@ export default function Sidebar({ active, fileHref, onOpen }) {
     <aside className={open ? 'sidebar open' : 'sidebar closed'} style={open ? { width: resize.width } : undefined}>
       {open && <div className="resize-handle" {...resize.handleProps} title="Trascina per ridimensionare, doppio clic per ripristinare" />}
       <div className="sidebar-head">
-        <button className="sidebar-toggle" onClick={toggle} aria-expanded={open} title={open ? 'Chiudi contenuti' : 'Apri contenuti'}>
+        <button className="sidebar-toggle" onClick={toggle} aria-expanded={open} title={open ? 'Chiudi indice' : 'Apri indice'}>
           {open ? '›' : '‹'}
         </button>
-        {open && <span>Contenuti</span>}
+        {open && <span>Indice</span>}
       </div>
       {open && (
         <nav className="sidebar-body">
-          <a href={href('')} className="tree-row">
-            <span className="tree-icon">🏠</span>home
-          </a>
-          <Folder node={tree} prefix="" depth={1} nav={nav} />
+          {index?.length ? (
+            <Entries entries={index} depth={0} nav={nav} />
+          ) : (
+            <p className="sidebar-empty">{index ? 'La roadmap è vuota.' : 'Nessuna roadmap.'}</p>
+          )}
         </nav>
       )}
     </aside>
