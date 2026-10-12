@@ -43,7 +43,8 @@ const RANK = { title: 0, topic: 1, subtopic: 2, note: 2 }
 // The roadmap as a table of contents: [{ node, children: [...] }]. Edges carry no
 // direction, so each node goes under the nearest node one level up (by number of hops,
 // moving only through nodes of its own level), or the nearest higher one if there is
-// none. Titles are the top-level sections; nodes with nothing above them come before
+// none. A subtopic linked to its topic only through another subtopic goes under that
+// subtopic, so details can nest one more level. Titles are the top-level sections; nodes with nothing above them come before
 // them, and empty titles are skipped. Siblings follow the layout, top to bottom then
 // left to right.
 export function buildIndex(doc) {
@@ -69,7 +70,8 @@ export function buildIndex(doc) {
         for (const next of links.get(id)) {
           if (seen.has(next) || rank(byId.get(next)) !== level) continue
           seen.add(next)
-          if (!parent.has(next)) parent.set(next, from)
+          // A subtopic reached through another subtopic is its detail: it goes under it
+          if (!parent.has(next)) parent.set(next, level === 2 && rank(byId.get(id)) === 2 ? id : from)
           queue.push([next, from])
         }
       }

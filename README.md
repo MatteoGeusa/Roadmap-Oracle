@@ -7,7 +7,11 @@ nella cartella `home/`.
 
 L'**indice** a destra segue la roadmap, non le cartelle di `home/`: i titoli fanno da
 sezioni, sotto ogni titolo compaiono gli argomenti collegati e sotto ogni argomento i suoi
-sotto-argomenti, nell'ordine in cui stanno nella mappa (dall'alto in basso). Le note
+sotto-argomenti, nell'ordine in cui stanno nella mappa (dall'alto in basso). Un
+sotto-argomento collegato a un altro sotto-argomento, invece che direttamente
+all'argomento, compare annidato sotto di lui, a qualsiasi profondità: serve per i
+dettagli. Nel pannello le sezioni si aprono con un clic;
+la casella di ricerca filtra l'indice e i pulsanti ⊞ e ⊟ espandono o comprimono tutto. Le note
 compaiono solo se hanno un documento. Per far comparire un nodo al posto giusto basta
 collegarlo nella roadmap al nodo sopra di lui.
 
