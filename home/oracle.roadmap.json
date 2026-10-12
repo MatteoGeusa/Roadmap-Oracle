@@ -8,7 +8,23 @@
       "label": "Oracle Database",
       "x": 370,
       "y": -30
+    },
+    {
+      "id": "nmv54kqnl0zqz",
+      "kind": "topic",
+      "label": "Proprietà ACID",
+      "x": 190,
+      "y": 70,
+      "page": "ACID.md"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "emv54m5ygkyct",
+      "source": "nmv54kqnl0zqz",
+      "target": "title",
+      "sourceHandle": "r",
+      "targetHandle": "b"
+    }
+  ]
 }
